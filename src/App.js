@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,8 +16,20 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Center for Better Learning
         </a>
+        <button type="button" className="btn btn-primary">
+          Click ME
+        </button>
+        <button type="button" className="btn btn-warning">
+          Click Me!
+        </button>
+        <button type="button" className="btn btn-success">
+          Click Me!
+        </button>
+        <button type="button" className="btn btn-danger">
+          Click Me!
+        </button>
       </header>
     </div>
   );
