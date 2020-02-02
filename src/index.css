@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logotagline {
+  font-family: 'Coming Soon', cursive;
+  color: var(--primary);
+}
+.logotitle {
+  font-family: 'league_spartanbold', sans-serif;
+  color: var(--primary);
+}
+.logoyellow {
+  color: var(--warning);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon&display=swap');
+@font-face {
+  font-family: 'league_spartanbold';
+  src: url('./fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+    url('./fonts/leaguespartan-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
