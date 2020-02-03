@@ -1,7 +1,10 @@
 import React from 'react';
+import Bio from '../components/Bio';
 
-function Team() {
-  return <h1>Team Component</h1>;
-}
+const Team = () => (
+  <div className="biocard">
+    <Bio />
+  </div>
+);
 
 export default Team;
