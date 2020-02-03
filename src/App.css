@@ -37,6 +37,13 @@
   border-bottom: 3px solid #29b6f6;
   transition: border-bottom 0.5s ease-in-out;
 }
+.belownav {
+  margin-top: 400px;
+  height: 90vh;
+}
+.card {
+  margin-bottom: 30px;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon&display=swap');
 @font-face {

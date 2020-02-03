@@ -5,15 +5,13 @@ function Bio(props) {
     <div className="card">
       <img
         className="bioimg card-img-top"
-        src={props.user.url}
-        alt={props.user.name}
+        src={props.url}
+        alt={props.name}
       />
       <div className="card-body">
-        <h3 className="card-title">>{props.user.name}</h3>
-        <h4 className="card-title">{props.user.role}</h4>
-      </div>
-      <div className="card-body">
-        <p className="card-text">{props.user.bio}</p>
+        <h3 className="card-title">{props.name}</h3>
+        <h5 className="card-title">{props.role}</h5>
+        <p className="card-text">{props.bio}</p>
       </div>
     </div>
   );

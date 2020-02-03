@@ -10,7 +10,9 @@ function App() {
     <Router>
       <div className="container">
         <Navbar />
-        <Routes />
+        <div className="belownav">
+          <Routes />
+        </div>
         <Footer />
       </div>
     </Router>

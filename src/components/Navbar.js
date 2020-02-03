@@ -5,7 +5,7 @@ import logo from './../logo.svg';
 function Navbar() {
   return (
     <nav className="navbar fixed-top navbar-dark bg-primary">
-      <img src={logo} className="App-logo" alt="logo" />
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <div className="logo">
         <h1 className="logotitle">Center for Better Learning</h1>
         <h2 className="logotagline">
