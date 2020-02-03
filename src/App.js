@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Routes from './routes/routes';
 
 function App() {
   return (
-    <div className="App container">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="logotitle">Center for Better Learning</h1>
-      <h2 className="logotagline">
-        Better Vision. <span className="logoyellow">Brighter</span> Future.
-      </h2>
-    </div>
+    <Router>
+      <div className="container">
+        <Navbar />
+        <Routes />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
