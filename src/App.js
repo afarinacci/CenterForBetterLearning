@@ -10,9 +10,9 @@ function App() {
     <Router>
       <div className="container">
         <Navbar />
-        <div className="belownav">
+        <main>
           <Routes />
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>
