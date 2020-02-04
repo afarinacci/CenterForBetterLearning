@@ -54,6 +54,8 @@ a.nav-item.nav-link.active {
   margin: 0px;
 }
 footer {
+  width: 100%;
+  margin: 0px;
   padding: 10px;
   background-color: var(--primary);
   color: white;

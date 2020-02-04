@@ -8,13 +8,13 @@ import Routes from './routes/routes';
 function App() {
   return (
     <Router>
+      <Navbar />
       <div className="container">
-        <Navbar />
         <main>
           <Routes />
         </main>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }
