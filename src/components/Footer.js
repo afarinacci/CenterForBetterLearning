@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="row">
-        <div className="col-12 col-md-6 text-center">
+        <div className="location col-12 col-md-6 text-center">
           <h3>Coconut Creek</h3>
           <address>
             4147 Hillsboro Blvd Suite 13
@@ -20,7 +20,7 @@ function Footer() {
             (561) 264-1245
           </a>
         </div>
-        <div className="col-12 col-md-6 text-center">
+        <div className="location col-12 col-md-6 text-center">
           <h3>West Palm Beach</h3>
           <address>
             3650 Forest Hill Blvd. Suite 2<br />
