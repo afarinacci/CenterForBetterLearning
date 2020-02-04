@@ -21,7 +21,7 @@
 }
 main {
   min-height: 90vh;
-  margin-top: 200px;
+  margin-top: 275px;
 }
 .logoIcon {
   margin: 0px 10px 2px 10px;
@@ -35,13 +35,6 @@ main {
 .brainIcon {
   color: var(--danger);
 }
-
-.bottomNav {
-  padding: 0px 16px;
-}
-a.nav-item.nav-link.active {
-  color: var(--primary);
-}
 .topNav {
   padding: 5px 5px;
   background-color: white;
@@ -50,7 +43,7 @@ a.nav-item.nav-link.active {
   margin: 5px 5px;
 }
 .navbar-brand {
-  padding: 0px 5px;
+  padding: 5px 5px;
   margin: 0px;
 }
 footer {
@@ -72,12 +65,21 @@ footer .row {
 .footerIcon {
   margin-right: 3px;
 }
-
-/* Medium devices (tablets, 768px and up) 
-@media (min-width: 768px) {
-  
+.btnResponsive {
+  padding: 4px;
+  font-size: 0.7rem;
 }
-*/
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  main {
+    margin-top: 250px;
+  }
+  .btnResponsive {
+    padding: 6px;
+    font-size: 1rem;
+  }
+}
 
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon&display=swap');
 @font-face {

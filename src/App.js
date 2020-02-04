@@ -4,11 +4,12 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Routes from './routes/routes';
+import CustomNavbar from './components/CustomNavbar';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <CustomNavbar />
       <div className="container">
         <main>
           <Routes />
