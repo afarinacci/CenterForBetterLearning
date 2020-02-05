@@ -20,7 +20,7 @@ function Footer() {
                 </span>
                 4147 Hillsboro Boulevard, Suite 13
                 <br />
-                Coconut Creek FL, 33703
+                Coconut Creek, FL 33703
                 <br />
               </address>
             </div>
