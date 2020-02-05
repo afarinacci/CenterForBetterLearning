@@ -21,8 +21,12 @@ const CustomNavbar = props => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
-    //document.body.scrollTop = 0; // For Safari
-    //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+  const scrollTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   return (
     <nav className="fixed-top">
@@ -32,7 +36,7 @@ const CustomNavbar = props => {
         className="topNav navbar row align-items-start"
       >
         <div className="order-2 order-md-1 col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-          <NavLogo />
+          <NavLogo onClick={scrollTop} />
         </div>
         <div className="order-1 order-md-2 col-12 col-md-6 d-flex flex-nowrap justify-content-center justify-content-md-end">
           <a href="tel:+1561-264-1245">

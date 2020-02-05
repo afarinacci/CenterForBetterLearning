@@ -34,7 +34,10 @@ function Footer() {
               <span>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="footerIcon" />
               </span>
-              3650 Forest Hill Blvd. Suite 2<br />
+              Located inside Premier Eye Center
+              <br />
+              3650 Forest Hill Blvd. Suite 2
+              <br />
               West Palm Beach, FL 33406
               <br />
             </address>
