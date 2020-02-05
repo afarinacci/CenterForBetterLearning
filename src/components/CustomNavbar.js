@@ -12,7 +12,8 @@ import {
   DropdownMenu,
   DropdownItem,
   NavbarBrand,
-  Collapse
+  Collapse,
+  Button
 } from 'reactstrap';
 import NavLogo from './NavLogo';
 
@@ -33,32 +34,33 @@ class CustomNavbar extends React.Component {
   render() {
     return (
       <nav className="fixed-top">
-        <Nav className="topNav navbar navbar-light row align-items-start">
+        <Navbar
+          color="primary"
+          dark
+          className="topNav navbar row align-items-start"
+        >
           <div className="order-2 order-md-1 col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
             <NavLogo />
           </div>
           <div className="order-1 order-md-2 col-12 col-md-6 d-flex flex-nowrap justify-content-center justify-content-md-end">
-            <a
-              href="tel:+1561-264-1245"
-              className="btn btn-primary btnResponsive topNavBtn"
-            >
-              <FontAwesomeIcon icon={faPhone} /> (561) 264-1245
+            <a href="tel:+1561-264-1245">
+              <Button outline color="primary" className="topNavBtn">
+                <FontAwesomeIcon icon={faPhone} /> (561) 264-1245
+              </Button>
             </a>
-            <Link
-              exact
-              to="/request-appointment"
-              className="btn btn-outline-primary btnResponsive topNavBtn"
-            >
-              Request an Appointment
+            <Link exact to="/request-appointment">
+              <Button outline color="primary" className="topNavBtn">
+                Request an Appointment
+              </Button>
             </Link>
           </div>
-        </Nav>
-        <Navbar color="primary" dark expand="md">
+        </Navbar>
+        <Navbar color="white" light expand="md">
           {/* Add toggler to auto-collapse */}
           <NavbarToggler onClick={this.toggle} className="ml-auto" />
           <Collapse isOpen={this.state.isOpen} navbar>
             {/*Pull left */}
-            <Nav navbar fill>
+            <Nav navbar tabs>
               <NavItem>
                 <NavLink
                   activeClassName="active"

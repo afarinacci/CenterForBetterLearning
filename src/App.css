@@ -3,13 +3,13 @@
 }
 .logotagline {
   font-family: 'Coming Soon', cursive;
-  color: var(--primary);
+  color: white;
   font-size: 1rem;
   margin-bottom: 0px;
 }
 .logotitle {
   font-family: 'league_spartanbold', sans-serif;
-  color: var(--primary);
+  color: white;
   font-size: 1.25rem;
   margin-bottom: 0px;
 }
@@ -37,10 +37,17 @@ main {
 }
 .topNav {
   padding: 5px 5px;
-  background-color: white;
 }
 .topNavBtn {
   margin: 5px 5px;
+  background-color: white;
+  padding: 4px;
+  font-size: 0.7rem;
+}
+.topNavBtn:hover,
+.footerBtn:hover {
+  color: white;
+  border-color: white;
 }
 .navbar-brand {
   padding: 5px 5px;
@@ -59,6 +66,9 @@ footer {
 footer .row {
   margin: 0px;
 }
+.footerBtn {
+  background-color: white;
+}
 .location {
   padding: 10px;
 }
@@ -66,17 +76,13 @@ footer .row {
 .navIcon {
   margin-right: 3px;
 }
-.btnResponsive {
-  padding: 4px;
-  font-size: 0.7rem;
-}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   main {
     margin-top: 250px;
   }
-  .btnResponsive {
+  .topNavBtn {
     padding: 6px;
     font-size: 1rem;
   }
