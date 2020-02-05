@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import {
   Nav,
   Navbar,
@@ -77,60 +77,104 @@ class CustomNavbar extends React.Component {
                   What is vision therapy?
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink
-                  activeClassName="active"
-                  className="nav-item nav-link"
-                  to="/services"
-                >
-                  Services
-                </NavLink>
-              </NavItem>
+
               <NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
-                    Resources
+                    Services
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>
-                      <Link exact to="/resources">
-                        All Resources
+                      <Link exact to="/services">
+                        All Services
                       </Link>
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem>Parents</DropdownItem>
+                    <DropdownItem>
+                      <Link
+                        exact
+                        to="/services/learning-related-visual-problems"
+                      >
+                        Learning Related Visual Problems
+                      </Link>
+                    </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem>Teachers</DropdownItem>
+                    <DropdownItem>
+                      <Link exact to="/services/amblyopia-strabismus">
+                        Amblyopia/Strabismus
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem>
+                      <Link exact to="/services/vision-rehabilitation">
+                        Vision Rehabilitation
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem>
+                      <Link exact to="/services/sports-vision">
+                        Sports Vision
+                      </Link>
+                    </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </NavItem>
+
               <NavItem>
                 <NavLink
                   activeClassName="active"
                   className="nav-item nav-link"
-                  to="/symptom-checker"
+                  to="/diagnosis"
                 >
-                  Symptom Checker
+                  Diagnosis
                 </NavLink>
               </NavItem>
+
               <NavItem>
                 <NavLink
                   activeClassName="active"
                   className="nav-item nav-link"
-                  to="/forms"
+                  to="/resources"
                 >
-                  Patient Forms
+                  Resources
                 </NavLink>
               </NavItem>
+
               <NavItem>
                 <NavLink
                   activeClassName="active"
                   className="nav-item nav-link"
-                  to="/locations"
+                  to="/symptoms"
                 >
-                  Locations
+                  Symptoms
                 </NavLink>
               </NavItem>
+
+              <NavItem>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Patient Forms
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem>
+                      <FontAwesomeIcon
+                        icon={faFileDownload}
+                        className="navIcon"
+                      />
+                      Child Intake Form
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem>
+                      <FontAwesomeIcon
+                        icon={faFileDownload}
+                        className="navIcon"
+                      />
+                      Adult Intake Form
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </NavItem>
+
               <NavItem>
                 <NavLink
                   activeClassName="active"

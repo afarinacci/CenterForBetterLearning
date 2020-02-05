@@ -5,10 +5,14 @@ import Appt from '../pages/Appt';
 import Team from '../pages/Team';
 import Wivt from '../pages/Wivt';
 import Services from '../pages/Services';
+import Sportsvision from '../pages/Sportsvision';
+import Visionrehab from '../pages/Visionrehab';
+import As from '../pages/As';
+import Lrvp from '../pages/Lrvp';
 import Resources from '../pages/Resources';
-import Symptomchecker from '../pages/Symptomchecker';
+import Symptoms from '../pages/Symptoms';
 import Forms from '../pages/Forms';
-import Locations from '../pages/Locations';
+import Diagnosis from '../pages/Diagnosis';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
 
@@ -19,10 +23,26 @@ const Routes = () => (
     <Route exact path="/our-team" component={Team}></Route>
     <Route exact path="/what-is-vision-therapy" component={Wivt}></Route>
     <Route exact path="/services" component={Services}></Route>
+    <Route
+      exact
+      path="/services/sports-vision"
+      component={Sportsvision}
+    ></Route>
+    <Route
+      exact
+      path="/services/vision-rehabilitation"
+      component={Visionrehab}
+    ></Route>
+    <Route exact path="/services/amblyopia-strabismus" component={As}></Route>
+    <Route
+      exact
+      path="/services/learning-related-visual-problems"
+      component={Lrvp}
+    ></Route>
+    <Route exact path="/diagnosis" component={Diagnosis}></Route>
     <Route exact path="/resources" component={Resources}></Route>
-    <Route exact path="/symptom-checker" component={Symptomchecker}></Route>
-    <Route exact path="/patient-forms" component={Forms}></Route>
-    <Route exact path="/locations" component={Locations}></Route>
+    <Route exact path="/symptoms" component={Symptoms}></Route>
+    <Route exact path="/forms" component={Forms}></Route>
     <Route exact path="/contact-us" component={Contact}></Route>
     <Route component={NotFound}></Route>
   </Switch>

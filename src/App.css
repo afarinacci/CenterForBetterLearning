@@ -62,7 +62,8 @@ footer .row {
 .location {
   padding: 10px;
 }
-.footerIcon {
+.footerIcon,
+.navIcon {
   margin-right: 3px;
 }
 .btnResponsive {
