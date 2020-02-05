@@ -2,9 +2,9 @@ import React from 'react';
 
 function Services() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Services</h1>
-    </div>
+    </main>
   );
 }
 

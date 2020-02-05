@@ -86,7 +86,7 @@ const CustomNavbar = props => {
                     tag={RRNavLink}
                     onClick={toggleNavbar}
                   >
-                    All Services
+                    <b>All Services</b>
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem divider />

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Resources() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Resources</h1>
-    </div>
+    </main>
   );
 }
 

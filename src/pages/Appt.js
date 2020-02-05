@@ -2,9 +2,9 @@ import React from 'react';
 
 function Appt() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Request an Appointment</h1>
-    </div>
+    </main>
   );
 }
 

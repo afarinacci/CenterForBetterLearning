@@ -2,7 +2,7 @@ import React from 'react';
 import Bio from '../components/Bio';
 
 const Team = () => (
-  <div>
+  <main className="container-fluid">
     <h1 className="text-center pageTitle">Meet Our Team</h1>
     <div className="row">
       <div className="col-md-6 col-lg-4">
@@ -35,7 +35,7 @@ const Team = () => (
         </div>
       </div>
     </div>
-  </div>
+  </main>
 );
 
 export default Team;

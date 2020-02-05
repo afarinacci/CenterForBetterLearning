@@ -2,9 +2,9 @@ import React from 'react';
 
 function Symptoms() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Symptoms</h1>
-    </div>
+    </main>
   );
 }
 

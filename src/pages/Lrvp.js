@@ -2,11 +2,11 @@ import React from 'react';
 
 function Lrvp() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">
         Learning Related Visual Problems
       </h1>
-    </div>
+    </main>
   );
 }
 

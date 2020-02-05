@@ -3,10 +3,10 @@ import ContactForm from './../components/ContactForm';
 
 function Contact() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Contact Us</h1>
       <ContactForm />
-    </div>
+    </main>
   );
 }
 

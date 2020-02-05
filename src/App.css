@@ -19,12 +19,13 @@
 .card {
   margin-bottom: 30px;
 }
+.marginfornav {
+  margin-top: 170px;
+}
 main {
   min-height: 90vh;
-  margin-top: 165px;
   padding: 10px;
 }
-
 main h1 {
   font-size: 1.9rem;
 }
@@ -116,18 +117,27 @@ footer .row {
 }
 .bottomNav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  overflow-y: scroll !important;
-  max-height: 300px !important;
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.coverPhoto {
+  max-width: 100%;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .marginfornav {
+    margin-top: 193px;
+  }
   main {
-    margin-top: 215px;
+    padding: 30px;
   }
   .topNavBtn {
     padding: 6px;
     font-size: 1rem;
+  }
+  .bottomNav {
+    overflow-y: visible;
   }
   main h1 {
     font-size: 2.5rem;

@@ -2,9 +2,9 @@ import React from 'react';
 
 function As() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Amblyopia & Strabismus</h1>
-    </div>
+    </main>
   );
 }
 

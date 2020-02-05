@@ -2,9 +2,9 @@ import React from 'react';
 
 function Diagnosis() {
   return (
-    <div>
+    <main className="container-fluid">
       <h1 className="text-center pageTitle">Diagnosis</h1>
-    </div>
+    </main>
   );
 }
 
