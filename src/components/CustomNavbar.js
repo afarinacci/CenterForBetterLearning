@@ -90,7 +90,7 @@ const CustomNavbar = props => {
                     tag={RRNavLink}
                     onClick={toggleNavbar}
                   >
-                    <b>All Services</b>
+                    <span style={{ fontWeight: 'bold' }}>All Services</span>
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem divider />
@@ -189,7 +189,11 @@ const CustomNavbar = props => {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-
+            <NavItem>
+              <NavLink href="#locations" onClick={toggleNavbar}>
+                Locations
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink
                 exact
