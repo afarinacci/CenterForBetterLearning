@@ -11,7 +11,6 @@ import As from '../pages/As';
 import Lrvp from '../pages/Lrvp';
 import Resources from '../pages/Resources';
 import Symptoms from '../pages/Symptoms';
-import Forms from '../pages/Forms';
 import Diagnosis from '../pages/Diagnosis';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
@@ -42,7 +41,6 @@ const Routes = () => (
     <Route exact path="/diagnosis" component={Diagnosis}></Route>
     <Route exact path="/resources" component={Resources}></Route>
     <Route exact path="/symptoms" component={Symptoms}></Route>
-    <Route exact path="/forms" component={Forms}></Route>
     <Route exact path="/contact-us" component={Contact}></Route>
     <Route component={NotFound}></Route>
   </Switch>

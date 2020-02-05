@@ -21,7 +21,31 @@
 }
 main {
   min-height: 90vh;
-  margin-top: 275px;
+  margin-top: 165px;
+  padding: 10px;
+}
+
+main h1 {
+  font-size: 1.9rem;
+}
+main h2 {
+  font-size: 1.7rem;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main h4 {
+  font-size: 1.3rem;
+}
+main h5 {
+  font-size: 1.1rem;
+}
+main h6 {
+  font-size: 0.9rem;
+}
+.pageTitle {
+  color: var(--primary);
+  font-family: 'league_spartanbold', sans-serif;
 }
 .logoIcon {
   margin: 0px 10px 2px 10px;
@@ -42,7 +66,17 @@ main {
   margin: 5px 5px;
   background-color: white;
   padding: 4px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+.navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 .topNavBtn:hover,
 .footerBtn:hover {
@@ -65,6 +99,7 @@ footer {
 }
 footer .row {
   margin: 0px;
+  padding-bottom: 20px;
 }
 .footerBtn {
   background-color: white;
@@ -76,14 +111,40 @@ footer .row {
 .navIcon {
   margin-right: 3px;
 }
+.formBtn {
+  color: white;
+}
+.bottomNav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-y: scroll !important;
+  max-height: 300px !important;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   main {
-    margin-top: 250px;
+    margin-top: 215px;
   }
   .topNavBtn {
     padding: 6px;
+    font-size: 1rem;
+  }
+  main h1 {
+    font-size: 2.5rem;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+  main h3 {
+    font-size: 1.75rem;
+  }
+  main h4 {
+    font-size: 1.5rem;
+  }
+  main h5 {
+    font-size: 1.25rem;
+  }
+  main h6 {
     font-size: 1rem;
   }
 }

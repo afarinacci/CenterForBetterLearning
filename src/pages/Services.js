@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Services() {
-  return <h1>Services Component</h1>;
+  return (
+    <div>
+      <h1 className="text-center pageTitle">Services</h1>
+    </div>
+  );
 }
 
 export default Services;

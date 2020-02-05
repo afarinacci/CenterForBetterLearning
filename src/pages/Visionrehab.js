@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Visionrehab() {
-  return <h1>Vision Rehab Component</h1>;
+  return (
+    <div>
+      <h1 className="text-center pageTitle">Vision Rehabilitation</h1>
+    </div>
+  );
 }
 
 export default Visionrehab;
