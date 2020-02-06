@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Col, Row, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import emailjs from 'emailjs-com';
 class ContactForm extends React.Component {
   constructor(props) {
@@ -7,6 +7,7 @@ class ContactForm extends React.Component {
     this.state = { name: '', tel: '', email: '', message: '' };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.createAlert = this.createAlert.bind(this);
   }
   handleInputChange(event) {
     const target = event.target;
@@ -16,31 +17,43 @@ class ContactForm extends React.Component {
       [name]: value
     });
   }
+  createAlert() {
+    var alert = document.createElement('div'); // Create a <li> node
+    alert.className = 'alert alert-success';
+    var textnode = document.createTextNode('Sucess! Thank you'); // Create a text node
+    alert.appendChild(textnode); // Append the text to <li>
+    var form = document.getElementById('contactform'); // Get the <ul> element to insert a new node
+    form.insertBefore(alert, form.childNodes[0]); // Insert <li> before the first child of <ul>
+  }
   handleSubmit(e) {
     e.preventDefault();
     const userID = 'user_tMxXXkIPTSbBxvv05sm2e';
     const templateID = 'CenterForBetterLearning';
+    const message = this.state.message.replace(/\\n/g, '<br>');
+    console.log(message);
     const templateParams = {
       to_name: 'afarinac.14@gmail.com',
       from_name: this.state.name,
       from_tel: this.state.tel,
       reply_to: this.state.email,
-      message_html: this.state.message
+      message_html: message
     };
-
     emailjs.send('gmail', templateID, templateParams, userID).then(
       response => {
         console.log('SUCCESS!', response.status, response.text);
+        this.createAlert();
       },
       err => {
         console.log('FAILED...', err);
       }
     );
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     this.setState({ name: '', tel: '', email: '', message: '' });
   }
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit} id="contactform">
         <Row form>
           <Col md={6}>
             <FormGroup>
@@ -93,11 +106,9 @@ class ContactForm extends React.Component {
             required
           />
         </FormGroup>
-        <input
-          type="submit"
-          value="Submit"
-          className="btn btn-primary formBtn"
-        />
+        <Button type="submit" color="primary" className="formBtn">
+          Submit
+        </Button>
       </Form>
     );
   }
