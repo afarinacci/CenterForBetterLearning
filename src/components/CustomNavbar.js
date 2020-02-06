@@ -28,6 +28,15 @@ const CustomNavbar = props => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
+  const scrollToLocations = () => {
+    setCollapsed(!collapsed);
+    const id = 'locations';
+    const yOffset = -200;
+    const element = document.getElementById(id);
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  };
   return (
     <nav className="fixed-top">
       <Navbar
@@ -190,9 +199,7 @@ const CustomNavbar = props => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="#locations" onClick={toggleNavbar}>
-                Locations
-              </NavLink>
+              <NavLink onClick={scrollToLocations}>Locations</NavLink>
             </NavItem>
             <NavItem>
               <NavLink
