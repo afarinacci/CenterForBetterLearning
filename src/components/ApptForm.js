@@ -1,0 +1,248 @@
+import React from 'react';
+import {
+  Col,
+  Row,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
+  Alert
+} from 'reactstrap';
+import emailjs from 'emailjs-com';
+
+class ApptForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      patientName: '',
+      patientDOB: '',
+      parentName: '',
+      tel: '',
+      email: '',
+      mon: false,
+      tue: false,
+      wed: false,
+      thu: false,
+      fri: false,
+      sat: false,
+      morning: false,
+      afternoon: false,
+      alertSuccessVisible: false,
+      alertFailureVisible: false
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.onDismiss = this.onDismiss.bind(this);
+  }
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value
+    });
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const userID = 'user_tMxXXkIPTSbBxvv05sm2e';
+    const templateID = 'CenterForBetterLearning';
+    const templateParams = {
+      to_name: 'afarinac.14@gmail.com',
+      from_name: this.state.patientName,
+      from_tel: this.state.tel,
+      reply_to: this.state.email
+    };
+    emailjs.send('gmail', templateID, templateParams, userID).then(
+      response => {
+        console.log('SUCCESS!', response.status, response.text);
+        this.setState({ alertSuccessVisible: true });
+      },
+      err => {
+        console.log('FAILED...', err);
+        this.setState({ alertFailureVisible: true });
+      }
+    );
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    this.setState({ name: '', tel: '', email: '', message: '' });
+  }
+  onDismiss() {
+    this.setState({ alertSuccessVisible: false, alertFailureVisible: false });
+  }
+  render() {
+    return (
+      <Form onSubmit={this.handleSubmit} className="form mr-auto ml-auto">
+        <Alert
+          color="success"
+          isOpen={this.state.alertSuccessVisible}
+          toggle={this.onDismiss}
+          fade={false}
+        >
+          Thank you, we have received your appointment request.
+        </Alert>
+        <Alert
+          color="danger"
+          isOpen={this.state.alertFailureVisible}
+          toggle={this.onDismiss}
+          fade={false}
+        >
+          Sorry, we encountered an error in sending your request.
+        </Alert>
+        <FormGroup row>
+          <Label for="patientName" md={3}>
+            Patient Name
+          </Label>
+          <Col md={9} className="mb-auto mt-auto">
+            <Input
+              type="text"
+              name="patientName"
+              id="patientName"
+              onChange={this.handleInputChange}
+              value={this.state.patientName}
+              required
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="parentName" md={3}>
+            Parent Name{' '}
+            <span style={{ fontStyle: 'italic' }}>(If patient is child)</span>
+          </Label>
+          <Col md={9} className="mb-auto mt-auto">
+            <Input
+              type="text"
+              name="parentName"
+              id="parentName"
+              onChange={this.handleInputChange}
+              value={this.state.parentName}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="patientDOB" md={3}>
+            Patient Date of Birth
+          </Label>
+          <Col md={9} className="mb-auto mt-auto">
+            <Input
+              type="date"
+              name="patientDOB"
+              id="patientDOB"
+              onChange={this.handleInputChange}
+              value={this.state.patientDOB}
+              required
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="tel" md={3}>
+            Phone Number
+          </Label>
+          <Col md={9} className="mb-auto mt-auto">
+            <Input
+              type="number"
+              name="tel"
+              id="tel"
+              onChange={this.handleInputChange}
+              value={this.state.tel}
+              required
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="email" md={3}>
+            Email
+          </Label>
+          <Col md={9} className="mb-auto mt-auto">
+            <Input
+              type="email"
+              name="email"
+              id="email"
+              onChange={this.handleInputChange}
+              value={this.state.email}
+              required
+            />
+          </Col>
+        </FormGroup>
+        <Row form>
+          <FormGroup>
+            <label>
+              <input
+                name="mon"
+                type="checkbox"
+                checked={this.state.mon}
+                onChange={this.handleInputChange}
+              />{' '}
+              Monday
+            </label>
+          </FormGroup>
+
+          <FormGroup>
+            <label>
+              <input
+                name="tue"
+                type="checkbox"
+                checked={this.state.tue}
+                onChange={this.handleInputChange}
+              />{' '}
+              Tuesday
+            </label>
+          </FormGroup>
+
+          <FormGroup>
+            <label>
+              <input
+                name="wed"
+                type="checkbox"
+                checked={this.state.wed}
+                onChange={this.handleInputChange}
+              />{' '}
+              Wednesday
+            </label>
+          </FormGroup>
+
+          <FormGroup>
+            <label>
+              <input
+                name="thu"
+                type="checkbox"
+                checked={this.state.thu}
+                onChange={this.handleInputChange}
+              />{' '}
+              Thursday
+            </label>
+          </FormGroup>
+
+          <FormGroup>
+            <label>
+              <input
+                name="fri"
+                type="checkbox"
+                checked={this.state.fri}
+                onChange={this.handleInputChange}
+              />{' '}
+              Friday
+            </label>
+          </FormGroup>
+
+          <FormGroup>
+            <label>
+              <input
+                name="sat"
+                type="checkbox"
+                checked={this.state.sat}
+                onChange={this.handleInputChange}
+              />{' '}
+              Saturday
+            </label>
+          </FormGroup>
+        </Row>
+        <Button type="submit" color="primary" className="formBtn">
+          Submit
+        </Button>
+      </Form>
+    );
+  }
+}
+
+export default ApptForm;
