@@ -20,7 +20,7 @@
   margin-bottom: 30px;
 }
 .marginfornav {
-  margin-top: 170px;
+  margin-top: 162px;
 }
 main {
   min-height: 90vh;
@@ -124,6 +124,10 @@ footer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
   max-height: 300px;
+  padding: 4px 16px;
+}
+.nav-link {
+  padding: 4px 8px;
 }
 .coverPhoto {
   width: 100vw;
@@ -138,7 +142,7 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {
-    margin-top: 193px;
+    margin-top: 177.5px;
   }
   main {
     padding: 30px;

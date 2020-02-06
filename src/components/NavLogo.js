@@ -6,7 +6,7 @@ import { faBrain, faEye, faUser } from '@fortawesome/free-solid-svg-icons';
 function NavLogo(props) {
   return (
     <div>
-      <Link exact to="/" className="navbar-brand" onClick={props.onClick}>
+      <Link to="/" className="navbar-brand" onClick={props.onClick}>
         {/*<img src={logo} className="App-logo" alt="logo" /> */}
         <div className="text-center">
           <div className="d-none d-md-block">

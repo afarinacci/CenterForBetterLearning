@@ -7,6 +7,7 @@ $theme-colors: (
   'success': #89d085
 );
 $link-color: #38b6ff;
+$nav-link-padding: 6px 15px;
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';

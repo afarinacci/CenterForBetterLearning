@@ -8,8 +8,8 @@ function Home() {
   return (
     <div>
       <picture>
-        <source media="(max-width: 450px)" srcset={childrenReading_w2400} />
-        <source media="(min-width: 451px)" srcset={childrenReading_w5743} />
+        <source media="(max-width: 450px)" srcSet={childrenReading_w2400} />
+        <source media="(min-width: 451px)" srcSet={childrenReading_w5743} />
         <img
           src={childrenReading_w5743}
           className="img-fluid"
