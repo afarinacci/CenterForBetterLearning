@@ -24,25 +24,18 @@ class ContactForm extends React.Component {
       to_name: 'afarinac.14@gmail.com',
       from_name: this.state.name,
       from_tel: this.state.tel,
-      reply_to: this.state.email
-      message_html: this.state.message,
+      reply_to: this.state.email,
+      message_html: this.state.message
     };
-    
-    emailjs
-      .send(
-        'gmail',
-        templateID,
-        templateParams,
-        userID
-      )
-      .then(
-        response => {
-          console.log('SUCCESS!', response.status, response.text);
-        },
-        err => {
-          console.log('FAILED...', err);
-        }
-      );
+
+    emailjs.send('gmail', templateID, templateParams, userID).then(
+      response => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      err => {
+        console.log('FAILED...', err);
+      }
+    );
     this.setState({ name: '', tel: '', email: '', message: '' });
   }
   render() {
