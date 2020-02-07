@@ -28,6 +28,8 @@ class ApptForm extends React.Component {
       sat: false,
       morning: false,
       afternoon: false,
+      contactbyphone: false,
+      contactbyemail: false,
       alertSuccessVisible: false,
       alertFailureVisible: false
     };
@@ -45,15 +47,27 @@ class ApptForm extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    const userID = 'user_tMxXXkIPTSbBxvv05sm2e';
-    const templateID = 'CenterForBetterLearning';
+    const userID = 'user_U4tGWwpwOzAQ4FchtTo0x';
+    const templateID = 'centerforbetterlearning_apptform';
     const templateParams = {
-      to_name: 'afarinac.14@gmail.com',
-      from_name: this.state.patientName,
+      to_name: 'info@centerforbetterlearning.com',
+      patient_name: this.state.patientName,
+      patient_dob: this.state.patientDOB,
+      parent_name: this.state.parentName,
       from_tel: this.state.tel,
-      reply_to: this.state.email
+      reply_to: this.state.email,
+      mon: this.state.mon ? 'monday' : '',
+      tue: this.state.tue ? 'tuesday' : '',
+      wed: this.state.wed ? 'wednesday' : '',
+      thu: this.state.thu ? 'thursday' : '',
+      fri: this.state.fri ? 'friday' : '',
+      sat: this.state.sat ? 'saturday' : '',
+      morning: this.state.morning ? 'morning' : '',
+      afternoon: this.state.afternoon ? 'afternoon' : '',
+      phone: this.state.contactbyphone ? 'phone' : '',
+      email: this.state.contactbyemail ? 'email' : ''
     };
-    emailjs.send('gmail', templateID, templateParams, userID).then(
+    emailjs.send('smtp_server', templateID, templateParams, userID).then(
       response => {
         console.log('SUCCESS!', response.status, response.text);
         this.setState({ alertSuccessVisible: true });
@@ -65,7 +79,23 @@ class ApptForm extends React.Component {
     );
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    this.setState({ name: '', tel: '', email: '', message: '' });
+    this.setState({
+      patientName: '',
+      patientDOB: '',
+      parentName: '',
+      tel: '',
+      email: '',
+      mon: false,
+      tue: false,
+      wed: false,
+      thu: false,
+      fri: false,
+      sat: false,
+      morning: false,
+      afternoon: false,
+      contactbyphone: false,
+      contactbyemail: false
+    });
   }
   onDismiss() {
     this.setState({ alertSuccessVisible: false, alertFailureVisible: false });
@@ -164,82 +194,133 @@ class ApptForm extends React.Component {
             />
           </Col>
         </FormGroup>
-        <Row form>
-          <FormGroup>
-            <label>
-              <input
-                name="mon"
-                type="checkbox"
-                checked={this.state.mon}
-                onChange={this.handleInputChange}
-              />{' '}
-              Monday
-            </label>
-          </FormGroup>
 
-          <FormGroup>
-            <label>
-              <input
-                name="tue"
-                type="checkbox"
-                checked={this.state.tue}
-                onChange={this.handleInputChange}
-              />{' '}
-              Tuesday
-            </label>
-          </FormGroup>
+        <FormGroup row>
+          <Label md={3}>Preferred Day of Week</Label>
+          <Col md={9} className="row mb-auto mt-auto">
+            <div>
+              <label className="apptcheckbox">
+                <input
+                  name="mon"
+                  type="checkbox"
+                  checked={this.state.mon}
+                  onChange={this.handleInputChange}
+                />{' '}
+                Monday
+              </label>
 
-          <FormGroup>
-            <label>
-              <input
-                name="wed"
-                type="checkbox"
-                checked={this.state.wed}
-                onChange={this.handleInputChange}
-              />{' '}
-              Wednesday
-            </label>
-          </FormGroup>
+              <label className="apptcheckbox">
+                <input
+                  name="tue"
+                  type="checkbox"
+                  checked={this.state.tue}
+                  onChange={this.handleInputChange}
+                />{' '}
+                Tuesday
+              </label>
+            </div>
+            <div>
+              <label className="apptcheckbox">
+                <input
+                  name="wed"
+                  type="checkbox"
+                  checked={this.state.wed}
+                  onChange={this.handleInputChange}
+                />{' '}
+                Wednesday
+              </label>
 
-          <FormGroup>
-            <label>
-              <input
-                name="thu"
-                type="checkbox"
-                checked={this.state.thu}
-                onChange={this.handleInputChange}
-              />{' '}
-              Thursday
-            </label>
-          </FormGroup>
+              <label className="apptcheckbox">
+                <input
+                  name="thu"
+                  type="checkbox"
+                  checked={this.state.thu}
+                  onChange={this.handleInputChange}
+                />{' '}
+                Thursday
+              </label>
+            </div>
+            <div>
+              <label className="apptcheckbox">
+                <input
+                  name="fri"
+                  type="checkbox"
+                  checked={this.state.fri}
+                  onChange={this.handleInputChange}
+                />{' '}
+                Friday
+              </label>
 
-          <FormGroup>
-            <label>
-              <input
-                name="fri"
-                type="checkbox"
-                checked={this.state.fri}
-                onChange={this.handleInputChange}
-              />{' '}
-              Friday
-            </label>
-          </FormGroup>
+              <label className="apptcheckbox">
+                <input
+                  name="sat"
+                  type="checkbox"
+                  checked={this.state.sat}
+                  onChange={this.handleInputChange}
+                />{' '}
+                Saturday
+              </label>
+            </div>
+          </Col>
+        </FormGroup>
 
-          <FormGroup>
-            <label>
+        <FormGroup row>
+          <Label md={3}>Preferred Time of Day</Label>
+          <Col md={9} className="row mb-auto mt-auto">
+            <label className="apptcheckbox">
               <input
-                name="sat"
+                name="morning"
                 type="checkbox"
-                checked={this.state.sat}
+                checked={this.state.morning}
                 onChange={this.handleInputChange}
               />{' '}
-              Saturday
+              Morning
             </label>
-          </FormGroup>
-        </Row>
-        <Button type="submit" color="primary" className="formBtn">
-          Submit
-        </Button>
+
+            <label className="apptcheckbox">
+              <input
+                name="afternoon"
+                type="checkbox"
+                checked={this.state.afternoon}
+                onChange={this.handleInputChange}
+              />{' '}
+              Afternoon
+            </label>
+          </Col>
+        </FormGroup>
+
+        <FormGroup row>
+          <Label md={3}>Preferred Method of Contact</Label>
+          <Col md={9} className="row mb-auto mt-auto">
+            <label className="apptcheckbox">
+              <input
+                name="contactbyphone"
+                type="checkbox"
+                checked={this.state.contactbyphone}
+                onChange={this.handleInputChange}
+              />{' '}
+              Phone
+            </label>
+
+            <label className="apptcheckbox">
+              <input
+                name="contactbyemail"
+                type="checkbox"
+                checked={this.state.contactbyemail}
+                onChange={this.handleInputChange}
+              />{' '}
+              Email
+            </label>
+          </Col>
+        </FormGroup>
+
+        <FormGroup row className="">
+          <Col className="text-center">
+            <Button type="submit" color="primary" className="formBtn">
+              Submit
+            </Button>
+          </Col>
+        </FormGroup>
       </Form>
     );
   }

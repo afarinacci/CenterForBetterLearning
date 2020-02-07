@@ -35,16 +35,16 @@ class ContactForm extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    const userID = 'user_tMxXXkIPTSbBxvv05sm2e';
-    const templateID = 'CenterForBetterLearning';
+    const userID = 'user_U4tGWwpwOzAQ4FchtTo0x';
+    const templateID = 'centerforbetterlearning_contactform';
     const templateParams = {
-      to_name: 'afarinac.14@gmail.com',
+      to_name: 'info@centerforbetterlearning.com',
       from_name: this.state.name,
       from_tel: this.state.tel,
       reply_to: this.state.email,
       message_html: this.state.message
     };
-    emailjs.send('gmail', templateID, templateParams, userID).then(
+    emailjs.send('smtp_server', templateID, templateParams, userID).then(
       response => {
         console.log('SUCCESS!', response.status, response.text);
         this.setState({ alertSuccessVisible: true });
@@ -141,9 +141,13 @@ class ContactForm extends React.Component {
             />
           </Col>
         </FormGroup>
-        <Button type="submit" color="primary" className="formBtn">
-          Submit
-        </Button>
+        <FormGroup row className="">
+          <Col className="text-center">
+            <Button type="submit" color="primary" className="formBtn">
+              Submit
+            </Button>
+          </Col>
+        </FormGroup>
       </Form>
     );
   }

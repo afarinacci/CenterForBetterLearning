@@ -89,7 +89,7 @@ class CustomNavbar extends React.Component {
                   tag={RRNavLink}
                   onClick={this.toggleNavbar}
                 >
-                  What is vision therapy?
+                  What is Vision Therapy?
                 </NavLink>
               </NavItem>
 
@@ -149,7 +149,7 @@ class CustomNavbar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
+              {/*}
               <NavItem>
                 <NavLink
                   to="/diagnosis"
@@ -159,7 +159,7 @@ class CustomNavbar extends React.Component {
                   Diagnosis
                 </NavLink>
               </NavItem>
-
+    */}
               <NavItem>
                 <NavLink
                   to="/resources"

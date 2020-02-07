@@ -142,6 +142,9 @@ footer {
 .form {
   max-width: 600px;
 }
+.apptcheckbox {
+  padding-left: 15px;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
