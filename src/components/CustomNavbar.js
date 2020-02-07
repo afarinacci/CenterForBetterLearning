@@ -46,7 +46,7 @@ class CustomNavbar extends React.Component {
   }
   render() {
     return (
-      <nav className="fixed-top">
+      <nav className="fixed-top" role="navigation">
         <Navbar
           color="primary"
           dark
@@ -68,12 +68,12 @@ class CustomNavbar extends React.Component {
             </Link>
           </div>
         </Navbar>
-        <Navbar color="white" light expand="md" className="bottomNav">
+        <Navbar light expand="md" className="bottomNav bg-light">
           {/* Add toggler to auto-collapse */}
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             {/*Pull left */}
-            <Nav navbar pills className="mr-auto ml-auto">
+            <Nav navbar pills className="mr-auto ml-auto nav-fill">
               <NavItem>
                 <NavLink
                   to="/our-team"
@@ -100,6 +100,7 @@ class CustomNavbar extends React.Component {
                 <DropdownMenu>
                   <DropdownItem>
                     <NavLink
+                      exact
                       to="/services"
                       tag={RRNavLink}
                       onClick={this.toggleNavbar}

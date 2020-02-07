@@ -37,7 +37,7 @@ function Footer() {
               width="220"
               height="220"
               frameBorder="0"
-              style={{ border: '2px solid white' }}
+              style={{ border: '2px solid rgb(249,249,249)' }}
               allowFullScreen=""
               title="CoconutCreekLocation"
               className="locationMap"
@@ -77,7 +77,7 @@ function Footer() {
               width="220"
               height="220"
               frameBorder="0"
-              style={{ border: '2px solid white' }}
+              style={{ border: '2px solid rgb(249,249,249)' }}
               allowFullScreen=""
               title="WestPalmLocation"
               className="locationMap"

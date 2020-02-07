@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Col,
-  Row,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Button,
-  Alert
-} from 'reactstrap';
+import { Col, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
 import emailjs from 'emailjs-com';
 class ContactForm extends React.Component {
   constructor(props) {
