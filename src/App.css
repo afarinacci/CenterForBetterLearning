@@ -146,6 +146,35 @@ footer {
   padding-left: 15px;
 }
 
+.homeLinksTitle {
+  font-family: 'Coming Soon', cursive;
+}
+.homeLinks {
+  margin: 0px;
+  padding: 7px 0px;
+  color: var(--light);
+}
+.homeLinksSection {
+  padding: 0px 0px;
+  margin: 7px 14px;
+}
+.homeLinksSection .card {
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+  height: 100px;
+}
+.homeLinksSection .card-body {
+  padding: 15px 5px;
+}
+.homeLinksButton:hover {
+  color: var(--light);
+  border-color: var(--light);
+}
+.homeLinksButton {
+  background-color: var(--light);
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {
@@ -178,6 +207,15 @@ footer {
   }
   main h6 {
     font-size: 1rem;
+  }
+  .homeLinksSection {
+    margin: 0px;
+  }
+  .homeLinks {
+    padding: 0px;
+  }
+  .homeLinksSection .card {
+    height: 110px;
   }
 }
 /* Large devices (desktops, 992px and up) */

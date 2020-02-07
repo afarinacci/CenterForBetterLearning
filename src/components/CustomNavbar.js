@@ -62,7 +62,12 @@ class CustomNavbar extends React.Component {
               </Button>
             </a>
             <Link to="/request-appointment">
-              <Button outline color="primary" className="topNavBtn">
+              <Button
+                outline
+                color="primary"
+                className="topNavBtn"
+                onClick={this.scrollTop}
+              >
                 Request an Appointment
               </Button>
             </Link>
