@@ -154,18 +154,10 @@ footer {
   color: var(--light);
   background-color: var(--primary);
 }
-.homeLinksSection {
-  padding: 0px 0px;
-  margin: 0px 0px;
-}
 .homeLinksSection .card {
   border: none;
   border-radius: 0px;
   margin: 0px;
-  height: 100px;
-}
-.homeLinksSection .card-body {
-  padding: 15px 5px;
 }
 .homeLinksButton:hover {
   color: var(--light);
@@ -228,15 +220,7 @@ footer {
   main h6 {
     font-size: 1rem;
   }
-  .homeLinksSection {
-    margin: 0px;
-  }
-  .homeLinks {
-    padding: 0px;
-  }
-  .homeLinksSection .card {
-    height: 110px;
-  }
+
   .grid-divider > [class*='col-']:nth-child(n + 2):after {
     width: 1px;
     height: auto;
