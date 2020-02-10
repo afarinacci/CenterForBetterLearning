@@ -33,7 +33,7 @@ function Home() {
         ></img>
       </picture>
 
-      <div className="row bg-light homeLinks">
+      <div className="row homeLinks grid-divider grid-divider-light">
         <div className="col-md-4 homeLinksSection">
           <div className="card text-center bg-primary">
             <div className="card-body">

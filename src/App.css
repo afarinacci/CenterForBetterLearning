@@ -151,12 +151,12 @@ footer {
 }
 .homeLinks {
   margin: 0px;
-  padding: 7px 0px;
   color: var(--light);
+  background-color: var(--primary);
 }
 .homeLinksSection {
   padding: 0px 0px;
-  margin: 7px 14px;
+  margin: 0px 0px;
 }
 .homeLinksSection .card {
   border: none;
@@ -172,6 +172,26 @@ footer {
   border-color: var(--light);
 }
 .homeLinksButton {
+  background-color: var(--light);
+}
+
+.grid-divider {
+  overflow-x: hidden;
+  position: relative;
+}
+.grid-divider > [class*='col-']:nth-child(n + 2):after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: -4px; /* quickfix to center line between columns */
+}
+.grid-divider-primary > [class*='col-']:nth-child(n + 2):after {
+  background-color: var(--primary);
+}
+.grid-divider-light > [class*='col-']:nth-child(n + 2):after {
   background-color: var(--light);
 }
 
@@ -216,6 +236,12 @@ footer {
   }
   .homeLinksSection .card {
     height: 110px;
+  }
+  .grid-divider > [class*='col-']:nth-child(n + 2):after {
+    width: 1px;
+    height: auto;
+    left: -1px; /* quickfix to hide divider on left side */
+    top: 0px;
   }
 }
 /* Large devices (desktops, 992px and up) */
