@@ -103,7 +103,7 @@ function Home() {
           </Link>
         </div>
         <div className="col-12 col-md-6 bg-light wivt-fordoctors-col">
-          <h4>For Doctors</h4>
+          <h4>For Professionals</h4>
           <Link to="/resources">
             <Button color="primary" className="primary-btn" onClick={scrollTop}>
               View All Resources <FontAwesomeIcon icon={faArrowRight} />

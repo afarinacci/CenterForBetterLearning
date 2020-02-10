@@ -21,7 +21,7 @@ function Lrvp() {
           style={{ color: 'var(--primary)' }}
         >
           <Col sm="12" md="6" className="my-1">
-            ONE in FOUR children struggle with reading and learning because of
+            1 in 4 children struggle with reading and learning because of
             undiagnosed vision problems.
           </Col>
           <Col sm="12" md="6" className="my-1">
@@ -71,23 +71,28 @@ function Lrvp() {
       </ul>
 
       <br />
-
-      <h5>
-        Common symptoms of learning related visual problems in children who
-        struggle with reading are:
-      </h5>
-      <ul>
-        <li>Losing place on the page</li>
-        <li>Words run together when reading</li>
-        <li>Reversals of letters or words</li>
-        <li>Easily distracted or fatigued</li>
-        <li>Takes "hours" to do homework</li>
-        <li>Low reading comprehension or fluency</li>
-        <li>Poor or unevenly spaced handwriting</li>
-        <li>Uses finger to keep place</li>
-        <li>Eye fatigue or strain</li>
-      </ul>
-
+      <Row>
+        <Col sm="12" md="6">
+          [IMAGE]
+        </Col>
+        <Col sm="12" md="6">
+          <h5>
+            Common symptoms of learning related visual problems in children who
+            struggle with reading are:
+          </h5>
+          <ul>
+            <li>Losing place on the page</li>
+            <li>Words run together when reading</li>
+            <li>Reversals of letters or words</li>
+            <li>Easily distracted or fatigued</li>
+            <li>Takes "hours" to do homework</li>
+            <li>Low reading comprehension or fluency</li>
+            <li>Poor or unevenly spaced handwriting</li>
+            <li>Uses finger to keep place</li>
+            <li>Eye fatigue or strain</li>
+          </ul>
+        </Col>
+      </Row>
       <br />
       <hr />
       <br />

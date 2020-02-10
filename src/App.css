@@ -80,8 +80,7 @@ main h6 {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-.topNavBtn:hover,
-.footerBtn:hover {
+.topNavBtn:hover {
   color: var(--light);
   border-color: var(--light);
 }
@@ -93,7 +92,7 @@ footer {
   width: 100%;
   margin: 0px;
   padding: 10px;
-  background-color: var(--primary);
+  background-color: var(--dark);
   color: var(--light);
 }
 footer {
@@ -101,6 +100,10 @@ footer {
 }
 .footerBtn {
   background-color: var(--light);
+}
+.footerBtn:hover {
+  color: var(--dark);
+  border-color: var(--dark);
 }
 .footerRow {
   padding: 10px;
@@ -110,7 +113,9 @@ footer {
   padding: 20px 15px 0px 15px;
   margin: 0px;
 }
-
+.footerlocation {
+  color: var(--primary);
+}
 .locationMap {
   margin-top: 15px;
 }

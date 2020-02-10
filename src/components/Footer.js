@@ -9,7 +9,7 @@ function Footer() {
       <div className="row footerRow">
         <div id="locations" className="footerCol col-12 col-md-6 row">
           <div className="col-12 col-lg-6 text-center ">
-            <h3>Coconut Creek</h3>
+            <h3 className="footerlocation">Coconut Creek</h3>
             <div>
               <address>
                 <span>
@@ -25,7 +25,7 @@ function Footer() {
               </address>
             </div>
             <a href="tel:+1561-264-1245">
-              <Button outline color="primary" className="footerBtn">
+              <Button outline color="dark" className="footerBtn">
                 <FontAwesomeIcon icon={faPhone} className="footerIcon" />
                 (561) 264-1245
               </Button>
@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div className="footerCol col-12 col-md-6 row">
           <div className="col-12 col-lg-6 text-center ">
-            <h3>West Palm Beach</h3>
+            <h3 className="footerlocation">West Palm Beach</h3>
             <div>
               <address>
                 <span>
@@ -65,7 +65,7 @@ function Footer() {
               </address>
             </div>
             <a href="tel:+1561-264-2345">
-              <Button outline color="primary" className="footerBtn">
+              <Button outline color="dark" className="footerBtn">
                 <FontAwesomeIcon icon={faPhone} className="footerIcon" />
                 (561) 264-2345
               </Button>

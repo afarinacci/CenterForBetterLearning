@@ -1,9 +1,10 @@
 import React from 'react';
+import SymptomsChecklist from './../components/SymptomsChecklist';
 
 function Symptoms() {
   return (
     <main className="container-fluid">
-      <h1 className="text-center pageTitle">Symptoms</h1>
+      <SymptomsChecklist />
     </main>
   );
 }
