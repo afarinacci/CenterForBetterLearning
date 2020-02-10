@@ -187,6 +187,27 @@ footer {
   background-color: var(--light);
 }
 
+.wivt-fordoctors-row {
+  margin: 0px;
+}
+.wivt-fordoctors-col {
+  padding: 50px;
+}
+
+.primary-btn {
+  color: var(--light);
+  background-color: var(--primary);
+}
+.primary-btn:hover {
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+.missionVerbs {
+  font-family: 'Coming Soon', cursive;
+  color: var(--warning);
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {

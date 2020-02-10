@@ -93,8 +93,48 @@ function Home() {
         </div>
       </div>
 
-      <main className="container-fluid">
-        <h1 className="text-center pageTitle">Home</h1>
+      <div className="row wivt-fordoctors-row text-center">
+        <div className="col-12 col-md-6 bg-white wivt-fordoctors-col">
+          <h4>For Patients</h4>
+          <Link to="/what-is-vision-therapy">
+            <Button color="primary" className="primary-btn" onClick={scrollTop}>
+              Learn About Vision Therapy <FontAwesomeIcon icon={faArrowRight} />
+            </Button>
+          </Link>
+        </div>
+        <div className="col-12 col-md-6 bg-light wivt-fordoctors-col">
+          <h4>For Doctors</h4>
+          <Link to="/resources">
+            <Button color="primary" className="primary-btn" onClick={scrollTop}>
+              View All Resources <FontAwesomeIcon icon={faArrowRight} />
+            </Button>
+          </Link>
+        </div>
+      </div>
+
+      <main className="container-fluid text-center">
+        <h1 className="text-center pageTitle">Welcome</h1>
+        <p>Thanks for visiting the Center for Better Learning website.</p>
+        <br />
+        <h5>
+          Our <span className="missionVerbs">PASSION</span> is to bring
+          awareness to the importance of synergy in the visual system by
+          educating the community of the connection between the eyes, brain, and
+          body.
+        </h5>
+        <br />
+        <h5>
+          Our <span className="missionVerbs">PURPOSE</span> is to provide
+          innovative, evidenced based vision therapy services to those seeking
+          improvement, development, or rehabilitation of visual function.
+        </h5>
+        <br />
+        <h5>
+          Our <span className="missionVerbs">PROMISE</span> is to rebuild the
+          foundation and efficiency of your visual system to pave the way for a
+          brighter future.
+        </h5>
+        <br />
       </main>
     </div>
   );
