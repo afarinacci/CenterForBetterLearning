@@ -1,5 +1,18 @@
 import React from 'react';
-import { Col, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
+import {
+  Col,
+  Row,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
+  Alert,
+  Card,
+  CardBody,
+  CardText,
+  CardTitle
+} from 'reactstrap';
 
 const Checkbox = ({ type = 'checkbox', name, checked = false, onChange }) => (
   <input type={type} name={name} checked={checked} onChange={onChange} />
@@ -9,19 +22,16 @@ class SymptomsChecklist extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkedItems: new Map(),
-      alertSuccessVisible: false,
-      alertFailureVisible: false
+      checkedItems: new Map()
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.onDismiss = this.onDismiss.bind(this);
   }
   handleInputChange(e) {
     const item = e.target.name;
     const isChecked = e.target.checked;
-    this.setState(prevState => ({
-      checkedItems: prevState.checkedItems.set(item, isChecked)
+    this.setState(state => ({
+      checkedItems: state.checkedItems.set(item, isChecked)
     }));
   }
   handleSubmit(e) {
@@ -33,9 +43,6 @@ class SymptomsChecklist extends React.Component {
       alertSuccessVisible: false,
       alertFailureVisible: false
     });
-  }
-  onDismiss() {
-    this.setState({ alertSuccessVisible: false, alertFailureVisible: false });
   }
   render() {
     const checkboxes = [
@@ -113,41 +120,106 @@ class SymptomsChecklist extends React.Component {
     ];
     return (
       <Form onSubmit={this.handleSubmit} className="form mr-auto ml-auto">
-        <Alert
-          color="success"
-          isOpen={this.state.alertSuccessVisible}
-          toggle={this.onDismiss}
-          fade={false}
-        >
-          Thank you, we have received for your message.
-        </Alert>
-        <Alert
-          color="danger"
-          isOpen={this.state.alertFailureVisible}
-          toggle={this.onDismiss}
-          fade={false}
-        >
-          Sorry, we encountered an error in sending your message.
-        </Alert>
-        <FormGroup>
-          {checkboxes.map(item => (
-            <label key={item.id}>
-              {item.symptom}
-              <Checkbox
-                name={item.id}
-                checked={this.state.checkedItems.get(item.id)}
-                onChange={this.handleInputChange}
-              />
-            </label>
-          ))}
-        </FormGroup>
-        <FormGroup row className="">
-          <Col className="text-center">
-            <Button type="submit" color="primary" className="formBtn">
-              Submit
-            </Button>
+        <h5>Please check off all of your symptoms:</h5>
+        <Row>
+          <Col sm="12" md="8">
+            <FormGroup>
+              {checkboxes.map(item => (
+                <div>
+                  <label key={item.id}>
+                    <Checkbox
+                      name={item.id}
+                      checked={this.state.checkedItems.get(item.id)}
+                      onChange={this.handleInputChange}
+                    />{' '}
+                    {item.symptom}
+                  </label>
+                  <br />
+                </div>
+              ))}
+            </FormGroup>
+            <FormGroup row className="">
+              <Col>
+                <Button
+                  type="submit"
+                  color="primary"
+                  className="formBtn"
+                  onClick={this.handleSubmit}
+                >
+                  Clear
+                </Button>
+              </Col>
+            </FormGroup>
           </Col>
-        </FormGroup>
+          <Col sm="12" md="4">
+            <Card
+              body
+              inverse
+              style={{ backgroundColor: '#333', borderColor: '#333' }}
+            >
+              <CardBody>
+                <CardTitle>
+                  <h5>Your Score: {this.state.checkedItems.size}</h5>
+                </CardTitle>
+                <CardText>
+                  A score of 20 or more indicates the need for a functional
+                  vision evaluation.
+                </CardText>
+              </CardBody>
+            </Card>
+            <Card
+              body
+              inverse
+              style={{
+                backgroundColor: 'var(--danger)',
+                borderColor: 'var(--danger)'
+              }}
+            >
+              <CardBody>
+                <CardTitle>
+                  <h5>31+</h5>
+                </CardTitle>
+                <CardText>
+                  You have a definite functional vision problem.
+                </CardText>
+              </CardBody>
+            </Card>
+            <Card
+              body
+              inverse
+              style={{
+                backgroundColor: 'var(--warning)',
+                borderColor: 'var(--warning)'
+              }}
+            >
+              <CardBody>
+                <CardTitle>
+                  <h5>21-30</h5>
+                </CardTitle>
+                <CardText>
+                  You have a probable functional vision problem.
+                </CardText>
+              </CardBody>
+            </Card>
+            <Card
+              body
+              inverse
+              style={{
+                backgroundColor: 'var(--success)',
+                borderColor: 'var(--success)'
+              }}
+            >
+              <CardBody>
+                <CardTitle>
+                  <h5>15-20</h5>
+                </CardTitle>
+                <CardText>
+                  You have a possible functional vision problem.
+                </CardText>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
       </Form>
     );
   }
