@@ -204,9 +204,8 @@ class SymptomsChecklist extends React.Component {
               </Col>
             </FormGroup>
           </Col>
-          <Col sm="12" md="4">
+          <Col sm="12" md="4" className="checklistcards text-center">
             <Card
-              body
               inverse
               style={{
                 backgroundColor: 'var(--secondary)',
@@ -215,7 +214,7 @@ class SymptomsChecklist extends React.Component {
             >
               <CardBody>
                 <CardTitle>
-                  <h5>Your Score: {totalScore}</h5>
+                  <h4>Your Score: {totalScore}</h4>
                 </CardTitle>
                 <CardText>
                   A score of 20 or more indicates the need for a functional
@@ -224,7 +223,6 @@ class SymptomsChecklist extends React.Component {
               </CardBody>
             </Card>
             <Card
-              body
               inverse
               style={{
                 backgroundColor: 'var(--success)',
@@ -241,7 +239,6 @@ class SymptomsChecklist extends React.Component {
               </CardBody>
             </Card>
             <Card
-              body
               inverse
               style={{
                 backgroundColor: 'var(--warning)',
@@ -258,7 +255,6 @@ class SymptomsChecklist extends React.Component {
               </CardBody>
             </Card>
             <Card
-              body
               inverse
               style={{
                 backgroundColor: 'var(--danger)',
