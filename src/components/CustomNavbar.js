@@ -56,9 +56,9 @@ class CustomNavbar extends React.Component {
             <NavLogo onClick={this.scrollTop} />
           </div>
           <div className="order-1 order-md-2 col-12 col-md-6 d-flex flex-nowrap justify-content-center justify-content-md-end">
-            <a href="tel:+1561-264-1245">
+            <a href="tel:+1561-462-1245">
               <Button outline color="primary" className="topNavBtn">
-                <FontAwesomeIcon icon={faPhone} /> (561) 264-1245
+                <FontAwesomeIcon icon={faPhone} /> (561) 462-1245
               </Button>
             </a>
             <Link to="/request-appointment">
