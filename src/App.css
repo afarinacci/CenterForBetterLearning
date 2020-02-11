@@ -214,10 +214,15 @@ footer {
 
 .missionVerbs {
   font-family: 'Coming Soon', cursive;
+  margin: 0px;
 }
 .wideSectionTitle {
   background-color: var(--primary);
   color: var(--light);
+}
+.allServicesCol {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -255,6 +260,9 @@ footer {
     height: auto;
     left: -1px; /* quickfix to hide divider on left side */
     top: 0px;
+  }
+  .wivt-fordoctors-col {
+    padding: 100px;
   }
 }
 /* Large devices (desktops, 992px and up) */

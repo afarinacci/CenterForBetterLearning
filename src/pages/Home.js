@@ -120,37 +120,44 @@ function Home() {
           child could benefit from vision therapy.
         </p>
         <br />
-        <div className="text-center">
-          <h5>
-            Our{' '}
-            <span className="missionVerbs" style={{ color: 'var(--danger)' }}>
-              PASSION
-            </span>{' '}
-            is to bring awareness to the importance of synergy in the visual
-            system by educating the community of the connection between the
-            eyes, brain, and body.
-          </h5>
-          <br />
-          <h5>
-            Our{' '}
-            <span className="missionVerbs" style={{ color: 'var(--primary)' }}>
-              PURPOSE
-            </span>{' '}
-            is to provide innovative, evidenced based vision therapy services to
-            those seeking improvement, development, or rehabilitation of visual
-            function.
-          </h5>
-          <br />
-          <h5>
-            Our{' '}
-            <span className="missionVerbs" style={{ color: 'var(--success)' }}>
-              PROMISE
-            </span>{' '}
-            is to rebuild the foundation and efficiency of your visual system to
-            pave the way for a brighter future.
-          </h5>
+
+        <div class="card-deck text-center">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-header">
+              <h3 className="missionVerbs">PASSION</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Our passion is to bring awareness to the importance of synergy
+                in the visual system by educating the community about the
+                connection between the eyes, brain, and body.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-danger mb-3">
+            <div class="card-header">
+              <h3 className="missionVerbs">PURPOSE</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Our purpose is to provide innovative, evidenced-based vision
+                therapy services to those seeking improvement, development, or
+                rehabilitation of visual function.
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-success mb-3">
+            <div class="card-header">
+              <h3 className="missionVerbs">PROMISE</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Our promise is to rebuild the foundation and efficiency of your
+                visual system to pave the way for a brighter future.
+              </p>
+            </div>
+          </div>
         </div>
-        <br />
       </main>
     </div>
   );
