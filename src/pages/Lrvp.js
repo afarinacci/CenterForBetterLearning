@@ -115,9 +115,7 @@ function Lrvp() {
         <br />
       </div>
       <h4 className="text-center paddingAround wideSectionTitle">
-        Below are some frequently asked questions and answers as pertains to
-        learning related visual problems. More detailed information can be found
-        on our blog posts.
+        Frequently Asked Questions
       </h4>
       <div className="container-fluid paddingAround max800">
         <h5>How do visual problems effect my child's ability to read?</h5>

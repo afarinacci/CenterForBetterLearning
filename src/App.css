@@ -264,6 +264,9 @@ footer {
   .wivt-fordoctors-col {
     padding: 100px;
   }
+  .wideSectionTitle {
+    padding: 15px calc(15px + 5vw);
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
