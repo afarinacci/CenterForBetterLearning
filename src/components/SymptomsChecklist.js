@@ -163,7 +163,11 @@ class SymptomsChecklist extends React.Component {
     const totalScore = checkboxes.reduce((accumulator, currentValue) => {
       return (
         accumulator +
-        (this.state.checkedItems.has(currentValue.id) ? currentValue.score : 0)
+        (this.state.checkedItems.has(currentValue.id)
+          ? this.state.checkedItems.get(currentValue.id)
+            ? currentValue.score
+            : 0
+          : 0)
       );
     }, 0);
     return (
