@@ -168,9 +168,8 @@ class SymptomsChecklist extends React.Component {
       );
     }, 0);
     return (
-      <Form onSubmit={this.handleSubmit} className="form mr-auto ml-auto">
-        <h1 className="text-center pageTitle">Symptoms Checklist</h1>
-        <h5>Please check off all of your symptoms:</h5>
+      <Form onSubmit={this.handleSubmit}>
+        <h5>Please check all symptoms that apply:</h5>
         <Row>
           <Col sm="12" md="8">
             <FormGroup>

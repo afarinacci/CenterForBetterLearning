@@ -22,10 +22,14 @@
 .marginfornav {
   margin-top: 162px;
 }
+.max800 {
+  max-width: 800px;
+}
+.paddingAround {
+  padding: 15px;
+}
 main {
   min-height: 90vh;
-  padding: 10px;
-  max-width: 800px;
 }
 main h1 {
   font-size: 1.9rem;
@@ -210,22 +214,16 @@ footer {
 
 .missionVerbs {
   font-family: 'Coming Soon', cursive;
-  color: var(--warning);
 }
-.checklistcards .card {
-  padding: 0px;
-}
-.checklistcards .card-body {
-  padding: 1.25rem 1rem;
+.wideSectionTitle {
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {
     margin-top: 177.5px;
-  }
-  main {
-    padding: 30px;
   }
   .topNavBtn {
     padding: 6px;
@@ -257,9 +255,6 @@ footer {
     height: auto;
     left: -1px; /* quickfix to hide divider on left side */
     top: 0px;
-  }
-  .checklistcards .card-body {
-    padding: 15px;
   }
 }
 /* Large devices (desktops, 992px and up) */
