@@ -22,7 +22,7 @@ function Home() {
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
   return (
-    <div>
+    <div className="marginfornav">
       <picture>
         <source media="(max-width: 450px)" srcSet={childrenReading_w2400} />
         <source media="(min-width: 451px)" srcSet={childrenReading_w5743} />

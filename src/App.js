@@ -9,9 +9,7 @@ function App() {
   return (
     <Router>
       <CustomNavbar />
-      <div className="marginfornav">
-        <Routes />
-      </div>
+      <Routes />
       <Footer />
     </Router>
   );

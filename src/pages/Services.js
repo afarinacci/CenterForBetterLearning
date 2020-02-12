@@ -18,7 +18,7 @@ function Services() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   return (
-    <main className="container-fluid">
+    <div className="container-fluid marginfornav">
       {/*<h1 className="text-center pageTitle">Services</h1>*/}
       <Row bg-light>
         <Col sm="12" md="6" className="allServicesCol">
@@ -178,7 +178,7 @@ function Services() {
           </div>
         </Col>
       </Row>
-    </main>
+    </div>
   );
 }
 
