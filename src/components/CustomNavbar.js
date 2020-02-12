@@ -59,8 +59,7 @@ class CustomNavbar extends React.Component {
         this.toggleNavbar();
       }
       const element = document.getElementById('locations');
-      const y =
-        element.getBoundingClientRect().top + window.pageYOffset - 111;
+      const y = element.getBoundingClientRect().top + window.pageYOffset - 111;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
@@ -108,7 +107,7 @@ class CustomNavbar extends React.Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar className="ml-auto nav-fill">
+            <Nav navbar className="ml-auto mr-auto nav-fill">
               <NavItem>
                 <NavLink
                   to="/our-team"
