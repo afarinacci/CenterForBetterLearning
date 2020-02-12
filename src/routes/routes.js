@@ -21,7 +21,6 @@ const Routes = () => (
     <Route exact path="/request-appointment" component={Appt}></Route>
     <Route exact path="/our-team" component={Team}></Route>
     <Route exact path="/what-is-vision-therapy" component={Wivt}></Route>
-    <Route exact path="/services" component={Services}></Route>
     <Route
       exact
       path="/services/sports-vision"
@@ -38,6 +37,7 @@ const Routes = () => (
       path="/services/learning-related-visual-problems"
       component={Lrvp}
     ></Route>
+    <Route exact path="/services" component={Services}></Route>
     <Route exact path="/diagnosis" component={Diagnosis}></Route>
     <Route exact path="/resources" component={Resources}></Route>
     <Route exact path="/symptoms" component={Symptoms}></Route>

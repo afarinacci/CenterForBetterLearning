@@ -2,10 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink as RRNavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPhone,
+  faFileDownload,
+  faBars
+} from '@fortawesome/free-solid-svg-icons';
 import {
   Nav,
   Navbar,
+  NavbarBrand,
   NavbarToggler,
   NavItem,
   NavLink,
@@ -23,48 +28,66 @@ class CustomNavbar extends React.Component {
     super(props);
     this.state = { collapsed: true };
     this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.closeNavbar = this.closeNavbar.bind(this);
     this.scrollTop = this.scrollTop.bind(this);
     this.scrollToLocations = this.scrollToLocations.bind(this);
   }
   toggleNavbar() {
     this.setState(state => ({ collapsed: !state.collapsed }));
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  closeNavbar() {
+    if (this.state.collapsed !== true) {
+      this.toggleNavbar();
+    }
+    this.scrollTop();
   }
   scrollTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
   scrollToLocations() {
-    this.setState(state => ({ collapsed: !state.collapsed }));
-    const id = 'locations';
-    const yOffset = -170;
-    const element = document.getElementById(id);
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+    if (document.body.clientWidth > 767) {
+      const yOffset = document
+        .getElementById('fixedNav')
+        .getBoundingClientRect().height;
+      const element = document.getElementById('locations');
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    } else {
+      if (this.state.collapsed !== true) {
+        this.toggleNavbar();
+      }
+      const element = document.getElementById('locations');
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset - 111;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
   render() {
     return (
-      <nav className="fixed-top" role="navigation">
-        <Navbar
-          color="primary"
-          dark
-          className="topNav navbar row align-items-start"
-        >
-          <div className="order-2 order-md-1 col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-            <NavLogo onClick={this.scrollTop} />
+      <nav className="fixed-top" role="navigation" id="fixedNav">
+        <Navbar color="dark" dark className="topNav navbar row">
+          <div className="d-none d-md-block col-12 col-md-6">
+            <NavbarBrand onClick={this.scrollTop}>
+              <Link to="/">
+                <div className="logotitle">Center for Better Learning</div>
+                <div className="logotagline">
+                  Better Vision. <span className="logoyellow">Brighter</span>{' '}
+                  Future.
+                </div>
+              </Link>
+            </NavbarBrand>
           </div>
-          <div className="order-1 order-md-2 col-12 col-md-6 d-flex flex-nowrap justify-content-center justify-content-md-end">
+          <div className="col-12 col-md-6 d-flex flex-nowrap justify-content-center justify-content-md-end">
             <a href="tel:+1561-462-1245">
-              <Button outline color="primary" className="topNavBtn">
+              <Button color="light" className="topNavBtn">
                 <FontAwesomeIcon icon={faPhone} /> (561) 462-1245
               </Button>
             </a>
             <Link to="/request-appointment">
               <Button
-                outline
-                color="primary"
+                color="light"
                 className="topNavBtn"
                 onClick={this.scrollTop}
               >
@@ -73,17 +96,25 @@ class CustomNavbar extends React.Component {
             </Link>
           </div>
         </Navbar>
-        <Navbar light expand="md" className="bottomNav bg-light">
-          {/* Add toggler to auto-collapse */}
+        <Navbar dark expand="md" className="bottomNav bg-dark">
+          <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
+            <Link to="/">
+              <div className="logotitle">Center for Better Learning</div>
+              <div className="logotagline">
+                Better Vision. <span className="logoyellow">Brighter</span>{' '}
+                Future.
+              </div>
+            </Link>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            {/*Pull left */}
-            <Nav navbar pills className="mr-auto ml-auto nav-fill">
+            <Nav navbar className="ml-auto nav-fill">
               <NavItem>
                 <NavLink
                   to="/our-team"
                   tag={RRNavLink}
-                  onClick={this.toggleNavbar}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
                 >
                   Our Team
                 </NavLink>
@@ -92,7 +123,8 @@ class CustomNavbar extends React.Component {
                 <NavLink
                   to="/what-is-vision-therapy"
                   tag={RRNavLink}
-                  onClick={this.toggleNavbar}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
                 >
                   What is Vision Therapy?
                 </NavLink>
@@ -108,47 +140,48 @@ class CustomNavbar extends React.Component {
                       exact
                       to="/services"
                       tag={RRNavLink}
-                      onClick={this.toggleNavbar}
+                      onClick={this.closeNavbar}
+                      activeClassName="active"
                     >
-                      <span style={{ fontWeight: 'bold' }}>All Services</span>
+                      All Services
                     </NavLink>
                   </DropdownItem>
-                  <DropdownItem divider />
                   <DropdownItem>
                     <NavLink
                       to="/services/learning-related-visual-problems"
                       tag={RRNavLink}
-                      onClick={this.toggleNavbar}
+                      onClick={this.closeNavbar}
+                      activeClassName="active"
                     >
                       Learning Related Visual Problems
                     </NavLink>
                   </DropdownItem>
-                  <DropdownItem divider />
                   <DropdownItem>
                     <NavLink
                       to="/services/amblyopia-strabismus"
                       tag={RRNavLink}
-                      onClick={this.toggleNavbar}
+                      onClick={this.closeNavbar}
+                      activeClassName="active"
                     >
-                      Amblyopia/Strabismus
+                      Amblyopia &amp; Strabismus
                     </NavLink>
                   </DropdownItem>
-                  <DropdownItem divider />
                   <DropdownItem>
                     <NavLink
                       to="/services/vision-rehabilitation"
                       tag={RRNavLink}
-                      onClick={this.toggleNavbar}
+                      onClick={this.closeNavbar}
+                      activeClassName="active"
                     >
                       Vision Rehabilitation
                     </NavLink>
                   </DropdownItem>
-                  <DropdownItem divider />
                   <DropdownItem>
                     <NavLink
                       to="/services/sports-vision"
                       tag={RRNavLink}
-                      onClick={this.toggleNavbar}
+                      onClick={this.closeNavbar}
+                      activeClassName="active"
                     >
                       Sports Vision
                     </NavLink>
@@ -160,7 +193,8 @@ class CustomNavbar extends React.Component {
                 <NavLink
                   to="/diagnosis"
                   tag={RRNavLink}
-                  onClick={this.toggleNavbar}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
                 >
                   Diagnosis
                 </NavLink>
@@ -170,7 +204,8 @@ class CustomNavbar extends React.Component {
                 <NavLink
                   to="/resources"
                   tag={RRNavLink}
-                  onClick={this.toggleNavbar}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
                 >
                   Professional Resources
                 </NavLink>
@@ -180,7 +215,8 @@ class CustomNavbar extends React.Component {
                 <NavLink
                   to="/symptoms"
                   tag={RRNavLink}
-                  onClick={this.toggleNavbar}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
                 >
                   Symptoms
                 </NavLink>
@@ -191,31 +227,45 @@ class CustomNavbar extends React.Component {
                   Patient Forms
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem onClick={this.toggleNavbar}>
-                    <FontAwesomeIcon
-                      icon={faFileDownload}
-                      className="navIcon"
-                    />
-                    Child Intake Form
+                  <DropdownItem>
+                    <NavLink
+                      href="./../forms/adultform.pdf"
+                      download
+                      onClick={this.closeNavbar}
+                    >
+                      <FontAwesomeIcon
+                        icon={faFileDownload}
+                        className="navIcon"
+                      />
+                      Child Intake Form
+                    </NavLink>
                   </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem onClick={this.toggleNavbar}>
-                    <FontAwesomeIcon
-                      icon={faFileDownload}
-                      className="navIcon"
-                    />
-                    Adult Intake Form
+                  <DropdownItem>
+                    <NavLink
+                      href="./../forms/adultform.pdf"
+                      download
+                      onClick={this.closeNavbar}
+                    >
+                      <FontAwesomeIcon
+                        icon={faFileDownload}
+                        className="navIcon"
+                      />
+                      Adult Intake Form
+                    </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink onClick={this.scrollToLocations}>Locations</NavLink>
+                <NavLink href="#" onClick={this.scrollToLocations}>
+                  Locations
+                </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   to="/contact-us"
                   tag={RRNavLink}
-                  onClick={this.toggleNavbar}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
                 >
                   Contact Us
                 </NavLink>

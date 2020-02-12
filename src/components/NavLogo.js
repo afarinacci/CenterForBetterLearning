@@ -9,7 +9,7 @@ function NavLogo(props) {
       <Link to="/" className="navbar-brand" onClick={props.onClick}>
         {/*<img src={logo} className="App-logo" alt="logo" /> */}
         <div className="text-center">
-          <div className="d-none d-md-block">
+          {/* <div className="d-none d-md-block">
             <FontAwesomeIcon
               className="eyeIcon logoIcon"
               icon={faEye}
@@ -25,7 +25,7 @@ function NavLogo(props) {
               icon={faBrain}
               size="2x"
             />
-          </div>
+          </div> */}
           <p className="logotitle">Center for Better Learning</p>
           <p className="logotagline">
             Better Vision. <span className="logoyellow">Brighter</span> Future.

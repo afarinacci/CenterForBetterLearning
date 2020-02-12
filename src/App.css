@@ -1,26 +1,29 @@
-.logo {
-  text-align: center;
-}
 .logotagline {
   font-family: 'Coming Soon', cursive;
-  color: white;
+  color: var(--primary);
   font-size: 1rem;
   margin-bottom: 0px;
+  text-align: center;
 }
 .logotitle {
   font-family: 'league_spartanbold', sans-serif;
-  color: white;
+  color: var(--primary);
   font-size: 1.25rem;
   margin-bottom: 0px;
+  text-align: center;
+}
+.navbar-brand a:hover {
+  text-decoration: none;
 }
 .logoyellow {
   color: var(--warning);
 }
+
 .card {
   margin-bottom: 30px;
 }
 .marginfornav {
-  margin-top: 162px;
+  margin-top: 111px;
 }
 .max800 {
   max-width: 800px;
@@ -67,26 +70,49 @@ main h6 {
 }
 .topNav {
   padding: 5px 5px;
+  margin: 0px;
 }
 .topNavBtn {
-  margin: 5px 5px;
-  background-color: var(--light);
-  padding: 4px;
+  margin: 0px 5px 0px 5px;
+  padding: 4px 6px;
   font-size: 0.8rem;
 }
-.navbar-light .navbar-nav .nav-link.active {
-  color: white;
+.btn-primary {
+  color: var(--light);
 }
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #fff;
+.btn-primary:hover {
+  color: var(--primary);
+  background-color: none;
 }
-.navbar-nav .nav-link {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary);
+  font-weight: bold;
 }
-.topNavBtn:hover {
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--light);
+}
+.navbar-dark .nav-item a.nav-link:hover,
+.navbar-dark .nav-item a.nav-link:focus {
+  color: var(--primary);
+}
+.navbar-dark .nav-item a.nav-link:active {
+  color: var(--primary);
+}
+.navbar-dark .dropdown-item a.nav-link {
+  color: var(--light);
+}
+.navbar-dark .dropdown-item:hover {
+  background-color: var(--dark);
+}
+.navbar-dark .dropdown-menu {
+  background-color: var(--dark);
+}
+
+.topNavBtn:hover,
+.topNavBtn:active {
   color: var(--light);
   border-color: var(--light);
+  background-color: var(--dark);
 }
 .navbar-brand {
   padding: 5px 5px;
@@ -106,8 +132,8 @@ footer {
   background-color: var(--light);
 }
 .footerBtn:hover {
-  color: var(--dark);
-  border-color: var(--dark);
+  color: var(-light);
+  border-color: var(--light);
 }
 .footerRow {
   padding: 10px;
@@ -131,10 +157,10 @@ footer {
   color: var(--light);
 }
 .bottomNav {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
   max-height: 300px;
   padding: 4px 16px;
+  margin: 0px;
 }
 .nav-link {
   padding: 4px 8px;
@@ -224,15 +250,20 @@ footer {
   margin: 0px;
   padding: 0px;
 }
+.extraPaddingBottomPhone {
+  padding-bottom: 50px;
+}
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .topNavBtn {
+    font-size: 1rem;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {
-    margin-top: 177.5px;
-  }
-  .topNavBtn {
-    padding: 6px;
-    font-size: 1rem;
+    margin-top: 138px;
   }
   .bottomNav {
     overflow-y: visible;
@@ -267,11 +298,17 @@ footer {
   .wideSectionTitle {
     padding: 15px calc(15px + 5vw);
   }
+  .extraPaddingBottomPhone {
+    padding-bottom: 15px;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .locationMap {
     margin-top: 0px;
+  }
+  .marginfornav {
+    margin-top: 114px;
   }
 }
 
