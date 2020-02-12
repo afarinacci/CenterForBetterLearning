@@ -1,9 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPhone,
+  faMapMarkerAlt,
+  faCopyright
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebookSquare,
+  faInstagram,
+  faGoogle,
+  faYelp
+} from '@fortawesome/free-brands-svg-icons';
 import { Button } from 'reactstrap';
 
 function Footer() {
+  const d = new Date();
+  const currentYear = d.getFullYear();
   return (
     <footer>
       <div className="row footerRow">
@@ -89,24 +101,67 @@ function Footer() {
         style={{ margin: '2px', border: '1px solid rgba(255,255,255, 0.5)' }}
       />
       <div className="row footerRow">
-        <div className="col-12 d-flex justify-content-center ">
+        <div className="col-12 col-md-6 text-center">
+          <h5 style={{ fontWeight: 'bold' }}>OFFICE HOURS:</h5>
+          <div className="hours">Mon: 9:00 AM - 6:00 PM</div>
+          <div className="hours">Tue: 9:00 AM - 6:00 PM</div>
+          <div className="hours">Wed: 9:00 AM - 6:00 PM</div>
+          <div className="hours">Thu: 9:00 AM - 6:00 PM</div>
+          <div className="hours">Fri: 9:00 AM - 6:00 PM</div>
+          <div className="hours">Sat: 9:00 AM - 1:00 PM</div>
           <div className="hours">
-            <h5 style={{ fontWeight: 'bold' }}>OFFICE HOURS:</h5>
-            Mon: 9:00 AM - 6:00 PM
-            <br />
-            Tue: 9:00 AM - 6:00 PM
-            <br />
-            Wed: 9:00 AM - 6:00 PM
-            <br />
-            Thu: 9:00 AM - 6:00 PM
-            <br />
-            Fri: 9:00 AM - 6:00 PM
-            <br />
-            Sat: 9:00 AM - 1:00 PM
-            <br />
             Sun: <span style={{ fontStyle: 'italic' }}>Closed</span>
-            <br />
           </div>
+        </div>
+        <div className="col-12 col-md-6 d-flex justify-content-center ">
+          <h5 style={{ fontWeight: 'bold' }}>Links</h5>
+        </div>
+      </div>
+      <hr
+        style={{ margin: '2px', border: '1px solid rgba(255,255,255, 0.5)' }}
+      />
+      <div className="row footerRow">
+        <div className="col-12 col-md-6 copyRow my-auto">
+          <FontAwesomeIcon icon={faCopyright} /> {currentYear} Center for Better
+          Learning
+        </div>
+        <div className="col-12 col-md-6 socialRow">
+          <a
+            href="http://www.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faFacebookSquare}
+              size="2x"
+              className="socialIcon"
+            />
+          </a>
+          <a
+            href="http://www.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="2x"
+              className="socialIcon"
+            />
+          </a>
+          <a
+            href="http://www.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGoogle} size="2x" className="socialIcon" />
+          </a>
+          <a
+            href="http://www.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faYelp} size="2x" className="socialIcon" />
+          </a>
         </div>
       </div>
     </footer>

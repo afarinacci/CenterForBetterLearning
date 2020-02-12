@@ -1,6 +1,9 @@
 body {
   background-color: var(--light);
 }
+.fixed-top {
+  width: 100%;
+}
 .logotagline {
   font-family: 'Coming Soon', cursive;
   color: var(--primary);
@@ -29,10 +32,10 @@ body {
   margin-top: 111px;
 }
 .max800 {
-  max-width: 800px;
+  width: 100vw;
 }
 .paddingAround {
-  padding: 15px;
+  padding: 30px;
 }
 main {
   min-height: 90vh;
@@ -81,13 +84,7 @@ main h6 {
   padding: 4px 6px;
   font-size: 0.8rem;
 }
-.btn-primary {
-  color: var(--light);
-}
-.btn-primary:hover {
-  color: var(--primary);
-  background-color: none;
-}
+
 .navbar-dark .navbar-nav .nav-link.active {
   color: var(--primary);
   font-weight: bold;
@@ -106,10 +103,10 @@ main h6 {
   color: var(--light);
 }
 .navbar-dark .dropdown-item:hover {
-  background-color: var(--dark);
+  background-color: #3c434a;
 }
 .navbar-dark .dropdown-menu {
-  background-color: var(--dark);
+  background-color: #3c434a;
 }
 
 .topNavBtn:hover,
@@ -157,12 +154,26 @@ footer {
 .navIcon {
   margin-right: 3px;
 }
+a .socialIcon {
+  color: var(--light);
+}
+a .socialIcon:hover {
+  color: var(--primary);
+}
+.socialIcon {
+  margin: 10px 7px;
+}
+.socialRow {
+  text-align: center;
+}
+.copyRow {
+  text-align: center;
+}
 .formBtn {
   color: var(--light);
 }
 .bottomNav {
   overflow-y: scroll;
-  max-height: 300px;
   padding: 4px 16px;
   margin: 0px;
 }
@@ -174,9 +185,7 @@ footer {
   height: auto;
 }
 .hours {
-  width: 240px;
   font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-  text-align: center;
 }
 .form {
   max-width: 600px;
@@ -231,15 +240,6 @@ footer {
 }
 .wivt-fordoctors-col {
   padding: 50px;
-}
-
-.primary-btn {
-  color: var(--light);
-  background-color: var(--primary);
-}
-.primary-btn:hover {
-  color: var(--primary);
-  background-color: var(--light);
 }
 
 .missionVerbs {
@@ -302,11 +302,17 @@ footer {
   .topNavBtn {
     font-size: 1rem;
   }
+  .paddingAround {
+    padding: 30px 50px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {
-    margin: 168px 0px 30px 0px;
+    margin: 138px 0px 30px 0px;
+  }
+  main {
+    margin-top: 158px;
   }
   .bottomNav {
     overflow-y: visible;
@@ -344,6 +350,15 @@ footer {
   .extraPaddingBottomPhone {
     padding-bottom: 15px;
   }
+  .max800 {
+    max-width: 90vw;
+  }
+  .socialRow {
+    text-align: right;
+  }
+  .copyRow {
+    text-align: left;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -351,7 +366,11 @@ footer {
     margin-top: 0px;
   }
   .marginfornav {
-    margin: 144px 0px 30px 0px;
+    margin: 114px 0px 30px 0px;
+  }
+  .max800 {
+    max-width: 800px;
+    width: 90vw;
   }
 }
 

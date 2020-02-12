@@ -2,7 +2,7 @@ import React from 'react';
 import Bio from '../components/Bio';
 
 const Team = () => (
-  <main className="container-fluid paddingAround max800">
+  <main className="container-fluid paddingAround max800 effect8">
     <h1 className="text-center pageTitle">Meet Our Team</h1>
     <div className="row">
       <div className="col-md-6 col-lg-4">
@@ -10,8 +10,8 @@ const Team = () => (
           <Bio
             name="Dr. Christina Murray, O.D."
             bio={[
-              'Dr. Murray is originally from Columbus, Ohio, and is a proud graduate of The Ohio State University. She happily escaped the cold Ohio winters to attend ...',
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?'
+              "Dr. Murray is originally from Columbus, Ohio, and is a proud graduate of The Ohio State University. She happily escaped the cold Ohio winters to attend optometry school at Nova Southeastern University. While in school, she discovered her passion for pediatrics and vision therapy. Dr. Murray's passion for helping children and adults reach their full potential through vision therapy has inspired her to Center for Better Learning. She is currently finishing up her board certification from the College of Optometrists in Vision Development.",
+              'When not seeing patients, Dr. Murray enjoys spending time with her husband, Paul, daughter, Mia, and two adorable golden retrievers, Sadie and Bentley. Her favorite activities include reading, baking, traveling.'
             ]}
             url="https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/422/2018/04/UKKXIPXYVTEA.IMAGE_4.jpeg"
           />

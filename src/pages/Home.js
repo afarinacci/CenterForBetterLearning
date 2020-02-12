@@ -115,9 +115,15 @@ function Home() {
       <main className="container-fluid paddingAround max800">
         <h1 className="text-center pageTitle">Welcome</h1>
         <p>
-          Thanks for visiting the Center for Better Learning website. Here you
-          will find an array of resources to help you understand if you or your
-          child could benefit from vision therapy.
+          We are proud to offer Vision Therapy serves to our community. We are
+          here to educate and bring awareness to the importance of efficient
+          coordination of the eyes, brain, and body for peak visual performance.
+          Please take some time to learn about the various aspects of your
+          visual system and take the interactive symptoms checklist to determine
+          if you or your child would benefit from Vision Therapy services. We
+          can help you or your child meet the demanding visual needs of our
+          everyday life. Center for Better Learning was developed with a clear
+          vision in mind:
         </p>
         <br />
 

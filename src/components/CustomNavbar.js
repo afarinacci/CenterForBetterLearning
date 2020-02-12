@@ -228,7 +228,7 @@ class CustomNavbar extends React.Component {
                 <DropdownMenu>
                   <DropdownItem>
                     <NavLink
-                      href="./../forms/adultform.pdf"
+                      href="./../forms/CHILD_INTAKE_FORM.pdf"
                       download
                       onClick={this.closeNavbar}
                     >
@@ -241,7 +241,7 @@ class CustomNavbar extends React.Component {
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink
-                      href="./../forms/adultform.pdf"
+                      href="./../forms/ADULT_INTAKE_FORM.pdf"
                       download
                       onClick={this.closeNavbar}
                     >
