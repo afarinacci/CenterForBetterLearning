@@ -59,7 +59,7 @@ const checkboxes = [
   {
     id: '14',
     symptom:
-      'Headaches after intense visual activities such as reading or computer work',
+      'Headaches after intense visual activities (reading or computer work)',
     score: 3
   },
   {

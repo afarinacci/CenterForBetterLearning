@@ -217,7 +217,7 @@ class CustomNavbar extends React.Component {
                   onClick={this.closeNavbar}
                   activeClassName="active"
                 >
-                  Symptoms
+                  Symptoms Checklist
                 </NavLink>
               </NavItem>
 
