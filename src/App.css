@@ -290,13 +290,22 @@ a .socialIcon:hover {
   -o-transform: skew(8deg) rotate(3deg);
   transform: skew(8deg) rotate(3deg);
 }
+.bioimg {
+  max-width: 352px;
+  margin-top: 20px;
+  border-radius: 0.25rem;
+}
 
 @media (max-width: 370px) {
   .marginfornav {
     margin-top: 151px;
   }
 }
-
+@media (max-width: 414px) {
+  .bioimg {
+    margin-top: 0px;
+  }
+}
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .topNavBtn {
@@ -358,6 +367,12 @@ a .socialIcon:hover {
   }
   .copyRow {
     text-align: left;
+  }
+  .biocard .card {
+    border: none;
+  }
+  .bioimg {
+    margin-top: 0px;
   }
 }
 /* Large devices (desktops, 992px and up) */
