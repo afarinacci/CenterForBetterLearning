@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,
   faMapMarkerAlt,
-  faCopyright
+  faCopyright,
+  faCalendarAlt,
+  faEnvelope,
+  faUserCircle
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookSquare,
@@ -11,15 +14,20 @@ import {
   faGoogle,
   faYelp
 } from '@fortawesome/free-brands-svg-icons';
-import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Button, NavLink } from 'reactstrap';
 
 function Footer() {
   const d = new Date();
   const currentYear = d.getFullYear();
+  const scrollTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
   return (
     <footer>
       <div className="row footerRow">
-        <div id="locations" className="footerCol col-12 col-md-6 row">
+        <div id="locations" className="footerCol col-12 col-sm-6 row">
           <div className="col-12 col-lg-6 text-center ">
             <h3 className="footerlocation">Coconut Creek</h3>
             <div>
@@ -56,7 +64,7 @@ function Footer() {
             ></iframe>
           </div>
         </div>
-        <div className="footerCol col-12 col-md-6 row">
+        <div className="footerCol col-12 col-sm-6 row">
           <div className="col-12 col-lg-6 text-center ">
             <h3 className="footerlocation">West Palm Beach</h3>
             <div>
@@ -100,8 +108,30 @@ function Footer() {
       <hr
         style={{ margin: '2px', border: '1px solid rgba(255,255,255, 0.5)' }}
       />
-      <div className="row footerRow">
-        <div className="col-12 col-md-6 text-center">
+      <div className="row footerRow footerBottomSection">
+        <div className="col-12 col-sm-6 col-md-4 footerCol1">
+          <h5 style={{ fontWeight: 'bold' }}>Links</h5>
+          <div>
+            <Link to="/our-team" onClick={scrollTop} className="footerLink">
+              <FontAwesomeIcon icon={faUserCircle} /> About Us
+            </Link>
+          </div>
+          <div>
+            <Link to="/contact-us" onClick={scrollTop} className="footerLink">
+              <FontAwesomeIcon icon={faEnvelope} /> Contact Us
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/request-appointment"
+              onClick={scrollTop}
+              className="footerLink"
+            >
+              <FontAwesomeIcon icon={faCalendarAlt} /> Request an Appointment
+            </Link>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6 col-md-4 footerCol2">
           <h5 style={{ fontWeight: 'bold' }}>OFFICE HOURS:</h5>
           <div className="hours">Mon: 9:00 AM - 6:00 PM</div>
           <div className="hours">Tue: 9:00 AM - 6:00 PM</div>
@@ -113,55 +143,57 @@ function Footer() {
             Sun: <span style={{ fontStyle: 'italic' }}>Closed</span>
           </div>
         </div>
-        <div className="col-12 col-md-6 d-flex justify-content-center ">
-          <h5 style={{ fontWeight: 'bold' }}>Links</h5>
-        </div>
-      </div>
-      <hr
-        style={{ margin: '2px', border: '1px solid rgba(255,255,255, 0.5)' }}
-      />
-      <div className="row footerRow">
-        <div className="col-12 col-md-6 copyRow my-auto">
-          <FontAwesomeIcon icon={faCopyright} /> {currentYear} Center for Better
-          Learning
-        </div>
-        <div className="col-12 col-md-6 socialRow">
-          <a
-            href="http://www.google.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faFacebookSquare}
-              size="2x"
-              className="socialIcon"
-            />
-          </a>
-          <a
-            href="http://www.google.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="2x"
-              className="socialIcon"
-            />
-          </a>
-          <a
-            href="http://www.google.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGoogle} size="2x" className="socialIcon" />
-          </a>
-          <a
-            href="http://www.google.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faYelp} size="2x" className="socialIcon" />
-          </a>
+        <div className="col-12 col-md-4 row footerCol3">
+          <div className="col-12" style={{ padding: '0px 0px 30px 0px' }}>
+            <a
+              href="http://www.google.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faFacebookSquare}
+                size="2x"
+                className="socialIcon"
+              />
+            </a>
+            <a
+              href="http://www.google.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="2x"
+                className="socialIcon socialIconLeftPadding"
+              />
+            </a>
+            <a
+              href="http://www.google.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faGoogle}
+                size="2x"
+                className="socialIcon socialIconLeftPadding"
+              />
+            </a>
+            <a
+              href="http://www.google.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faYelp}
+                size="2x"
+                className="socialIcon socialIconLeftPadding"
+              />
+            </a>
+          </div>
+          <div className="col-12 align-self-md-end" style={{ padding: '0px' }}>
+            <FontAwesomeIcon icon={faCopyright} /> {currentYear} Center for
+            Better Learning
+          </div>
         </div>
       </div>
     </footer>

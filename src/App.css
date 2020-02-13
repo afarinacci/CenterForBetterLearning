@@ -12,7 +12,7 @@ body {
 }
 .logotitle {
   font-family: 'league_spartanbold', sans-serif;
-  color: var(--primary);
+  color: white;
   font-size: 1.25rem;
   margin-bottom: 0px;
 }
@@ -77,10 +77,9 @@ main h6 {
   padding: 5px 5px;
   margin: 0px;
 }
-.topNavBtn {
-  margin: 0px 5px 0px 5px;
-  padding: 4px 6px;
-  font-size: 0.8rem;
+.topNavLink:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -138,6 +137,9 @@ footer {
   padding: 10px;
   margin: 0px;
 }
+.footerBottomSection {
+  padding: 0px 30px;
+}
 .footerCol {
   padding: 20px 15px 0px 15px;
   margin: 0px;
@@ -152,14 +154,29 @@ footer {
 .navIcon {
   margin-right: 3px;
 }
+.footerLink {
+  padding: 7px 0px;
+  color: white;
+}
+.footerLink:hover {
+  padding: 5px 0px;
+  color: var(--primary);
+}
+.footerCol3,
+.footerCol2,
+.footerCol1 {
+  padding: 15px 0px;
+  margin: 0px;
+  text-align: center;
+}
 a .socialIcon {
   color: var(--light);
 }
 a .socialIcon:hover {
   color: var(--primary);
 }
-.socialIcon {
-  margin: 10px 7px;
+.socialIconLeftPadding {
+  margin: 0px 0px 0px 10px;
 }
 .socialRow {
   text-align: center;
@@ -360,17 +377,17 @@ a .socialIcon:hover {
   .max800 {
     max-width: 90vw;
   }
-  .socialRow {
-    text-align: right;
-  }
-  .copyRow {
-    text-align: left;
-  }
   .biocard .card {
     border: none;
   }
   .bioimg {
     margin-top: 0px;
+  }
+  .footerCol1 {
+    text-align: left;
+  }
+  .footerCol3 {
+    text-align: right;
   }
 }
 /* Large devices (desktops, 992px and up) */

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,
   faFileDownload,
-  faBars
+  faCalendarAlt
 } from '@fortawesome/free-solid-svg-icons';
 import {
   Nav,
@@ -66,58 +66,42 @@ class CustomNavbar extends React.Component {
   render() {
     return (
       <nav className="fixed-top" role="navigation" id="fixedNav">
-        <Navbar color="dark" dark className="topNav navbar row">
-          <div className="d-none d-md-block col-12 col-md-6">
-            <NavbarBrand onClick={this.scrollTop}>
-              <Link to="/">
-                <div className="logotitle">Center for Better Learning</div>
-                <div className="logotagline">
-                  Better Vision. <span className="logoyellow">Brighter</span>{' '}
-                  Future.
-                </div>
-              </Link>
-            </NavbarBrand>
-          </div>
-          <div className="col-12 col-md-6 d-flex flex-nowrap justify-content-center justify-content-md-end">
-            <a href="tel:+1561-462-1245">
-              <Button color="light" className="topNavBtn">
-                <FontAwesomeIcon icon={faPhone} /> (561) 462-1245
-              </Button>
-            </a>
-            <Link to="/request-appointment">
-              <Button
-                color="light"
-                className="topNavBtn"
-                onClick={this.scrollTop}
-              >
-                Request an Appointment
-              </Button>
-            </Link>
-          </div>
-        </Navbar>
-        <Navbar dark expand="md" className="bottomNav bg-dark">
+        <div className="row justify-content-center justify-content-md-end bg-dark topNav">
+          <a
+            href="tel:+1561-462-1245"
+            style={{ padding: '0px 10px' }}
+            className="topNavLink"
+          >
+            <FontAwesomeIcon icon={faPhone} /> (561) 462-1245
+          </a>
+          <Link
+            to="/request-appointment"
+            onClick={this.scrollTop}
+            style={{ padding: '0px 10px' }}
+            className="topNavLink"
+          >
+            <FontAwesomeIcon icon={faCalendarAlt} /> Request an Appointment
+          </Link>
+        </div>
+        <div
+          className="row text-center bg-secondary justify-content-center"
+          style={{ margin: '0px' }}
+        >
           <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
             <Link to="/">
               <div className="logotitle">Center for Better Learning</div>
-              <div className="logotagline">
-                Better Vision. <span className="logoyellow">Brighter</span>{' '}
-                Future.
-              </div>
+            </Link>
+          </NavbarBrand>
+        </div>
+        <Navbar dark expand="md" className="bottomNav bg-secondary">
+          <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
+            <Link to="/">
+              <div className="logotitle">Center for Better Learning</div>
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar className="ml-auto mr-auto nav-fill">
-              <NavItem>
-                <NavLink
-                  to="/our-team"
-                  tag={RRNavLink}
-                  onClick={this.closeNavbar}
-                  activeClassName="active"
-                >
-                  Our Team
-                </NavLink>
-              </NavItem>
               <NavItem>
                 <NavLink
                   to="/what-is-vision-therapy"
@@ -257,16 +241,6 @@ class CustomNavbar extends React.Component {
               <NavItem>
                 <NavLink href="#" onClick={this.scrollToLocations}>
                   Locations
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  to="/contact-us"
-                  tag={RRNavLink}
-                  onClick={this.closeNavbar}
-                  activeClassName="active"
-                >
-                  Contact Us
                 </NavLink>
               </NavItem>
             </Nav>
