@@ -23,7 +23,7 @@ function Home() {
   };
   return (
     <div className="marginfornav">
-      {/* <picture>
+      <picture>
         <source media="(max-width: 450px)" srcSet={childrenReading_w2400} />
         <source media="(min-width: 451px)" srcSet={childrenReading_w5743} />
         <img
@@ -31,19 +31,11 @@ function Home() {
           className="img-fluid"
           alt="Children Reading"
         ></img>
-      </picture> */}
-      {/* <video width="800px">
+      </picture>
+      {/* <video autoplay muted loop id="homepageVideo">
         <source src="./../images/videostockfootage.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/zkVO56Rjb5c?controls=0"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
 
       <div className="row homeLinks grid-divider grid-divider-light">
         <div className="col-md-4 homeLinksSection">

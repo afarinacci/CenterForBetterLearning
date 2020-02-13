@@ -66,42 +66,51 @@ class CustomNavbar extends React.Component {
   render() {
     return (
       <nav className="fixed-top" role="navigation" id="fixedNav">
-        <div className="row justify-content-center justify-content-md-end bg-dark topNav">
-          <a
-            href="tel:+1561-462-1245"
-            style={{ padding: '0px 10px' }}
-            className="topNavLink"
+        <div className="row bg-light topNav">
+          <div
+            className="col-12 col-md-6 order-2 order-md-1 row justify-content-center justify-content-md-start"
+            style={{ margin: '0px', padding: '0px' }}
           >
-            <FontAwesomeIcon icon={faPhone} /> (561) 462-1245
-          </a>
-          <Link
-            to="/request-appointment"
-            onClick={this.scrollTop}
-            style={{ padding: '0px 10px' }}
-            className="topNavLink"
+            <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
+              <Link to="/">
+                <div className="logotitle">Center for Better Learning</div>
+              </Link>
+            </NavbarBrand>
+          </div>
+          <div
+            className="col-12 col-md-6 order-1 order-md-2 row justify-content-center justify-content-md-end"
+            style={{ margin: '0px', padding: '0px' }}
           >
-            <FontAwesomeIcon icon={faCalendarAlt} /> Request an Appointment
-          </Link>
-        </div>
-        <div
-          className="row text-center bg-secondary justify-content-center"
-          style={{ margin: '0px' }}
-        >
-          <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
-            <Link to="/">
-              <div className="logotitle">Center for Better Learning</div>
+            <a href="tel:+1561-462-1245" className="topNavLink">
+              <FontAwesomeIcon
+                icon={faPhone}
+                style={{ color: 'var(--primary)' }}
+              />{' '}
+              (561) 462-1245
+            </a>
+            <Link
+              to="/request-appointment"
+              onClick={this.scrollTop}
+              className="topNavLink"
+              style={{ paddingLeft: '15px' }}
+            >
+              <FontAwesomeIcon
+                icon={faCalendarAlt}
+                style={{ color: 'var(--primary)' }}
+              />{' '}
+              Request an Appointment
             </Link>
-          </NavbarBrand>
+          </div>
         </div>
-        <Navbar dark expand="md" className="bottomNav bg-secondary">
-          <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
+        <Navbar expand="md" className="bottomNav navbar-light bg-light">
+          <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
             <Link to="/">
               <div className="logotitle">Center for Better Learning</div>
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar className="ml-auto mr-auto nav-fill">
+            <Nav navbar className="mr-auto nav-fill">
               <NavItem>
                 <NavLink
                   to="/what-is-vision-therapy"

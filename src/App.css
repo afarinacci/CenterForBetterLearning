@@ -12,9 +12,13 @@ body {
 }
 .logotitle {
   font-family: 'league_spartanbold', sans-serif;
-  color: white;
+  color: var(--dark);
   font-size: 1.25rem;
   margin-bottom: 0px;
+}
+.navbar-brand {
+  padding: 0px;
+  margin: 0px;
 }
 .navbar-brand a:hover {
   text-decoration: none;
@@ -74,57 +78,54 @@ main h6 {
   color: var(--danger);
 }
 .topNav {
-  padding: 5px 5px;
+  padding: 16px 16px 4px 16px;
   margin: 0px;
+}
+.topNavLink {
+  color: var(--dark);
 }
 .topNavLink:hover {
   text-decoration: none;
-  color: white;
+  color: var(--primary);
 }
 
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link.active {
   color: var(--primary);
   font-weight: bold;
 }
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--light);
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark);
 }
-.navbar-dark .nav-item a.nav-link:hover,
-.navbar-dark .nav-item a.nav-link:focus {
+.navbar-light .nav-item a.nav-link:hover,
+.navbar-light .nav-item a.nav-link:focus {
   color: var(--primary);
 }
-.navbar-dark .nav-item a.nav-link:active {
+.navbar-light .nav-item a.nav-link:active {
   color: var(--primary);
 }
-.navbar-dark .dropdown-item a.nav-link {
-  color: var(--light);
+.navbar-light .dropdown-item a.nav-link {
+  color: var(--dark);
 }
-.navbar-dark .dropdown-item:hover {
-  background-color: #3c434a;
+.navbar-light .dropdown-item:hover {
+  background-color: white;
 }
-.navbar-dark .dropdown-menu {
-  background-color: #3c434a;
+.navbar-light .dropdown-menu {
+  background-color: white;
+}
+.bottomNav {
+  overflow-y: scroll;
+  padding: 4px 16px;
+  margin: 0px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.topNavBtn:hover,
-.topNavBtn:active {
-  color: var(--light);
-  border-color: var(--light);
-  background-color: var(--dark);
-}
-.navbar-brand {
-  padding: 5px 5px;
-  margin: 0px;
-}
 footer {
   width: 100%;
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   background-color: var(--dark);
   color: var(--light);
-}
-footer {
-  padding: 0px;
 }
 .footerBtn {
   background-color: var(--light);
@@ -134,14 +135,14 @@ footer {
   border-color: var(--light);
 }
 .footerRow {
-  padding: 10px;
+  padding: 0px 30px;
   margin: 0px;
 }
 .footerBottomSection {
   padding: 0px 30px;
 }
 .footerCol {
-  padding: 20px 15px 0px 15px;
+  padding: 15px;
   margin: 0px;
 }
 .footerlocation {
@@ -155,7 +156,7 @@ footer {
   margin-right: 3px;
 }
 .footerLink {
-  padding: 7px 0px;
+  padding: 10px 0px;
   color: white;
 }
 .footerLink:hover {
@@ -187,14 +188,7 @@ a .socialIcon:hover {
 .formBtn {
   color: var(--light);
 }
-.bottomNav {
-  overflow-y: scroll;
-  padding: 4px 16px;
-  margin: 0px;
-}
-.nav-link {
-  padding: 4px 8px;
-}
+
 .coverPhoto {
   width: 100vw;
   height: auto;
@@ -229,7 +223,9 @@ a .socialIcon:hover {
 .homeLinksButton {
   background-color: var(--light);
 }
-
+#homepageVideo {
+  width: 100vw;
+}
 .grid-divider {
   overflow-x: hidden;
   position: relative;
@@ -313,7 +309,7 @@ a .socialIcon:hover {
 
 @media (max-width: 370px) {
   .marginfornav {
-    margin-top: 151px;
+    margin-top: 80px;
   }
 }
 @media (max-width: 414px) {
@@ -323,9 +319,6 @@ a .socialIcon:hover {
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .topNavBtn {
-    font-size: 1rem;
-  }
   .paddingAround {
     padding: 30px 50px;
   }
