@@ -21,7 +21,7 @@ import {
   Collapse,
   Button
 } from 'reactstrap';
-import NavLogo from './NavLogo';
+import { ReactComponent as Logo } from './../images/BandWLogo.svg';
 
 class CustomNavbar extends React.Component {
   constructor(props) {
@@ -73,11 +73,9 @@ class CustomNavbar extends React.Component {
           >
             <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
               <Link to="/">
-                <img
-                  src="./../images/BandWLogo.svg"
-                  alt="Center for Better Learning"
-                  width="300"
-                />
+                <div className="navLogoTop">
+                  <Logo />
+                </div>
               </Link>
             </NavbarBrand>
           </div>
@@ -109,11 +107,9 @@ class CustomNavbar extends React.Component {
         <Navbar expand="md" className="bottomNav navbar-light bg-light">
           <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
             <Link to="/">
-              <img
-                src="./../images/BandWLogo.svg"
-                alt="Center for Better Learning"
-                width="300"
-              />
+              <div className="navLogoBottom">
+                <Logo />
+              </div>
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />

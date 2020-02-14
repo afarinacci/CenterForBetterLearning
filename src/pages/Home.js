@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import homepageVideo from './../images/videostockfootage.mp4';
 
 function Home() {
   const childrenReading_w5743 =
@@ -23,7 +24,7 @@ function Home() {
   };
   return (
     <div className="marginfornav">
-      <picture>
+      {/* <picture>
         <source media="(max-width: 450px)" srcSet={childrenReading_w2400} />
         <source media="(min-width: 451px)" srcSet={childrenReading_w5743} />
         <img
@@ -31,11 +32,11 @@ function Home() {
           className="img-fluid"
           alt="Children Reading"
         ></img>
-      </picture>
-      {/* <video autoplay muted loop id="homepageVideo">
-        <source src="./../images/videostockfootage.mp4" type="video/mp4" />
+      </picture> */}
+      <video autoplay muted loop controls id="homepageVideo">
+        <source src={homepageVideo} type="video/mp4" />
         Your browser does not support the video tag.
-      </video> */}
+      </video>
 
       <div className="row homeLinks grid-divider grid-divider-light">
         <div className="col-md-4 homeLinksSection">

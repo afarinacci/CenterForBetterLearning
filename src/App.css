@@ -16,6 +16,12 @@ body {
   font-size: 1.25rem;
   margin-bottom: 0px;
 }
+.navLogoTop {
+  width: 380px;
+}
+.navLogoBottom {
+  width: 220px;
+}
 .navbar-brand {
   padding: 0px;
   margin: 0px;
@@ -31,7 +37,7 @@ body {
   margin-bottom: 30px;
 }
 .marginfornav {
-  margin-top: 111px;
+  margin-top: 92px;
 }
 .max800 {
   width: 100vw;
@@ -309,7 +315,7 @@ a .socialIcon:hover {
 
 @media (max-width: 370px) {
   .marginfornav {
-    margin-top: 80px;
+    margin-top: 116px;
   }
 }
 @media (max-width: 414px) {
@@ -322,11 +328,14 @@ a .socialIcon:hover {
   .paddingAround {
     padding: 30px 50px;
   }
+  .navLogoBottom {
+    width: 300px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .marginfornav {
-    margin: 138px 0px 30px 0px;
+    margin: 145px 0px 30px 0px;
   }
   main {
     margin-top: 158px;
@@ -383,13 +392,15 @@ a .socialIcon:hover {
     text-align: right;
   }
 }
+@media (min-width: 841px) {
+  .marginfornav {
+    margin: 121px 0px 30px 0px;
+  }
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .locationMap {
     margin-top: 0px;
-  }
-  .marginfornav {
-    margin: 114px 0px 30px 0px;
   }
   .max800 {
     max-width: 800px;
