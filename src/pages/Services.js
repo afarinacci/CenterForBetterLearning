@@ -39,18 +39,17 @@ function Services() {
           >
             <h3>Learning Related Visual Problems</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The visual system is the dominant sense utilized for learning.
+              When our visual system does not work efficiently, it can
+              negatively impact the ability to learn and/ or stay focused.
+              Vision Therapy restores the ability to gather and process visual
+              information efficiently resulting in improved academic
+              performance.
             </p>
             <Link to="/services/learning-related-visual-problems">
               <Button
                 color="primary"
-                className="primary-btn"
+                className="homeLinksButtonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
@@ -80,18 +79,16 @@ function Services() {
           <div className="paddingAround extraPaddingBottomPhone">
             <h3>Amblyopia &amp; Strabismus</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Those with Amblyopia experience reduced eyesight in one (or both)
+              eyes despite best correction with contact or glasses. Strabismus
+              occurs when the eyes are unable to align properly. Vision Therapy
+              coordinate the eyes and brain to team both eye together resulting
+              in clear and comfortable binocular vision.
             </p>
             <Link to="/services/learning-related-visual-problems">
               <Button
                 color="primary"
-                className="primary-btn"
+                className="homeLinksButtonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
@@ -117,18 +114,15 @@ function Services() {
           <div className="paddingAround extraPaddingBottomPhone">
             <h3>Vision Rehabilitation</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Vision Rehabilitation improves the visual processes in someone who
+              suffered a Traumatic Brain Injury due to trauma or stroke. Vision
+              Therapy works to improve the quality of life in those who suffer
+              visual field defects, double vision, or visual balance disorders.
             </p>
             <Link to="/services/learning-related-visual-problems">
               <Button
                 color="primary"
-                className="primary-btn"
+                className="homeLinksButtonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
@@ -158,18 +152,16 @@ function Services() {
           <div className="paddingAround extraPaddingBottomPhone">
             <h3>Sports Vision</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Sports Vision Training works on improving the visual abilities of
+              an athlete to give them a competitive edge over the competition. A
+              great player can become an excellent player with the enhanced
+              visual processing to make split second decisions with confidence
+              and precision.
             </p>
             <Link to="/services/learning-related-visual-problems">
               <Button
                 color="primary"
-                className="primary-btn"
+                className="homeLinksButtonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />

@@ -217,7 +217,9 @@ a .socialIcon:hover {
 .apptcheckbox {
   padding-left: 15px;
 }
-
+.textShadow {
+  text-shadow: 2px 2px 4px #000000;
+}
 .homeLinksButtonLight:hover {
   color: var(--light);
   border-color: var(--light);

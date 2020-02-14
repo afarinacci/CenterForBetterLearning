@@ -46,7 +46,7 @@ function Home() {
 
       <div className="row homeLinksRow backgroundTextureDark">
         <div className="col-md-4 homeLinksCol">
-          <h4 className="homeLinksTitle">Meet the Team</h4>
+          <h4 className="textShadow">Meet the Team</h4>
           <Link to="/our-team">
             <Button
               outline
@@ -59,7 +59,7 @@ function Home() {
           </Link>
         </div>
         <div className="col-md-4 homeLinksCol">
-          <h4 className="homeLinksTitle">Request an Appointment</h4>
+          <h4 className="textShadow">Request an Appointment</h4>
           <Link to="/request-appointment">
             <Button
               outline
@@ -72,7 +72,7 @@ function Home() {
           </Link>
         </div>
         <div className="col-md-4 homeLinksCol">
-          <h4 className="homeLinksTitle">Find Us</h4>
+          <h4 className="textShadow">Find Us</h4>
           <Button
             outline
             color="primary"
@@ -114,7 +114,7 @@ function Home() {
         <div class="card-deck text-center">
           <div class="card text-white bg-primary mb-3">
             <div class="card-header">
-              <h3 className="missionVerbs">PASSION</h3>
+              <h3 className="missionVerbs ">PASSION</h3>
             </div>
             <div class="card-body">
               <p class="card-text">
@@ -159,7 +159,7 @@ function Home() {
       <div className="row wivt-fordoctors-row text-center">
         <div className="col-12 col-md-6 wivt-fordoctors-col wivt-fordoctors-col1 row align-items-center">
           <div className="col-12">
-            <h1>For Patients</h1>
+            <h1 className="textShadow">For Patients</h1>
             <Link to="/what-is-vision-therapy">
               <Button
                 color="primary"
@@ -174,7 +174,7 @@ function Home() {
         </div>
         <div className="col-12 col-md-6 wivt-fordoctors-col wivt-fordoctors-col2 row align-items-center">
           <div className="col-12">
-            <h1>For Professionals</h1>
+            <h1 className="textShadow">For Professionals</h1>
             <Link to="/resources">
               <Button
                 color="primary"
