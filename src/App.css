@@ -71,6 +71,10 @@ main h6 {
   font-family: 'league_spartanbold', sans-serif;
   margin: 10px 0px;
 }
+.pageTitleHomepage {
+  font-family: 'Coming Soon', cursive;
+  margin: 10px 0px;
+}
 .logoIcon {
   margin: 0px 10px 2px 10px;
 }
@@ -84,7 +88,7 @@ main h6 {
   color: var(--danger);
 }
 .topNav {
-  padding: 16px 16px 4px 16px;
+  padding: 16px 16px 8px 16px;
   margin: 0px;
 }
 .topNavLink {
@@ -222,12 +226,23 @@ a .socialIcon:hover {
   border-radius: 0px;
   margin: 0px;
 }
-.homeLinksButton:hover {
+.homeLinksButtonLight:hover {
   color: var(--light);
   border-color: var(--light);
+  background-color: var(--primary);
 }
-.homeLinksButton {
+.homeLinksButtonLight {
+  color: var(--primary);
   background-color: var(--light);
+}
+.homeLinksButtonPrimary:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background-color: var(--light);
+}
+.homeLinksButtonPrimary {
+  color: var(--light);
+  background-color: var(--primary);
 }
 #homepageVideo {
   width: 100vw;
@@ -338,7 +353,7 @@ a .socialIcon:hover {
     margin: 145px 0px 30px 0px;
   }
   main {
-    margin-top: 158px;
+    margin-top: 175px;
   }
   .bottomNav {
     overflow-y: visible;
@@ -392,9 +407,12 @@ a .socialIcon:hover {
     text-align: right;
   }
 }
-@media (min-width: 841px) {
+@media (min-width: 853px) {
   .marginfornav {
     margin: 121px 0px 30px 0px;
+  }
+  main {
+    margin-top: 151px;
   }
 }
 /* Large devices (desktops, 992px and up) */

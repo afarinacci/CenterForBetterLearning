@@ -3,7 +3,7 @@ import React from 'react';
 function Wivt() {
   return (
     <div className="marginfornav">
-      <main className="container-fluid paddingAround max800 effect8">
+      <main className="container-fluid paddingAround max800">
         <h1 className="text-center pageTitle">What is Vision Therapy?</h1>
         <p>
           Over 80% of the brain function is incorporated in the visual system.

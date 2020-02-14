@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import homepageVideo from './../images/videostockfootage.mp4';
+import blueLogo from './../images/LogoForBlue2.svg';
 
 function Home() {
   const childrenReading_w5743 =
@@ -33,7 +34,7 @@ function Home() {
           alt="Children Reading"
         ></img>
       </picture> */}
-      <video autoplay muted loop controls id="homepageVideo">
+      <video autoplay controls muted loop id="homepageVideo">
         <source src={homepageVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -49,7 +50,7 @@ function Home() {
                     outline
                     color="primary"
                     onClick={scrollTop}
-                    className="homeLinksButton"
+                    className="homeLinksButtonLight"
                   >
                     Our Staff <FontAwesomeIcon icon={faArrowRight} />
                   </Button>
@@ -69,7 +70,7 @@ function Home() {
                   <Button
                     outline
                     color="primary"
-                    className="homeLinksButton"
+                    className="homeLinksButtonLight"
                     onClick={scrollTop}
                   >
                     Appointments <FontAwesomeIcon icon={faArrowRight} />
@@ -87,7 +88,7 @@ function Home() {
                 <Button
                   outline
                   color="primary"
-                  className="homeLinksButton"
+                  className="homeLinksButtonLight"
                   onClick={scrollToLocations}
                 >
                   Locations <FontAwesomeIcon icon={faArrowRight} />
@@ -102,7 +103,11 @@ function Home() {
         <div className="col-12 col-md-6 bg-light wivt-fordoctors-col">
           <h4 style={{ color: 'var(--dark)' }}>For Patients</h4>
           <Link to="/what-is-vision-therapy">
-            <Button color="primary" className="primary-btn" onClick={scrollTop}>
+            <Button
+              color="primary"
+              className="primary-btn homeLinksButtonPrimary"
+              onClick={scrollTop}
+            >
               Learn About Vision Therapy <FontAwesomeIcon icon={faArrowRight} />
             </Button>
           </Link>
@@ -110,66 +115,76 @@ function Home() {
         <div className="col-12 col-md-6 bg-secondary wivt-fordoctors-col">
           <h4 style={{ color: 'var(--light)' }}>For Professionals</h4>
           <Link to="/resources">
-            <Button color="primary" className="primary-btn" onClick={scrollTop}>
+            <Button
+              color="primary"
+              className="primary-btn homeLinksButtonPrimary"
+              onClick={scrollTop}
+            >
               View All Resources <FontAwesomeIcon icon={faArrowRight} />
             </Button>
           </Link>
         </div>
       </div>
+      <div style={{ backgroundColor: 'var(--primary)', padding: '30px' }}>
+        <div className="mr-auto ml-auto" style={{ maxWidth: '500px' }}>
+          <img src={blueLogo} alt="Center for Better Learning Logo" />
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div className="container-fluid paddingAround max800">
+          <h1 className="text-center pageTitleHomepage">Welcome</h1>
+          <p>
+            We are proud to offer Vision Therapy serves to our community. We are
+            here to educate and bring awareness to the importance of efficient
+            coordination of the eyes, brain, and body for peak visual
+            performance. Please take some time to learn about the various
+            aspects of your visual system and take the interactive symptoms
+            checklist to determine if you or your child would benefit from
+            Vision Therapy services. We can help you or your child meet the
+            demanding visual needs of our everyday life. Center for Better
+            Learning was developed with a clear vision in mind:
+          </p>
+          <br />
 
-      <main className="container-fluid paddingAround max800">
-        <h1 className="text-center pageTitle">Welcome</h1>
-        <p>
-          We are proud to offer Vision Therapy serves to our community. We are
-          here to educate and bring awareness to the importance of efficient
-          coordination of the eyes, brain, and body for peak visual performance.
-          Please take some time to learn about the various aspects of your
-          visual system and take the interactive symptoms checklist to determine
-          if you or your child would benefit from Vision Therapy services. We
-          can help you or your child meet the demanding visual needs of our
-          everyday life. Center for Better Learning was developed with a clear
-          vision in mind:
-        </p>
-        <br />
-
-        <div class="card-deck text-center">
-          <div class="card text-white bg-primary mb-3">
-            <div class="card-header">
-              <h3 className="missionVerbs">PASSION</h3>
+          <div class="card-deck text-center">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-header">
+                <h3 className="missionVerbs">PASSION</h3>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Our passion is to bring awareness to the importance of synergy
+                  in the visual system by educating the community about the
+                  connection between the eyes, brain, and body.
+                </p>
+              </div>
             </div>
-            <div class="card-body">
-              <p class="card-text">
-                Our passion is to bring awareness to the importance of synergy
-                in the visual system by educating the community about the
-                connection between the eyes, brain, and body.
-              </p>
+            <div class="card text-white bg-danger mb-3">
+              <div class="card-header">
+                <h3 className="missionVerbs">PURPOSE</h3>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Our purpose is to provide innovative, evidenced-based vision
+                  therapy services to those seeking improvement, development, or
+                  rehabilitation of visual function.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card text-white bg-danger mb-3">
-            <div class="card-header">
-              <h3 className="missionVerbs">PURPOSE</h3>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Our purpose is to provide innovative, evidenced-based vision
-                therapy services to those seeking improvement, development, or
-                rehabilitation of visual function.
-              </p>
-            </div>
-          </div>
-          <div class="card text-white bg-success mb-3">
-            <div class="card-header">
-              <h3 className="missionVerbs">PROMISE</h3>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Our promise is to rebuild the foundation and efficiency of your
-                visual system to pave the way for a brighter future.
-              </p>
+            <div class="card text-white bg-success mb-3">
+              <div class="card-header">
+                <h3 className="missionVerbs">PROMISE</h3>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Our promise is to rebuild the foundation and efficiency of
+                  your visual system to pave the way for a brighter future.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

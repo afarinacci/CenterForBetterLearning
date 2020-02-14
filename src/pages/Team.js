@@ -3,7 +3,7 @@ import Bio from '../components/Bio';
 
 const Team = () => (
   <div className="marginfornav">
-    <main className="container-fluid paddingAround max800 effect8">
+    <main className="container-fluid paddingAround max800">
       <h1 className="text-center pageTitle">Meet Our Team</h1>
 
       <div className="biocard">
