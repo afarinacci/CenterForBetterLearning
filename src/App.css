@@ -218,19 +218,6 @@ a .socialIcon:hover {
   padding-left: 15px;
 }
 
-.homeLinksTitle {
-  font-family: 'Coming Soon', cursive;
-}
-.homeLinks {
-  margin: 0px;
-  color: var(--light);
-  background-color: var(--primary);
-}
-.homeLinksSection .card {
-  border: none;
-  border-radius: 0px;
-  margin: 0px;
-}
 .homeLinksButtonLight:hover {
   color: var(--light);
   border-color: var(--light);
@@ -253,6 +240,12 @@ a .socialIcon:hover {
 }
 #homepageVideo {
   width: 100vw;
+  margin-bottom: -8px;
+}
+.videoContainer {
+  background-color: var(--light);
+  margin: 0px;
+  padding: 0px;
 }
 .grid-divider {
   overflow-x: hidden;
@@ -274,26 +267,13 @@ a .socialIcon:hover {
   background-color: var(--light);
 }
 
-.wivt-fordoctors-row {
-  margin: 0px;
-}
-.wivt-fordoctors-col {
-  padding: 50px;
-}
-
 .missionVerbs {
   font-family: 'Coming Soon', cursive;
   margin: 0px;
 }
 .wideSectionBannerPrimary {
   background-color: var(--primary);
-  background-image: radial-gradient(
-    #05a3ff,
-    #1fadff,
-    #38b6ff,
-    #52bfff,
-    #6bc9ff
-  );
+  background-image: radial-gradient(#0094eb, #05a3ff, #1fadff, #38b6ff);
   padding: 30px;
 }
 .allServicesCol {
@@ -302,6 +282,21 @@ a .socialIcon:hover {
 }
 .extraPaddingBottomPhone {
   padding-bottom: 50px;
+}
+.paragraphLink {
+  color: inherit;
+}
+.paragraphLink:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+.homeLinksRow {
+  padding: 20px 30px;
+  text-align: center;
+  color: white;
+}
+.homeLinksCol {
+  padding: 10px 5px;
 }
 
 .effect8 {
@@ -340,6 +335,26 @@ a .socialIcon:hover {
   max-width: 352px;
   margin-top: 20px;
   border-radius: 0.25rem;
+}
+.wivt-fordoctors-col {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--dark);
+  padding: 0px;
+  margin: 0px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  color: white;
+  min-height: 300px;
+}
+.wivt-fordoctors-col1 {
+  background-image: url(https://lh3.googleusercontent.com/ZaUL7uUr1tkfFt-EFr72H6QUZk1l0EAxAr9uRtnhR6RqVYwKpoQaGyruvB1HHATc8mjg-dp7xGQEY28ewCG9CSqpbtLC3ECgatHMSA6Kj0j04eS52s1f-wMRABeZDAn9gmKWyX0-j_c=w1200);
+}
+.wivt-fordoctors-col2 {
+  background-image: url(https://lh3.googleusercontent.com/HgAA0IiCiKa2CwGMaKCwpCIixhKzBmfzmOLllTSvDBvwnqsBuXArBKHxQM607IVIkl2AObSnaGPez4kCtMfl3o37HidWFoBaA7VLb3WWu-wIPClL4pofXetbu8J7zeFS8aBj-h1AOIc=w1200);
+}
+.wivt-fordoctors-row {
+  margin: 0px;
 }
 
 @media (max-width: 370px) {
@@ -399,12 +414,7 @@ a .socialIcon:hover {
     left: -1px; /* quickfix to hide divider on left side */
     top: 0px;
   }
-  .wivt-fordoctors-col {
-    padding: 100px;
-  }
-  .wideSectionTitle {
-    padding: 15px calc(15px + 5vw);
-  }
+
   .extraPaddingBottomPhone {
     padding-bottom: 15px;
   }
