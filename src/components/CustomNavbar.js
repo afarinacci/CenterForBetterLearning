@@ -74,8 +74,9 @@ class CustomNavbar extends React.Component {
             <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
               <Link to="/">
                 <img
-                  src="./../images/BlackAndWhiteLogo.png"
-                  style={{ width: '300px' }}
+                  src="./../images/BandWLogo.svg"
+                  alt="Center for Better Learning"
+                  width="300"
                 />
               </Link>
             </NavbarBrand>
@@ -108,7 +109,11 @@ class CustomNavbar extends React.Component {
         <Navbar expand="md" className="bottomNav navbar-light bg-light">
           <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
             <Link to="/">
-              <div className="logotitle">Center for Better Learning</div>
+              <img
+                src="./../images/BandWLogo.svg"
+                alt="Center for Better Learning"
+                width="300"
+              />
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
