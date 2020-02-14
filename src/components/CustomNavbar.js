@@ -73,7 +73,10 @@ class CustomNavbar extends React.Component {
           >
             <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
               <Link to="/">
-                <div className="logotitle">Center for Better Learning</div>
+                <img
+                  src="./../images/BlackAndWhiteLogo.png"
+                  style={{ width: '300px' }}
+                />
               </Link>
             </NavbarBrand>
           </div>
