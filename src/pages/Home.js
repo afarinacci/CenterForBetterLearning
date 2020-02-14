@@ -112,7 +112,7 @@ function Home() {
             </Button>
           </Link>
         </div>
-        <div className="col-12 col-md-6 bg-secondary wivt-fordoctors-col">
+        <div className="col-12 col-md-6 backgroundTextureDark wivt-fordoctors-col">
           <h4 style={{ color: 'var(--light)' }}>For Professionals</h4>
           <Link to="/resources">
             <Button
@@ -125,7 +125,7 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div style={{ backgroundColor: 'var(--primary)', padding: '30px' }}>
+      <div className="wideSectionBannerPrimary">
         <div className="mr-auto ml-auto" style={{ maxWidth: '500px' }}>
           <img src={blueLogo} alt="Center for Better Learning Logo" />
         </div>

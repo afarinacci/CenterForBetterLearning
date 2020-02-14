@@ -28,7 +28,7 @@ function Footer() {
     <footer>
       <div className="row footerRow">
         <div id="locations" className="footerCol col-12 col-sm-6 row">
-          <div className="col-12 col-lg-6 text-center ">
+          <div className="footerCol col-12 col-lg-6 footerColLocationName">
             <h3 className="footerlocation">Coconut Creek</h3>
             <div>
               <address>
@@ -51,7 +51,7 @@ function Footer() {
               </Button>
             </a>
           </div>
-          <div className="col-12 col-lg-6 text-center ">
+          <div className="footerCol col-12 col-lg-6" style={{ padding: '0px' }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.242939625798!2d-80.18354878496756!3d26.318631783387072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91c7de52ad3b1%3A0xa72e0705bacc4e88!2s4171%20W%20Hillsboro%20Blvd%2C%20Coconut%20Creek%2C%20FL%2033073%2C%20USA!5e0!3m2!1sen!2s!4v1581398068070!5m2!1sen!2s"
               width="220"
@@ -65,7 +65,7 @@ function Footer() {
           </div>
         </div>
         <div className="footerCol col-12 col-sm-6 row">
-          <div className="col-12 col-lg-6 text-center ">
+          <div className="footerCol col-12 col-lg-6 footerColLocationName">
             <h3 className="footerlocation">West Palm Beach</h3>
             <div>
               <address>
@@ -91,7 +91,7 @@ function Footer() {
               </Button>
             </a>
           </div>
-          <div className="col-12 col-lg-6 text-center ">
+          <div className="footerCol col-12 col-lg-6" style={{ padding: '0px' }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.9259432077806!2d-80.0996689849606!3d26.650853483241118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d7e2b2fda219%3A0x4a24362d573a4248!2s3650%20Forest%20Hill%20Blvd%20%232%2C%20West%20Palm%20Beach%2C%20FL%2033406%2C%20USA!5e0!3m2!1sen!2s!4v1580894192930!5m2!1sen!2s"
               width="220"
@@ -110,29 +110,34 @@ function Footer() {
       />
       <div className="row footerRow footerBottomSection">
         <div className="col-12 col-sm-6 col-md-4 footerCol1">
-          <h5 style={{ fontWeight: 'bold' }}>Links</h5>
-          <div>
+          <h6 className="footerLinkDiv">
             <Link to="/our-team" onClick={scrollTop} className="footerLink">
-              <FontAwesomeIcon icon={faUserCircle} /> About Us
+              <FontAwesomeIcon icon={faUserCircle} className="footerLinkIcon" />
+              Our Team
             </Link>
-          </div>
-          <div>
+          </h6>
+          <h6 className="footerLinkDiv">
             <Link to="/contact-us" onClick={scrollTop} className="footerLink">
-              <FontAwesomeIcon icon={faEnvelope} /> Contact Us
+              <FontAwesomeIcon icon={faEnvelope} className="footerLinkIcon" />
+              Contact Us
             </Link>
-          </div>
-          <div>
+          </h6>
+          <h6 className="footerLinkDiv">
             <Link
               to="/request-appointment"
               onClick={scrollTop}
               className="footerLink"
             >
-              <FontAwesomeIcon icon={faCalendarAlt} /> Request an Appointment
+              <FontAwesomeIcon
+                icon={faCalendarAlt}
+                className="footerLinkIcon"
+              />
+              Request an Appointment
             </Link>
-          </div>
+          </h6>
         </div>
         <div className="col-12 col-sm-6 col-md-4 footerCol2">
-          <h5 style={{ fontWeight: 'bold' }}>OFFICE HOURS:</h5>
+          <h4 style={{ fontWeight: 'bold' }}>Office Hours</h4>
           <div className="hours">Mon: 9:00 AM - 6:00 PM</div>
           <div className="hours">Tue: 9:00 AM - 6:00 PM</div>
           <div className="hours">Wed: 9:00 AM - 6:00 PM</div>

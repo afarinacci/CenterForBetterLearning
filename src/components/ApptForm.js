@@ -55,6 +55,8 @@ class ApptForm extends React.Component {
       sat: this.state.sat ? 'saturday' : '',
       morning: this.state.morning ? 'morning' : '',
       afternoon: this.state.afternoon ? 'afternoon' : '',
+      coconutcreek: this.state.coconutcreek ? 'coconutcreek' : '',
+      westpalmbeach: this.state.westpalmbeach ? 'westpalmbeach' : '',
       phone: this.state.contactbyphone ? 'phone' : '',
       email: this.state.contactbyemail ? 'email' : ''
     };
@@ -84,6 +86,8 @@ class ApptForm extends React.Component {
       sat: false,
       morning: false,
       afternoon: false,
+      coconutcreek: false,
+      westpalmbeach: false,
       contactbyphone: false,
       contactbyemail: false
     });
@@ -276,6 +280,31 @@ class ApptForm extends React.Component {
                 onChange={this.handleInputChange}
               />{' '}
               Afternoon
+            </label>
+          </Col>
+        </FormGroup>
+
+        <FormGroup row>
+          <Label md={3}>Preferred Office Location</Label>
+          <Col md={9} className="row mb-auto mt-auto">
+            <label className="apptcheckbox">
+              <input
+                name="coconutcreek"
+                type="checkbox"
+                checked={this.state.coconutcreek}
+                onChange={this.handleInputChange}
+              />{' '}
+              Coconut Creek
+            </label>
+
+            <label className="apptcheckbox">
+              <input
+                name="westpalmbeach"
+                type="checkbox"
+                checked={this.state.westpalmbeach}
+                onChange={this.handleInputChange}
+              />{' '}
+              West Palm Beach
             </label>
           </Col>
         </FormGroup>
