@@ -37,12 +37,38 @@ function Home() {
           alt="Children Reading"
         ></img>
       </picture> */}
-      <div className="videoContainer">
-        <video autoplay controls muted loop id="homepageVideo">
+      <div class="jumbotron jumbotron-fluid">
+        <video
+          autoplay
+          controls
+          muted
+          loop
+          id="homepageVideo"
+          poster={childrenReading_w5743}
+        >
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <div class="container align-items-end text-white">
+          <h1 class="display-4">Bright Child, Poor Grades?</h1>
+          <p class="lead">
+            Your child may have an undetected vision problem. Find out how to
+            get them back on track.
+          </p>
+          <Link to="/services/learning-related-visual-problems">
+            <Button
+              outline
+              color="primary"
+              onClick={scrollTop}
+              className="homeLinksButtonPrimary"
+            >
+              Learn More <FontAwesomeIcon icon={faArrowRight} />
+            </Button>
+          </Link>
+        </div>
+        {/* /container */}
       </div>
+      {/* /jumbotron */}
 
       <div className="row homeLinksRow backgroundTextureDark">
         <div className="col-md-4 homeLinksCol">

@@ -151,7 +151,7 @@ function Footer() {
         <div className="col-12 col-md-4 row footerCol3">
           <div className="col-12" style={{ padding: '0px 0px 30px 0px' }}>
             <a
-              href="http://www.google.com"
+              href="https://www.facebook.com/Premier-Eye-Center-of-West-Palm-Beach-1286162468063057"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -162,7 +162,7 @@ function Footer() {
               />
             </a>
             <a
-              href="http://www.google.com"
+              href="https://www.instagram.com/centerforbetterlearning/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -173,7 +173,7 @@ function Footer() {
               />
             </a>
             <a
-              href="http://www.google.com"
+              href="https://www.google.com/search?sxsrf=ACYBGNSr-_cZKWegdHZRZ2Z7LSU_ulWfpQ%3A1581735938989&source=hp&ei=AmBHXsuBOo-HoATG_bKQCQ&q=center+for+better+learning+coconut+creek&btnK=Google+Search#btnK=Google%20Search"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -184,7 +184,7 @@ function Footer() {
               />
             </a>
             <a
-              href="http://www.google.com"
+              href="https://www.yelp.com/biz/premier-eye-center-west-palm-beach"
               rel="noopener noreferrer"
               target="_blank"
             >

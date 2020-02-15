@@ -10,7 +10,7 @@ const Team = () => (
         <Bio
           name="Dr. Christina Murray, O.D."
           bio={[
-            "Dr. Murray is originally from Columbus, Ohio, and is a proud graduate of The Ohio State University. She happily escaped the cold Ohio winters to attend optometry school at Nova Southeastern University. While in school, she discovered her passion for pediatrics and vision therapy. Dr. Murray's passion for helping children and adults reach their full potential through vision therapy has inspired her to Center for Better Learning. She is currently finishing up her board certification from the College of Optometrists in Vision Development.",
+            "Dr. Murray is originally from Columbus, Ohio, and is a proud graduate of The Ohio State University. She happily escaped the cold Ohio winters to attend optometry school at Nova Southeastern University. While in school, she discovered her passion for pediatrics and vision therapy. Dr. Murray's passion for helping children and adults reach their full potential through vision therapy has inspired her to open Center for Better Learning. She is currently finishing up her board certification from the College of Optometrists in Vision Development.",
             'When not seeing patients, Dr. Murray enjoys spending time with her husband, Paul, daughter, Mia, and two adorable golden retrievers, Sadie and Bentley. Her favorite activities include reading, baking, traveling.'
           ]}
           url="https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/422/2018/04/UKKXIPXYVTEA.IMAGE_4.jpeg"
@@ -25,7 +25,7 @@ const Team = () => (
             "Renee has volunteered and worked with children in a variety of settings for 17 years. In addition to working with neuro-typical children, she also has extensive experience working with children who have mental, physical, and learning challenges such as: Autism Spectrum Disorder, Down's Syndrome, various Developmental Disorders, Cerebral Palsy, Muscular Dystrophy, Deafness, Hard of Hearing, and Blindness.",
             'After 8 years of working and training as a Vision Therapist, Renee is proud to continue her growth and understanding of Optometric Vision Therapy.'
           ]}
-          url="https://media.istockphoto.com/photos/female-portrait-icon-as-avatar-or-profile-picture-picture-id477333976?k=6&m=477333976&s=612x612&w=0&h=A5lI_2KJbVjyQpNsaCDWAR3jj-CLV1kqI6ObClYf4e4="
+          url="./../images/WhiteBox.svg"
         />
       </div>
 
@@ -34,10 +34,10 @@ const Team = () => (
           name="Paul Murray"
           role="Operations Manager "
           bio={[
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate.',
-            'Voluptatum ducimus voluptates voluptas?'
+            "Paul's professional career spans 10+ years in the sales industry selling a wide variety of products and managing teams of sales professionals around the country. Paul's ambition to help people naturally lead him to support Dr. Murray at the Center for Better Learning to provide Vision Therapy services in the tri-county area.",
+            "When Paul isn't working, he enjoys spending time with his newborn daughter, being outside, and playing with his dogs."
           ]}
-          url="https://media.istockphoto.com/photos/icon-of-a-businessman-avatar-or-profile-pic-picture-id474001892?k=6&m=474001892&s=612x612&w=0&h=6g0M3Q3HF8_uMQpYbkM9XAAoEDym7z9leencMcC4pxo="
+          url="./../images/WhiteBox.svg"
         />
       </div>
     </main>
