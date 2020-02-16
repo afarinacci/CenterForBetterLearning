@@ -37,7 +37,7 @@ function Home() {
           alt="Children Reading"
         ></img>
       </picture> */}
-      <div className="videoContainer">
+      <div className="videoContainer d-flex justify-content-center">
         <video
           autoplay
           controls
