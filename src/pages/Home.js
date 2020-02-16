@@ -37,7 +37,7 @@ function Home() {
           alt="Children Reading"
         ></img>
       </picture> */}
-      <div class="jumbotron jumbotron-fluid">
+      <div className="videoContainer">
         <video
           autoplay
           controls
@@ -49,26 +49,24 @@ function Home() {
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div class="container align-items-end text-white">
-          <h1 class="display-4">Bright Child, Poor Grades?</h1>
-          <p class="lead">
+        <div className="container text-white text-center">
+          <div className="videoTitle">Bright Child, Poor Grades?</div>
+          <div className="videoSubtitle">
             Your child may have an undetected vision problem. Find out how to
             get them back on track.
-          </p>
+          </div>
           <Link to="/services/learning-related-visual-problems">
             <Button
               outline
               color="primary"
               onClick={scrollTop}
-              className="homeLinksButtonPrimary"
+              className="homeLinksButtonPrimary shrinkingButton"
             >
               Learn More <FontAwesomeIcon icon={faArrowRight} />
             </Button>
           </Link>
         </div>
-        {/* /container */}
       </div>
-      {/* /jumbotron */}
 
       <div className="row homeLinksRow backgroundTextureDark">
         <div className="col-md-4 homeLinksCol">
@@ -137,37 +135,37 @@ function Home() {
         </p>
         <br />
 
-        <div class="card-deck text-center">
-          <div class="card text-white bg-primary mb-3">
-            <div class="card-header">
+        <div className="card-deck text-center">
+          <div className="card text-white bg-primary mb-3">
+            <div className="card-header">
               <h3 className="missionVerbs ">PASSION</h3>
             </div>
-            <div class="card-body">
-              <p class="card-text">
+            <div className="card-body">
+              <p className="card-text">
                 Our passion is to bring awareness to the importance of synergy
                 in the visual system by educating the community about the
                 connection between the eyes, brain, and body.
               </p>
             </div>
           </div>
-          <div class="card text-white bg-danger mb-3">
-            <div class="card-header">
+          <div className="card text-white bg-danger mb-3">
+            <div className="card-header">
               <h3 className="missionVerbs">PURPOSE</h3>
             </div>
-            <div class="card-body">
-              <p class="card-text">
+            <div className="card-body">
+              <p className="card-text">
                 Our purpose is to provide innovative, evidenced-based vision
                 therapy services to those seeking improvement, development, or
                 rehabilitation of visual function.
               </p>
             </div>
           </div>
-          <div class="card text-white bg-success mb-3">
-            <div class="card-header">
+          <div className="card text-white bg-success mb-3">
+            <div className="card-header">
               <h3 className="missionVerbs">PROMISE</h3>
             </div>
-            <div class="card-body">
-              <p class="card-text">
+            <div className="card-body">
+              <p className="card-text">
                 Our promise is to rebuild the foundation and efficiency of your
                 visual system to pave the way for a brighter future.
               </p>
