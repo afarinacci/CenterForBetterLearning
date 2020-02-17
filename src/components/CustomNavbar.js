@@ -19,7 +19,6 @@ import {
   DropdownMenu,
   DropdownItem,
   Collapse,
-  Button
 } from 'reactstrap';
 import { ReactComponent as Logo } from './../images/BandWNavLogo.svg';
 

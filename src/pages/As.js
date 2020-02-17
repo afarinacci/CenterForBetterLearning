@@ -1,6 +1,15 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faExternalLinkAlt
+} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function As() {
+  const scrollTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   return (
     <div className="marginfornav">
       <div className="wideSectionBannerPrimary">
@@ -45,10 +54,20 @@ function As() {
           <li>Self-esteem issues, especially if one eye is visibly misaligned</li>
         </ul>
         <br />
-
         <h4>What does vision therapy do in this case?</h4>
         <p>Vision therapy works to lessen the workload of the "good eye" and retrain both eyes to work and function together. With vision therapy, it is expected that your child will likely improve their eyesight and depth perception as well as learn how to use their eyes so that the eyes themselves are cosmetically lined up. In order to be a successful student and individual, we must be able to be efficient. Two eyes are better than one! Imagine just how hard your child is working to accomplish tasks with half of their visual system intact. Our goal here is to increase efficiency while boosting confidence and comprehension in our children.</p>
         <br />
+        
+        <p style={{fontStyle: 'italic'}}>
+          To schedule an evaluation,{' '}
+          <Link to="/request-appointment" className="paragraphLink paragraphLinkPrimary" onClick={scrollTop}>
+            click here{' '}
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              style={{ fontSize: '.8em', color: 'var(--primary)' }}
+            />
+          </Link>.
+        </p>
 
       </main>
     </div>

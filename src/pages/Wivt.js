@@ -101,19 +101,19 @@ function Wivt() {
         <ol>
           <li>
             You are tired of the way things currently are, and you are desperate
-            to find a solution to your problem.
+            to find a solution.
           </li>
           <li>
             You are worried about you or your loved one's future in successfully navigating through life.
           </li>
           <li>
-            Previous advice and other therapies you've tried have not eliminated your struggles.
+            Previous advice and other therapies you've tried have not eliminated your problem.
           </li>
         </ol>
         <br />
         
         <p>
-          If you are unsure if vision therapy is the right choice for you or
+          If you are still unsure if vision therapy is the right choice for you or
           your child. Please contact us at your earliest convenience. Our
           friendly and knowledgeable staff at Center for Better Learning will be
           glad to guide you through the process of determining if an undiagnosed
@@ -121,7 +121,7 @@ function Wivt() {
         </p>
         <br />
         
-        <p>
+        <p style={{fontStyle: 'italic'}}>
           Please visit our{' '}
           <Link to="/services" className="paragraphLink paragraphLinkPrimary" onClick={scrollTop}>
             services{' '}
@@ -129,7 +129,7 @@ function Wivt() {
               icon={faExternalLinkAlt}
               style={{ fontSize: '.8em', color: 'var(--primary)' }}
             />
-          </Link> page for information.
+          </Link> page for information on each service we offer.
         </p>
       </main>
     </div>

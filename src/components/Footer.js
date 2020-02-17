@@ -15,7 +15,7 @@ import {
   faYelp
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
-import { Button, NavLink } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 function Footer() {
   const d = new Date();
@@ -149,7 +149,7 @@ function Footer() {
         <div className="col-12 col-md-4 row footerCol3">
           <div className="col-12" style={{ padding: '0px 0px 30px 0px' }}>
             <a
-              href="https://www.facebook.com/Premier-Eye-Center-of-West-Palm-Beach-1286162468063057"
+              href="https://www.facebook.com/centerforbetterlearning/"
               rel="noopener noreferrer"
               target="_blank"
             >

@@ -1,11 +1,20 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faExternalLinkAlt
+} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Lrvp() {
   const childFrustrated_w1200 =
     'https://lh3.googleusercontent.com/WFqgpMmgoiU2yzm6EldbDvWFcID6_4dploMQg9w95pZqVea-bjUv7iCNCaUwAAJSpiVxThGGI1ZewCOzFSBlIzBSI2EfG4atMmZo-7ihtxMFz0bYQQ3jwIWkpknDrquGVDWfxIs7Omk=w1200';
   const childFrustrated_w2400 =
     'https://lh3.googleusercontent.com/bmEJGm3tDYskIkP4S_JwFj1XRjqWMbyXQKLsPsGx5RFp8CxzhN5Ffq-Pi8gDhF9cmy1m_F1uHNzw0d-1vTOmms-lqh0jA27_VMKH0plKwATrSIolQtTNypKuLhuvoqygDWoXu6PUACk=w1597';
+  const scrollTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   return (
     <div className="marginfornav">
       <div className="wideSectionBannerPrimary">
@@ -189,6 +198,17 @@ function Lrvp() {
           Vision therapy helps a child use the power of visualization to convert
           spoken language into mental imagery. Mastering this skill will greatly
           improve the child's comprehension of spoken directions.
+        </p>
+        <br />
+        <p style={{fontStyle: 'italic'}}>
+          To schedule an evaluation,{' '}
+          <Link to="/request-appointment" className="paragraphLink paragraphLinkPrimary" onClick={scrollTop}>
+            click here{' '}
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              style={{ fontSize: '.8em', color: 'var(--primary)' }}
+            />
+          </Link>.
         </p>
       </main>
     </div>
