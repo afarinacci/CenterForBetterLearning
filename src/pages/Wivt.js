@@ -1,15 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faExternalLinkAlt
-} from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Wivt() {
   const scrollTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  };
   const checkmark = './../images/checkmark.svg';
   return (
     <div className="marginfornav">
@@ -96,7 +94,8 @@ function Wivt() {
         <br />
 
         <h5>
-          We find most people have come to this website for one of the following reasons:
+          We find most people have come to this website for one of the following
+          reasons:
         </h5>
         <ol>
           <li>
@@ -104,34 +103,42 @@ function Wivt() {
             to find a solution.
           </li>
           <li>
-            You are worried about you or your loved one's future in successfully navigating through life.
+            You are worried about you or your loved one's future in successfully
+            navigating through life.
           </li>
           <li>
-            Previous advice and other therapies you've tried have not eliminated your problem.
+            Previous advice and other therapies you've tried have not eliminated
+            your problem.
           </li>
         </ol>
         <br />
-        
+
         <p>
-          If you are still unsure if vision therapy is the right choice for you or
-          your child. Please contact us at your earliest convenience. Our
+          If you are still unsure if vision therapy is the right choice for you
+          or your child. Please contact us at your earliest convenience. Our
           friendly and knowledgeable staff at Center for Better Learning will be
           glad to guide you through the process of determining if an undiagnosed
           visual problem is the source of your struggle.
         </p>
         <br />
-        
-        <p style={{fontStyle: 'italic'}}>
+      </main>
+      <div className="wideSectionFooterPrimary">
+        <h5 style={{ margin: '0px' }}>
           Please visit our{' '}
-          <Link to="/services" className="paragraphLink paragraphLinkPrimary" onClick={scrollTop}>
+          <Link
+            to="/services"
+            className="paragraphLink paragraphLinkDark"
+            onClick={scrollTop}
+          >
             services{' '}
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
-              style={{ fontSize: '.8em', color: 'var(--primary)' }}
+              style={{ fontSize: '.8em' }}
             />
-          </Link> page for information on each service we offer.
-        </p>
-      </main>
+          </Link>{' '}
+          page for information on each service we offer.
+        </h5>
+      </div>
     </div>
   );
 }

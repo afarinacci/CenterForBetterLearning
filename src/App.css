@@ -136,8 +136,7 @@ main h6 {
   padding: 4px 16px;
   margin: 0px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
-  0 -0.1rem .25rem rgba(0, 0, 0, 0.03),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+    0 -0.1rem 0.25rem rgba(0, 0, 0, 0.03), inset 0 -1px 0 rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -310,6 +309,13 @@ a .socialIcon:hover {
   background-image: radial-gradient(#0094eb, #05a3ff, #1fadff, #38b6ff);
   padding: 30px;
 }
+.wideSectionFooterPrimary {
+  color: white;
+  text-align: center;
+  background-color: var(--primary);
+  background-image: radial-gradient(#0094eb, #05a3ff, #1fadff, #38b6ff);
+  padding: 15px;
+}
 .allServicesCol {
   margin: 0px;
   padding: 0px;
@@ -320,12 +326,24 @@ a .socialIcon:hover {
 .paragraphLink {
   color: inherit;
 }
-.paragraphLinkPrimary {
-  color: var(--primary);
-}
 .paragraphLink:hover {
   color: var(--primary);
   text-decoration: none;
+}
+.paragraphLinkPrimary {
+  color: var(--primary);
+}
+.paragraphLinkDark {
+  color: var(--dark);
+}
+.paragraphLinkDark:hover {
+  color: var(--dark);
+}
+.paragraphLinkWhite {
+  color: white;
+}
+.paragraphLinkWhite:hover {
+  color: var(--dark);
 }
 .homeLinksRow {
   padding: 20px 30px;
@@ -395,7 +413,7 @@ a .socialIcon:hover {
 }
 
 .checkListStyle {
-  list-style-image: url('./images/checkmark.svg')
+  list-style-image: url('./images/checkmark.svg');
 }
 
 @media (max-width: 370px) {

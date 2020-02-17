@@ -52,8 +52,10 @@ function Home() {
         <div className="container text-white text-center">
           <div className="videoTitle">Bright Child, Poor Grades?</div>
           <div className="videoSubtitle">
-            Your child may have an undetected vision problem. Find out how to
-            get them back on track.
+            Your child may have an undetected vision problem.
+          </div>
+          <div className="videoSubtitle">
+            Find out how to get them back on track.
           </div>
           <Link to="/services/learning-related-visual-problems">
             <Button
@@ -210,6 +212,23 @@ function Home() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="wideSectionFooterPrimary">
+        <h5 style={{ margin: '0px' }}>
+          Please visit our{' '}
+          <Link
+            to="/services"
+            className="paragraphLink paragraphLinkDark"
+            onClick={scrollTop}
+          >
+            services{' '}
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              style={{ fontSize: '.8em' }}
+            />
+          </Link>{' '}
+          page for information on each service we offer.
+        </h5>
       </div>
     </div>
   );

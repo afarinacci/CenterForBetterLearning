@@ -44,7 +44,7 @@ class ApptForm extends React.Component {
       to_name: 'info@centerforbetterlearning.com',
       patient_name: this.state.patientName,
       patient_dob: this.state.patientDOB,
-      parent_name: this.state.parentName !== ''? this.state.parentName : 'N/A',
+      parent_name: this.state.parentName !== '' ? this.state.parentName : 'N/A',
       from_tel: this.state.tel,
       reply_to: this.state.email,
       mon: this.state.mon ? 'Monday' : '',
