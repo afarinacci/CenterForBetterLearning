@@ -40,7 +40,7 @@ ul {
   margin-bottom: 30px;
 }
 .marginfornav {
-  margin-top: 107px;
+  margin-top: 99px;
   min-height: 90vh;
 }
 .max800 {
@@ -97,7 +97,7 @@ main h6 {
   color: var(--danger);
 }
 .topNav {
-  padding: 16px 16px 8px 16px;
+  padding: 8px 16px 8px 16px;
   margin: 0px;
 }
 .topNavLink {
@@ -280,26 +280,6 @@ a .socialIcon:hover {
   width: 100vw;
   opacity: 0.5;
 }
-.grid-divider {
-  overflow-x: hidden;
-  position: relative;
-}
-.grid-divider > [class*='col-']:nth-child(n + 2):after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  top: -4px; /* quickfix to center line between columns */
-}
-.grid-divider-primary > [class*='col-']:nth-child(n + 2):after {
-  background-color: var(--dark);
-}
-.grid-divider-light > [class*='col-']:nth-child(n + 2):after {
-  background-color: var(--light);
-}
-
 .missionVerbs {
   font-family: 'Coming Soon', cursive;
   margin: 0px;
@@ -323,35 +303,44 @@ a .socialIcon:hover {
 .extraPaddingBottomPhone {
   padding-bottom: 50px;
 }
-.paragraphLink {
-  color: inherit;
+.paragraphLinkPrimary {
+  color: var(--primary);
 }
-.paragraphLink:hover {
+.paragraphLinkPrimary:hover {
   color: var(--primary);
   text-decoration: none;
 }
-.paragraphLinkPrimary {
-  color: var(--primary);
+.externalLinkOnHover:hover::after {
+  content: '';
+  background: url('./images/externallink.svg') no-repeat;
+  background-position: 2px 2px;
+  display: inline-block;
+  width: 19px;
+  height: 16px;
 }
 .paragraphLinkDark {
   color: var(--dark);
 }
 .paragraphLinkDark:hover {
   color: var(--dark);
+  text-decoration: none;
 }
 .paragraphLinkWhite {
   color: white;
 }
 .paragraphLinkWhite:hover {
   color: var(--dark);
+  text-decoration: none;
 }
 .homeLinksRow {
-  padding: 20px 30px;
-  text-align: center;
-  color: white;
+  padding: 15px 0px;
+  margin: 0px;
 }
 .homeLinksCol {
-  padding: 10px 5px;
+  padding: 15px 0px;
+}
+.homeLinksIcon {
+  font-size: 2rem;
 }
 
 .effect8 {
@@ -412,8 +401,12 @@ a .socialIcon:hover {
   margin: 0px;
 }
 
+.checkListStyleUL {
+  list-style-type: none;
+}
 .checkListStyle {
-  list-style-image: url('./images/checkmark.svg');
+  background: url('./images/checkmark.svg') no-repeat left 5px;
+  padding-left: 1.4em;
 }
 .primaryBorder {
   border: 1px solid var(--primary);
@@ -426,7 +419,7 @@ a .socialIcon:hover {
 
 @media (max-width: 370px) {
   .marginfornav {
-    margin-top: 124px;
+    margin-top: 92px;
   }
   .shrinkingButton {
     padding: 3px 5px;
@@ -456,7 +449,7 @@ a .socialIcon:hover {
     width: 300px;
   }
   .marginfornav {
-    margin-top: 113px;
+    margin-top: 105px;
   }
   .footerColLocationName {
     min-height: 197px;
@@ -481,6 +474,9 @@ a .socialIcon:hover {
   .page {
     margin: 30px auto;
   }
+  .topNav {
+    padding: 16px 16px 8px 16px;
+  }
   .bottomNav {
     overflow-y: visible;
   }
@@ -504,12 +500,6 @@ a .socialIcon:hover {
   }
   main h6 {
     font-size: 1rem;
-  }
-  .grid-divider > [class*='col-']:nth-child(n + 2):after {
-    width: 1px;
-    height: auto;
-    left: -1px; /* quickfix to hide divider on left side */
-    top: 0px;
   }
 
   .extraPaddingBottomPhone {
@@ -540,6 +530,12 @@ a .socialIcon:hover {
   .videoSubtitle {
     font-size: 1.5rem;
     margin-bottom: 10px;
+  }
+  .homeLinksIcon {
+    font-size: 4rem;
+  }
+  .homeLinksCol {
+    padding: 10px 0px;
   }
 }
 @media (min-width: 841px) {

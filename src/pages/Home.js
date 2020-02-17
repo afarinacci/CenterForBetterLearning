@@ -1,10 +1,13 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowRight,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faCalendarAlt,
+  faUserCircle,
+  faMapMarkerAlt
 } from '@fortawesome/free-solid-svg-icons';
 import homepageVideo from './../images/videostockfootage.mp4';
 import blueLogo from './../images/LogoForBlue2.svg';
@@ -69,45 +72,57 @@ function Home() {
         </div>
       </div>
 
-      <div className="row homeLinksRow backgroundTextureDark">
-        <div className="col-md-4 homeLinksCol">
-          <h4 className="textShadow">Meet the Team</h4>
+      <Row
+        className="backgroundTextureDark text-center justify-content-center homeLinksRow"
+        style={{ color: 'white' }}
+      >
+        <Col sm="12" md={{ size: 3 }} className="homeLinksCol">
+          <FontAwesomeIcon icon={faUserCircle} className="homeLinksIcon" />
+          <h4 className="textShadow" style={{ margin: '12px 0px' }}>
+            Meet the Team
+          </h4>
           <Link to="/our-team">
             <Button
               outline
               color="primary"
               onClick={scrollTop}
-              className="homeLinksButtonPrimary"
+              className="homeLinksButtonPrimary shrinkingButton"
             >
               Our Staff <FontAwesomeIcon icon={faArrowRight} />
             </Button>
           </Link>
-        </div>
-        <div className="col-md-4 homeLinksCol">
-          <h4 className="textShadow">Request an Appointment</h4>
+        </Col>
+        <Col sm="12" md={{ size: 3, offset: 1 }} className="homeLinksCol">
+          <FontAwesomeIcon icon={faCalendarAlt} className="homeLinksIcon" />
+          <h4 className="textShadow" style={{ margin: '12px 0px' }}>
+            Request an Appointment
+          </h4>
           <Link to="/request-appointment">
             <Button
               outline
               color="primary"
-              className="homeLinksButtonPrimary"
+              className="homeLinksButtonPrimary shrinkingButton"
               onClick={scrollTop}
             >
               Appointments <FontAwesomeIcon icon={faArrowRight} />
             </Button>
           </Link>
-        </div>
-        <div className="col-md-4 homeLinksCol">
-          <h4 className="textShadow">Find Us</h4>
+        </Col>
+        <Col sm="12" md={{ size: 3, offset: 1 }} className="homeLinksCol">
+          <FontAwesomeIcon icon={faMapMarkerAlt} className="homeLinksIcon" />
+          <h4 className="textShadow" style={{ margin: '12px 0px' }}>
+            Find Us
+          </h4>
           <Button
             outline
             color="primary"
-            className="homeLinksButtonPrimary"
+            className="homeLinksButtonPrimary shrinkingButton"
             onClick={scrollToLocations}
           >
             Locations <FontAwesomeIcon icon={faArrowRight} />
           </Button>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
       <div className="container-fluid paddingAround max800">
         <h1 className="text-center pageTitleHomepage">Welcome</h1>
@@ -120,12 +135,12 @@ function Home() {
         <p>
           Please take some time to learn about the various aspects of your
           visual system and take the interactive{' '}
-          <Link to="/symptoms" className="paragraphLink" onClick={scrollTop}>
-            symptoms checklist{' '}
-            <FontAwesomeIcon
-              icon={faExternalLinkAlt}
-              style={{ fontSize: '.8em', color: 'var(--primary)' }}
-            />
+          <Link
+            to="/symptoms"
+            className="paragraphLinkPrimary externalLinkOnHover"
+            onClick={scrollTop}
+          >
+            symptoms checklist
           </Link>{' '}
           to determine if you or your child would benefit from Vision Therapy
           services. We can help you or your child meet the demanding visual

@@ -8,10 +8,10 @@ function Symptoms() {
         <h1 className="text-center pageTitleOnDark">Symptoms Checklist</h1>
       </div>
       <main className="container-fluid page paddingAround max800 effect8">
-        <p style={{ paddingBottom: '30px' }} className="text-center">
-          Use our symptom checklist below to find out if a vision therapy
+        <h5 style={{ paddingBottom: '30px' }} className="text-center">
+          Complete the checklist below to find out if a vision therapy
           evaluation is right for you.
-        </p>
+        </h5>
         <SymptomsChecklist />
       </main>
     </div>

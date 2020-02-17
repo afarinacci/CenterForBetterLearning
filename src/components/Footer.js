@@ -30,7 +30,7 @@ function Footer() {
         <h5 style={{ margin: '0px' }}>
           <Link
             to="/request-appointment"
-            className="paragraphLink paragraphLinkWhite"
+            className="paragraphLinkWhite"
             onClick={scrollTop}
           >
             Schedule an Evaluation

@@ -12,7 +12,20 @@ import {
 } from 'reactstrap';
 
 const Checkbox = ({ name, checked = false, onChange }) => (
-  <input type="checkbox" name={name} checked={checked} onChange={onChange} />
+  <input
+    type="checkbox"
+    name={name}
+    checked={checked}
+    onChange={onChange}
+    style={{
+      marginRight: '7px',
+      verticalAlign: 'center',
+      height: '16px',
+      width: '16px',
+      position: 'relative',
+      overflow: 'hidden'
+    }}
+  />
 );
 const checkboxes = [
   { id: '1', symptom: 'Skip lines while reading or copying', score: 3 },
@@ -169,7 +182,7 @@ class SymptomsChecklist extends React.Component {
     }, 0);
     return (
       <Form onSubmit={this.handleSubmit}>
-        <h5>Please check all symptoms that apply:</h5>
+        <p>Please check all symptoms that apply:</p>
         <Row>
           <Col sm="12" md="8">
             <FormGroup>
@@ -180,7 +193,7 @@ class SymptomsChecklist extends React.Component {
                       name={item.id}
                       checked={this.state.checkedItems.get(item.id)}
                       onChange={this.handleInputChange}
-                    />{' '}
+                    />
                     {item.symptom}
                   </label>
                   <br />

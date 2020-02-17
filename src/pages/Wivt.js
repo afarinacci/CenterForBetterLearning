@@ -57,12 +57,16 @@ function Wivt() {
         Our goals for bringing organization to an incredibly complex system are
         simple:
       </h5>
-      <ul className="checkListStyle">
-        <li>
+      <ul className="checkListStyleUL">
+        <li className="checkListStyle">
           Help you develop or improve fundamental visual skills and abilities
         </li>
-        <li>Improve visual comfort, ease, and efficiency</li>
-        <li>Change the way you process or interpret visual information</li>
+        <li className="checkListStyle">
+          Improve visual comfort, ease, and efficiency
+        </li>
+        <li className="checkListStyle">
+          Change the way you process or interpret visual information
+        </li>
       </ul>
       <br />
 

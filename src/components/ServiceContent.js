@@ -25,7 +25,7 @@ function ServiceContent(props) {
         >
           <Link
             to="/services"
-            className="paragraphLink paragraphLinkPrimary"
+            className="paragraphLinkPrimary"
             onClick={scrollTop}
           >
             {props.linktext} <FontAwesomeIcon icon={faArrowRight} />
