@@ -8,25 +8,24 @@ function Lrvp() {
   const childFrustrated_w2400 =
     'https://lh3.googleusercontent.com/bmEJGm3tDYskIkP4S_JwFj1XRjqWMbyXQKLsPsGx5RFp8CxzhN5Ffq-Pi8gDhF9cmy1m_F1uHNzw0d-1vTOmms-lqh0jA27_VMKH0plKwATrSIolQtTNypKuLhuvoqygDWoXu6PUACk=w1597';
   return (
-    <ServiceContent title="Learning Related Visual Problems">
-      <p>
-        The strain of poorly developed visual skills and abilities may not
-        always result in bad grades. Intelligent children that are highly
-        motivated can achieve good grades, but at an untold cost in wasted
-        energy; working inefficiently and under high stress. For those who are
-        less motivated, one or two deficient visual skills can produce enough
-        stress and frustration to create a low achiever.
-      </p>
+    <ServiceContent
+      title="Learning Related Visual Problems"
+      linktext="Learn about other services we offer"
+    >
       <div className="container">
         <Row
-          className="text-center grid-divider grid-divider-primary"
+          className="text-center justify-content-center"
           style={{ color: 'var(--dark)' }}
         >
-          <Col sm="12" md="6" className="my-1">
+          <Col sm="12" md={{ size: 5 }} className="evenPadding7 primaryBorder">
             1 in 4 children struggle with reading and learning because of
             undiagnosed vision problems.
           </Col>
-          <Col sm="12" md="6" className="my-1">
+          <Col
+            sm="12"
+            md={{ size: 5, offset: 1 }}
+            className="evenPadding7 primaryBorder"
+          >
             It is estimated that over 60% of "learning disabled" children have
             undiagnosed vision problems.
           </Col>
@@ -45,23 +44,39 @@ function Lrvp() {
       </p>
       <div className="container">
         <Row
-          className="text-center grid-divider grid-divider-primary"
+          className="text-center justify-content-center"
           style={{ color: 'var(--dark)' }}
         >
-          <Col sm="12" md="4" className="my-1">
+          <Col sm="12" md={{ size: 3 }} className="evenPadding7 primaryBorder">
             80% of learning in the classroom is visual.
           </Col>
-          <Col sm="12" md="4" className="my-1">
+          <Col
+            sm="12"
+            md={{ size: 3, offset: 1 }}
+            className="evenPadding7 primaryBorder"
+          >
             Many vision problems that interfere with reading and learning are
             treatable.
           </Col>
-          <Col sm="12" md="4" className="my-1">
+          <Col
+            sm="12"
+            md={{ size: 3, offset: 1 }}
+            className="evenPadding7 primaryBorder"
+          >
             Seeing clearly ("20/20") is just one of 17 visual skills critical to
             academic success.
           </Col>
         </Row>
       </div>
       <br />
+      <p>
+        The strain of poorly developed visual skills and abilities may not
+        always result in bad grades. Intelligent children that are highly
+        motivated can achieve good grades, but at an untold cost in wasted
+        energy; working inefficiently and under high stress. For those who are
+        less motivated, one or two deficient visual skills can produce enough
+        stress and frustration to create a low achiever.
+      </p>
       <br />
       <h5>Undiagnosed Vision Problems can lead to:</h5>
       <ul>

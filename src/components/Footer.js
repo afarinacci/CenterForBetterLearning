@@ -26,6 +26,17 @@ function Footer() {
   };
   return (
     <footer>
+      <div className="wideSectionFooterPrimary">
+        <h5 style={{ margin: '0px' }}>
+          <Link
+            to="/request-appointment"
+            className="paragraphLink paragraphLinkWhite"
+            onClick={scrollTop}
+          >
+            Schedule an Evaluation
+          </Link>
+        </h5>
+      </div>
       <div className="row footerRow">
         <div id="locations" className="footerCol col-12 col-sm-6 row">
           <div className="footerCol col-12 col-lg-6 footerColLocationName">

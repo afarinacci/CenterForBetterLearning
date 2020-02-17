@@ -415,6 +415,14 @@ a .socialIcon:hover {
 .checkListStyle {
   list-style-image: url('./images/checkmark.svg');
 }
+.primaryBorder {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.evenPadding7 {
+  padding: 7px;
+}
 
 @media (max-width: 370px) {
   .marginfornav {
