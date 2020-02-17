@@ -1,6 +1,9 @@
 body {
   background-color: white;
 }
+ul {
+  list-style-type: square;
+}
 .fixed-top {
   width: 100%;
 }
@@ -317,6 +320,9 @@ a .socialIcon:hover {
 .paragraphLink {
   color: inherit;
 }
+.paragraphLinkPrimary {
+  color: var(--primary);
+}
 .paragraphLink:hover {
   color: var(--primary);
   text-decoration: none;
@@ -386,6 +392,10 @@ a .socialIcon:hover {
 }
 .wivt-fordoctors-row {
   margin: 0px;
+}
+
+.checkListStyle {
+  list-style-image: url('./images/checkmark.svg')
 }
 
 @media (max-width: 370px) {

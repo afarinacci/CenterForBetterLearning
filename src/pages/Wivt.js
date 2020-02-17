@@ -1,6 +1,16 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faExternalLinkAlt
+} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Wivt() {
+  const scrollTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  const checkmark = './../images/checkmark.svg';
   return (
     <div className="marginfornav">
       <div className="wideSectionBannerPrimary">
@@ -58,7 +68,7 @@ function Wivt() {
           Our goals for bringing organization to an incredibly complex system
           are simple:
         </h5>
-        <ul>
+        <ul className="checkListStyle">
           <li>
             Help you develop or improve fundamental visual skills and abilities
           </li>
@@ -86,21 +96,18 @@ function Wivt() {
         <br />
 
         <h5>
-          We find most people who have come to this website for the same
-          reasons:
+          We find most people have come to this website for one of the following reasons:
         </h5>
         <ol>
           <li>
-            You are tired of the way things currently are and you are desperate
-            to find a solution to your problem
+            You are tired of the way things currently are, and you are desperate
+            to find a solution to your problem.
           </li>
           <li>
-            You are worried about your or your loved one's future to navigate
-            successfully through life
+            You are worried about you or your loved one's future in successfully navigating through life.
           </li>
           <li>
-            The advice of others or other therapies you have tried have not paid
-            off to eliminate your struggles.
+            Previous advice and other therapies you've tried have not eliminated your struggles.
           </li>
         </ol>
         <br />
@@ -111,6 +118,18 @@ function Wivt() {
           friendly and knowledgeable staff at Center for Better Learning will be
           glad to guide you through the process of determining if an undiagnosed
           visual problem is the source of your struggle.
+        </p>
+        <br />
+        
+        <p>
+          Please visit our{' '}
+          <Link to="/services" className="paragraphLink paragraphLinkPrimary" onClick={scrollTop}>
+            services{' '}
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              style={{ fontSize: '.8em', color: 'var(--primary)' }}
+            />
+          </Link> page for information.
         </p>
       </main>
     </div>

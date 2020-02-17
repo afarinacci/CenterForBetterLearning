@@ -119,7 +119,7 @@ function Home() {
         <p>
           Please take some time to learn about the various aspects of your
           visual system and take the interactive{' '}
-          <Link to="/symptoms" className="paragraphLink">
+          <Link to="/symptoms" className="paragraphLink" onClick={scrollTop}>
             symptoms checklist{' '}
             <FontAwesomeIcon
               icon={faExternalLinkAlt}
