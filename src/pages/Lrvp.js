@@ -23,7 +23,7 @@ function Lrvp() {
         <div className="container">
           <Row
             className="text-center grid-divider grid-divider-primary"
-            style={{ color: 'var(--primary)' }}
+            style={{ color: 'var(--dark)' }}
           >
             <Col sm="12" md="6" className="my-1">
               1 in 4 children struggle with reading and learning because of
@@ -49,7 +49,7 @@ function Lrvp() {
         <div className="container">
           <Row
             className="text-center grid-divider grid-divider-primary"
-            style={{ color: 'var(--primary)' }}
+            style={{ color: 'var(--dark)' }}
           >
             <Col sm="12" md="4" className="my-1">
               80% of learning in the classroom is visual.
@@ -65,7 +65,7 @@ function Lrvp() {
           </Row>
         </div>
         <br />
-
+<br />
         <h5>Undiagnosed Vision Problems can lead to:</h5>
         <ul>
           <li>Misdiagnosis of learning disabilities, ADD/ADHD, and Dyslexia</li>
@@ -74,7 +74,6 @@ function Lrvp() {
           <li>Short attention span</li>
           <li>Poor grades</li>
         </ul>
-
         <br />
         <Row>
           <Col sm="12" md="6">
@@ -113,6 +112,8 @@ function Lrvp() {
           </Col>
         </Row>
         <br />
+                <br />
+
         <h4 className="text-center paddingAround wideSectionTitle">
           Frequently Asked Questions
         </h4>
