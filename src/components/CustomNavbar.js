@@ -21,7 +21,7 @@ import {
   Collapse,
   Button
 } from 'reactstrap';
-import { ReactComponent as Logo } from './../images/BandWLogo.svg';
+import { ReactComponent as Logo } from './../images/BandWNavLogo.svg';
 
 class CustomNavbar extends React.Component {
   constructor(props) {
@@ -66,7 +66,7 @@ class CustomNavbar extends React.Component {
   render() {
     return (
       <nav className="fixed-top" role="navigation" id="fixedNav">
-        <div className="row bg-light topNav">
+        <div className="row bg-white topNav">
           <div
             className="col-12 col-md-6 order-2 order-md-1 row justify-content-center justify-content-md-start"
             style={{ margin: '0px', padding: '0px' }}
@@ -114,7 +114,7 @@ class CustomNavbar extends React.Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar className="mr-auto nav-fill">
+            <Nav navbar className="mr-auto ml-auto nav-fill">
               <NavItem>
                 <NavLink
                   to="/what-is-vision-therapy"

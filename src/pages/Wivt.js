@@ -3,8 +3,10 @@ import React from 'react';
 function Wivt() {
   return (
     <div className="marginfornav">
+      <div className="wideSectionBannerPrimary">
+        <h1 className="text-center pageTitleOnDark">What is Vision Therapy?</h1>
+      </div>
       <main className="container-fluid paddingAround max800">
-        <h1 className="text-center pageTitle">What is Vision Therapy?</h1>
         <p>
           Over 80% of the brain function is incorporated in the visual system.
           The highly functioning visual system is comprised of the eyes, brain,
@@ -50,10 +52,12 @@ function Wivt() {
           graduation of the program. We want to truly change your life{' '}
           <em>forever</em>.
         </p>
-        <p>
+        <br />
+
+        <h5>
           Our goals for bringing organization to an incredibly complex system
           are simple:
-        </p>
+        </h5>
         <ul>
           <li>
             Help you develop or improve fundamental visual skills and abilities
@@ -61,10 +65,12 @@ function Wivt() {
           <li>Improve visual comfort, ease, and efficiency</li>
           <li>Change the way you process or interpret visual information</li>
         </ul>
-        <p>
+        <br />
+
+        <h5>
           Research has demonstrated vision therapy can be an effective treatment
           option for:
-        </p>
+        </h5>
         <ul>
           <li>Ocular motility dysfunctions (eye movement disorders)</li>
           <li>Non-strabismic binocular disorders (inefficient eye teaming)</li>
@@ -77,10 +83,12 @@ function Wivt() {
           </li>
           <li>Visual sequelae of acquired brain injury</li>
         </ul>
-        <p>
+        <br />
+
+        <h5>
           We find most people who have come to this website for the same
           reasons:
-        </p>
+        </h5>
         <ol>
           <li>
             You are tired of the way things currently are and you are desperate
@@ -95,6 +103,8 @@ function Wivt() {
             off to eliminate your struggles.
           </li>
         </ol>
+        <br />
+        
         <p>
           If you are unsure if vision therapy is the right choice for you or
           your child. Please contact us at your earliest convenience. Our

@@ -8,10 +8,10 @@ function Lrvp() {
     'https://lh3.googleusercontent.com/bmEJGm3tDYskIkP4S_JwFj1XRjqWMbyXQKLsPsGx5RFp8CxzhN5Ffq-Pi8gDhF9cmy1m_F1uHNzw0d-1vTOmms-lqh0jA27_VMKH0plKwATrSIolQtTNypKuLhuvoqygDWoXu6PUACk=w1597';
   return (
     <div className="marginfornav">
+      <div className="wideSectionBannerPrimary">
+        <h1 className="text-center pageTitleOnDark">Learning Related Visual Problems</h1>
+      </div>
       <main className="container-fluid paddingAround max800">
-        <h1 className="text-center pageTitle">
-          Learning Related Visual Problems
-        </h1>
         <p>
           The strain of poorly developed visual skills and abilities may not
           always result in bad grades. Intelligent children that are highly

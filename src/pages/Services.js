@@ -18,8 +18,11 @@ function Services() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   return (
-    <div className="container-fluid marginfornav">
-      {/*<h1 className="text-center pageTitle">Services</h1>*/}
+    <div className="marginfornav">
+      <div className="wideSectionBannerPrimary">
+        <h1 className="text-center pageTitleOnDark">Services</h1>
+      </div>
+      <div className="container-fluid">
       <Row bg-light>
         <Col sm="12" md="6" className="allServicesCol">
           <picture>
@@ -85,7 +88,7 @@ function Services() {
               coordinate the eyes and brain to team both eye together resulting
               in clear and comfortable binocular vision.
             </p>
-            <Link to="/services/learning-related-visual-problems">
+            <Link to="/services/amblyopia-strabismus">
               <Button
                 color="primary"
                 className="homeLinksButtonPrimary"
@@ -119,7 +122,7 @@ function Services() {
               Therapy works to improve the quality of life in those who suffer
               visual field defects, double vision, or visual balance disorders.
             </p>
-            <Link to="/services/learning-related-visual-problems">
+            <Link to="/services/vision-rehabilitation">
               <Button
                 color="primary"
                 className="homeLinksButtonPrimary"
@@ -158,7 +161,7 @@ function Services() {
               visual processing to make split second decisions with confidence
               and precision.
             </p>
-            <Link to="/services/learning-related-visual-problems">
+            <Link to="/services/sports-vision">
               <Button
                 color="primary"
                 className="homeLinksButtonPrimary"
@@ -170,6 +173,7 @@ function Services() {
           </div>
         </Col>
       </Row>
+      </div>
     </div>
   );
 }
