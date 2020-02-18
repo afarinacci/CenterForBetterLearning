@@ -36,12 +36,11 @@ ul {
 .navbar-toggler {
   margin: 0px;
 }
-.logoyellow {
-  color: var(--warning);
-}
-
 .card {
   margin-bottom: 30px;
+}
+.biocard .card-title {
+  text-align: center;
 }
 .marginfornav {
   margin-top: 99px;
@@ -653,6 +652,9 @@ a .socialIcon:hover {
   }
   .biocard .card {
     border: none;
+  }
+  .biocard .card-title {
+    text-align: left;
   }
   .bioimg {
     margin-top: 0px;
