@@ -6,7 +6,8 @@ import {
   faCopyright,
   faCalendarAlt,
   faEnvelope,
-  faUserCircle
+  faUserCircle,
+  faAngleRight
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookSquare,
@@ -33,7 +34,7 @@ function Footer() {
             className="paragraphLinkWhite"
             onClick={scrollTop}
           >
-            Schedule an Evaluation
+            Schedule an Evaluation <FontAwesomeIcon icon={faAngleRight} />
           </Link>
         </h5>
       </div>

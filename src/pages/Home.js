@@ -3,8 +3,7 @@ import { Button, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faArrowRight,
-  faExternalLinkAlt,
+  faAngleRight,
   faCalendarAlt,
   faUserCircle,
   faMapMarkerAlt
@@ -22,12 +21,22 @@ function Home() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   const scrollToLocations = () => {
-    const id = 'locations';
-    const yOffset = -170;
-    const element = document.getElementById(id);
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+    if (document.body.clientWidth > 767) {
+      const yOffset = document
+        .getElementById('fixedNav')
+        .getBoundingClientRect().height;
+      const element = document.getElementById('locations');
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    } else {
+      if (this.state.collapsed !== true) {
+        this.toggleNavbar();
+      }
+      const element = document.getElementById('locations');
+      const y = element.getBoundingClientRect().top + window.pageYOffset - 111;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   };
   return (
     <div className="marginfornav">
@@ -66,7 +75,7 @@ function Home() {
               onClick={scrollTop}
               className="homeLinksButtonPrimary shrinkingButton"
             >
-              Learn More <FontAwesomeIcon icon={faArrowRight} />
+              Learn More <FontAwesomeIcon icon={faAngleRight} />
             </Button>
           </Link>
         </div>
@@ -78,53 +87,38 @@ function Home() {
       >
         <Col sm="12" md={{ size: 3 }} className="homeLinksCol">
           <FontAwesomeIcon icon={faUserCircle} className="homeLinksIcon" />
-          <h4 className="textShadow" style={{ margin: '12px 0px' }}>
-            Meet the Team
-          </h4>
-          <Link to="/our-team">
-            <Button
-              outline
-              color="primary"
-              onClick={scrollTop}
-              className="homeLinksButtonPrimary shrinkingButton"
-            >
-              Our Staff <FontAwesomeIcon icon={faArrowRight} />
-            </Button>
+          <Link to="/our-team" onClick={scrollTop} className="homeLinkPrimary">
+            <h4 className="textShadow" style={{ margin: '12px 0px' }}>
+              Meet the Team <FontAwesomeIcon icon={faAngleRight} />
+            </h4>
           </Link>
         </Col>
         <Col sm="12" md={{ size: 3, offset: 1 }} className="homeLinksCol">
           <FontAwesomeIcon icon={faCalendarAlt} className="homeLinksIcon" />
-          <h4 className="textShadow" style={{ margin: '12px 0px' }}>
-            Request an Appointment
-          </h4>
-          <Link to="/request-appointment">
-            <Button
-              outline
-              color="primary"
-              className="homeLinksButtonPrimary shrinkingButton"
-              onClick={scrollTop}
-            >
-              Appointments <FontAwesomeIcon icon={faArrowRight} />
-            </Button>
+          <Link
+            to="/request-appointment"
+            onClick={scrollTop}
+            className="homeLinkPrimary"
+          >
+            <h4 className="textShadow" style={{ margin: '12px 0px' }}>
+              Request an{' '}
+              <span style={{ whiteSpace: 'nowrap' }}>
+                Appointment <FontAwesomeIcon icon={faAngleRight} />
+              </span>
+            </h4>
           </Link>
         </Col>
         <Col sm="12" md={{ size: 3, offset: 1 }} className="homeLinksCol">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="homeLinksIcon" />
-          <h4 className="textShadow" style={{ margin: '12px 0px' }}>
-            Find Us
-          </h4>
-          <Button
-            outline
-            color="primary"
-            className="homeLinksButtonPrimary shrinkingButton"
-            onClick={scrollToLocations}
-          >
-            Locations <FontAwesomeIcon icon={faArrowRight} />
-          </Button>
+          <Link onClick={scrollToLocations} className="homeLinkPrimary">
+            <h4 className="textShadow" style={{ margin: '12px 0px' }}>
+              Locations <FontAwesomeIcon icon={faAngleRight} />
+            </h4>
+          </Link>
         </Col>
       </Row>
 
-      <div className="container-fluid paddingAround max800">
+      <Col className="container-fluid paddingAround max800">
         <h1 className="text-center pageTitleHomepage">Welcome</h1>
         <p>
           We are proud to offer Vision Therapy services to our community of
@@ -137,7 +131,7 @@ function Home() {
           visual system and take the interactive{' '}
           <Link
             to="/symptoms"
-            className="paragraphLinkPrimary externalLinkOnHover"
+            className="paragraphLinkPrimary"
             onClick={scrollTop}
           >
             symptoms checklist
@@ -150,45 +144,36 @@ function Home() {
           We started the Center for Better Learning with a clear vision in mind:
         </p>
         <br />
-
-        <div className="card-deck text-center">
-          <div className="card text-white bg-primary mb-3">
-            <div className="card-header">
-              <h3 className="missionVerbs ">PASSION</h3>
-            </div>
-            <div className="card-body">
-              <p className="card-text">
+        <div className="container text-center">
+          <Row className="justify-content-center">
+            <Col sm="12" md={{ size: 4 }} className="circleBlurbCol">
+              <div className="circleBlurb circleBlurbDanger">PASSION</div>
+              <div className="circleBlurbText">
                 Our passion is to bring awareness to the importance of synergy
                 in the visual system by educating the community about the
                 connection between the eyes, brain, and body.
-              </p>
-            </div>
-          </div>
-          <div className="card text-white bg-danger mb-3">
-            <div className="card-header">
-              <h3 className="missionVerbs">PURPOSE</h3>
-            </div>
-            <div className="card-body">
-              <p className="card-text">
+              </div>
+            </Col>
+            <Col sm="12" sm="12" md={{ size: 4 }} className="circleBlurbCol">
+              <div className="circleBlurb circleBlurbPrimary">PURPOSE</div>
+              <div className="circleBlurbText">
                 Our purpose is to provide innovative, evidenced-based vision
                 therapy services to those seeking improvement, development, or
                 rehabilitation of visual function.
-              </p>
-            </div>
-          </div>
-          <div className="card text-white bg-success mb-3">
-            <div className="card-header">
-              <h3 className="missionVerbs">PROMISE</h3>
-            </div>
-            <div className="card-body">
-              <p className="card-text">
+              </div>
+            </Col>
+            <Col sm="12" sm="12" md={{ size: 4 }} className="circleBlurbCol">
+              <div className="circleBlurb circleBlurbSuccess">PROMISE</div>
+              <div className="circleBlurbText">
                 Our promise is to rebuild the foundation and efficiency of your
                 visual system to pave the way for a brighter future.
-              </p>
-            </div>
-          </div>
+              </div>
+            </Col>
+          </Row>
+          {/* row*/}
         </div>
-      </div>
+        {/*container*/}
+      </Col>
 
       <div className="wideSectionBannerPrimary">
         <div className="mr-auto ml-auto" style={{ maxWidth: '500px' }}>
@@ -207,7 +192,7 @@ function Home() {
                 onClick={scrollTop}
               >
                 Learn About Vision Therapy{' '}
-                <FontAwesomeIcon icon={faArrowRight} />
+                <FontAwesomeIcon icon={faAngleRight} />
               </Button>
             </Link>
           </div>
@@ -221,7 +206,7 @@ function Home() {
                 className="primary-btn homeLinksButtonPrimary"
                 onClick={scrollTop}
               >
-                View All Resources <FontAwesomeIcon icon={faArrowRight} />
+                View All Resources <FontAwesomeIcon icon={faAngleRight} />
               </Button>
             </Link>
           </div>

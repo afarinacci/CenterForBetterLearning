@@ -18,7 +18,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Collapse,
+  Collapse
 } from 'reactstrap';
 import { ReactComponent as Logo } from './../images/BandWNavLogo.svg';
 
@@ -104,14 +104,17 @@ class CustomNavbar extends React.Component {
           </div>
         </div>
         <Navbar expand="md" className="bottomNav navbar-light bg-light">
-          <NavbarBrand className="d-md-none" onClick={this.scrollTop}>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-auto" />
+          <NavbarBrand
+            className="d-md-none ml-auto mr-auto"
+            onClick={this.scrollTop}
+          >
             <Link to="/">
               <div className="navLogoBottom">
                 <Logo />
               </div>
             </Link>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar className="mr-auto ml-auto nav-fill">
               <NavItem>
