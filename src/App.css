@@ -266,11 +266,13 @@ a .socialIcon:hover {
 .videoTitle {
   font-size: 1.8rem;
   font-weight: 600;
+  padding: 0px;
 }
 .videoSubtitle {
   font-size: 1rem;
   margin-bottom: 7px;
   font-weight: 400;
+  padding: 0px;
 }
 .videoContainer {
   position: relative;
@@ -284,7 +286,29 @@ a .socialIcon:hover {
   z-index: 1;
   bottom: 10%;
   margin: 0px;
-  text-shadow: 1px 1px 2px #000000;
+  max-width: 90vw;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+@keyframes fadeincontainer {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+  }
+}
+.videoContainer .container {
+  background: rgba(0, 0, 0, 0);
+  animation-name: fadeincontainer;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
 @keyframes fadein {
   /* declare animation actions here */
@@ -301,11 +325,12 @@ a .socialIcon:hover {
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
   animation-duration: 2s;
-  animation-delay: 5s;
+  animation-delay: 6s;
   animation-play-state: running;
   animation-fill-mode: forwards;
 }
 .videoSubtitleFadeIn {
+  margin-bottom: 15px;
   opacity: 0;
   animation-name: fadein;
   animation-timing-function: ease-in;
@@ -324,7 +349,6 @@ a .socialIcon:hover {
   bottom: 0;
   right: 0;
   width: 100vw;
-  opacity: 0.5;
 }
 .wideSectionBannerPrimary {
   background-color: var(--primary);
