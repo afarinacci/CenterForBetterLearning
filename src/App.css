@@ -6,6 +6,7 @@ ul {
 }
 .fixed-top {
   width: 100%;
+  max-width: 100vw;
 }
 .logotagline {
   font-family: 'Coming Soon', cursive;
@@ -158,8 +159,9 @@ footer {
 .footerBtn {
   background-color: var(--light);
 }
-.footerBtn:hover {
-  color: var(-light);
+.footerBtn:hover,
+.footerBtn:focus {
+  color: var(--light);
   border-color: var(--light);
 }
 .footerRow {
@@ -232,7 +234,8 @@ a .socialIcon:hover {
 .textShadow {
   text-shadow: 1px 1px 2px #000000;
 }
-.homeLinksButtonLight:hover {
+.homeLinksButtonLight:hover,
+.homeLinksButtonLight:focus {
   color: var(--light);
   border-color: var(--light);
   background-color: var(--primary);
@@ -241,21 +244,30 @@ a .socialIcon:hover {
   color: var(--primary);
   background-color: var(--light);
 }
-.homeLinksButtonPrimary:hover,
-.formBtn:hover {
+.buttonPrimary:hover,
+.buttonPrimary:focus,
+.formBtn:hover,
+.formBtn:focus,
+.videoButtonPrimary:hover,
+.videoButtonPrimary:focus {
   color: var(--primary);
   border-color: var(--primary);
-  background-color: var(--light);
+  background-color: transparent;
 }
-.homeLinksButtonPrimary,
+.buttonPrimary,
 .formBtn {
   color: var(--light);
+  background-color: var(--primary);
+}
+.videoButtonPrimary {
+  color: white;
   background-color: var(--primary);
 }
 .homeLinkPrimary {
   color: var(--primary);
 }
-.homeLinkPrimary:hover {
+.homeLinkPrimary:hover,
+.homeLinkPrimary:focus {
   color: var(--primary);
   text-decoration: none;
 }
@@ -269,7 +281,7 @@ a .socialIcon:hover {
   padding: 0px;
 }
 .videoSubtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 7px;
   font-weight: 400;
   padding: 0px;
@@ -281,14 +293,14 @@ a .socialIcon:hover {
   width: 100%;
   padding-top: 52%;
 }
-.videoContainer .container {
+.videoContainer .videoTextContainer {
   position: absolute;
+  padding: 15px;
   z-index: 1;
   bottom: 10%;
   margin: 0px;
-  max-width: 90vw;
+  max-width: 95vw;
   border-radius: 10px;
-  padding: 0px;
 }
 
 @keyframes fadeincontainer {
@@ -300,7 +312,7 @@ a .socialIcon:hover {
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
   }
 }
-.videoContainer .container {
+.videoContainer .videoTextContainer {
   background: rgba(0, 0, 0, 0);
   animation-name: fadeincontainer;
   animation-timing-function: ease-in;
@@ -538,9 +550,24 @@ a .socialIcon:hover {
   .marginfornav {
     margin-top: 92px;
   }
-  .shrinkingButton {
-    padding: 3px 5px;
-    font-size: 0.8rem;
+  .navLogoBottom {
+    max-width: 220px;
+  }
+  .videoTitle {
+    font-size: 1.3rem;
+  }
+  .videoSubtitle {
+    font-size: 0.6rem;
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .bioimg {
+    margin-top: 0px;
+  }
+  .videoContainer .videoTextContainer {
+    bottom: 3%;
+    padding: 7px;
   }
   .videoTitle {
     font-size: 1.5rem;
@@ -548,13 +575,9 @@ a .socialIcon:hover {
   .videoSubtitle {
     font-size: 0.8rem;
   }
-  .navLogoBottom {
-    width: 220px;
-  }
-}
-@media (max-width: 414px) {
-  .bioimg {
-    margin-top: 0px;
+  .shrinkingButton {
+    padding: 3px 5px;
+    font-size: 0.8rem;
   }
 }
 /* Small devices (landscape phones, 576px and up)*/
@@ -576,10 +599,10 @@ a .socialIcon:hover {
     font-size: 1rem;
   }
   .videoTitle {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .videoSubtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
 }

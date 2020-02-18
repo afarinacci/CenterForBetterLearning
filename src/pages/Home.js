@@ -61,7 +61,7 @@ function Home() {
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="container text-white text-center">
+        <div className="videoTextContainer text-white text-center">
           <div className="videoTitle videoTitleFadeIn">
             Bright Child, Poor Grades?
           </div>
@@ -76,7 +76,7 @@ function Home() {
                 outline
                 color="primary"
                 onClick={scrollTop}
-                className="homeLinksButtonPrimary shrinkingButton"
+                className="videoButtonPrimary shrinkingButton"
               >
                 Learn More <FontAwesomeIcon icon={faAngleRight} />
               </Button>
@@ -179,8 +179,8 @@ function Home() {
         {/*container*/}
       </Col>
 
-      <div className="wideSectionBannerPrimary">
-          <img src={blueLogo} alt="Center for Better Learning Logo" style={{ maxWidth: '500px' }} />
+      <div className="wideSectionBannerPrimary text-center">
+          <img src={blueLogo} alt="Center for Better Learning" style={{ maxWidth: '500px' }} />
       </div>
 
       <div className="row wivt-fordoctors-row text-center">
@@ -190,7 +190,7 @@ function Home() {
             <Link to="/what-is-vision-therapy">
               <Button
                 color="primary"
-                className="primary-btn homeLinksButtonPrimary"
+                className="primary-btn buttonPrimary"
                 onClick={scrollTop}
               >
                 Learn About Vision Therapy{' '}
@@ -205,7 +205,7 @@ function Home() {
             <Link to="/resources">
               <Button
                 color="primary"
-                className="primary-btn homeLinksButtonPrimary"
+                className="primary-btn buttonPrimary"
                 onClick={scrollTop}
               >
                 View All Resources <FontAwesomeIcon icon={faAngleRight} />

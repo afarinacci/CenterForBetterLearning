@@ -52,7 +52,7 @@ function Services() {
             <Link to="/services/learning-related-visual-problems">
               <Button
                 color="primary"
-                className="homeLinksButtonPrimary"
+                className="buttonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
@@ -91,7 +91,7 @@ function Services() {
             <Link to="/services/amblyopia-strabismus">
               <Button
                 color="primary"
-                className="homeLinksButtonPrimary"
+                className="buttonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
@@ -125,7 +125,7 @@ function Services() {
             <Link to="/services/vision-rehabilitation">
               <Button
                 color="primary"
-                className="homeLinksButtonPrimary"
+                className="buttonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
@@ -164,7 +164,7 @@ function Services() {
             <Link to="/services/sports-vision">
               <Button
                 color="primary"
-                className="homeLinksButtonPrimary"
+                className="buttonPrimary"
                 onClick={scrollTop}
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
