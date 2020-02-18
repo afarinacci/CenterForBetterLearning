@@ -61,7 +61,7 @@ function Home() {
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="container text-white text-center">
+        <div className="container text-white text-center videoFadeIn">
           <div className="videoTitle">Bright Child, Poor Grades?</div>
           <div className="videoSubtitle">
             Your child may have an undetected vision problem.
