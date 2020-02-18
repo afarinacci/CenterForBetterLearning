@@ -1,5 +1,13 @@
 import React from 'react';
 import ServiceContent from './../components/ServiceContent';
+import { Row, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleRight,
+  faCalendarCheck,
+  faUserAlt,
+  faClock
+} from '@fortawesome/free-solid-svg-icons';
 
 function Wivt() {
   return (
@@ -42,6 +50,55 @@ function Wivt() {
         program is completed and the new brain connections have been made, your
         visual system will continue to grow and develop.
       </p>
+      <br />
+      <div>
+        <Row className="wivtrow">
+          <Col sm="12" md="3" className="wivtIconCol">
+            <FontAwesomeIcon
+              icon={faCalendarCheck}
+              className="wivtIcon colorDanger"
+            />
+          </Col>
+          <Col sm="12" md={{ size: 8 }}>
+            <h5 className="colorDanger">
+              How long does a Vision Therapy program last?
+            </h5>
+            <p>
+              It typically takes 6-8 months to complete a program. It is
+              dependent on your specific diagnosis.
+            </p>
+          </Col>
+        </Row>
+        <Row className="wivtrow">
+          <Col sm="12" md="3" className="wivtIconCol">
+            <FontAwesomeIcon icon={faClock} className="wivtIcon colorPrimary" />
+          </Col>
+          <Col sm="12" md={{ size: 8 }}>
+            <h5 className="colorPrimary">How often are in-office sessions?</h5>
+            <p>
+              Vision therapy sessions are approximately 45 minutes long and are
+              scheduled 1-2 times per week.
+            </p>
+          </Col>
+        </Row>
+        <Row className="wivtrow">
+          <Col sm="12" md="3" className="wivtIconCol">
+            <FontAwesomeIcon
+              icon={faUserAlt}
+              className="wivtIcon colorSuccess"
+            />
+          </Col>
+          <Col sm="12" md={{ size: 8 }}>
+            <h5 className="colorSuccess">What else is expected from me?</h5>
+            <p>
+              You will be given home assignments to work on after each session
+              to reinforce what you learned. They will take you approximately
+              20-30 minutes per day, 4 days a week.
+            </p>
+          </Col>
+        </Row>
+      </div>
+
       <p>
         Our programs are designed based on exhaustive scientific research and
         years of continuing education and clinical experience. We know that
@@ -94,16 +151,16 @@ function Wivt() {
       </h5>
       <ol>
         <li>
-          You are tired of the way things currently are, and you are desperate
-          to find a solution.
+          You are tired of the way things currently are with your vision, and
+          you are desperate to find a solution.
         </li>
         <li>
           You are worried about you or your loved one's future in successfully
           navigating through life.
         </li>
         <li>
-          Previous advice and other therapies you've tried have not eliminated
-          your problem.
+          Other therapies and advice you've tried have not eliminated your
+          problem.
         </li>
       </ol>
       <br />
@@ -112,7 +169,7 @@ function Wivt() {
         your child. Please contact us at your earliest convenience. Our friendly
         and knowledgeable staff at Center for Better Learning will be glad to
         guide you through the process of determining if an undiagnosed visual
-        problem is the source of your struggle.
+        problem is a source of your problems.
       </p>
     </ServiceContent>
   );

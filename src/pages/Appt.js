@@ -8,10 +8,10 @@ function Appt() {
         <h1 className="text-center pageTitleOnDark">Request an Appointment</h1>
       </div>
       <main className="container-fluid page paddingAround max800 effect8">
-        <h5 style={{ paddingBottom: '30px' }} className="text-center">
-          Please fill out the form below to request an appointment. We will get
-          back to you shortly.
-        </h5>
+        <div className="text-center" style={{ paddingBottom: '30px' }}>
+          <h5>Please fill out the form below to request an appointment.</h5>
+          <h5>We will get back to you shortly.</h5>
+        </div>
         <ApptForm />
       </main>
     </div>

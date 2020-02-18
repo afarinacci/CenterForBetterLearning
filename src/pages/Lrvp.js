@@ -12,24 +12,46 @@ function Lrvp() {
       title="Learning Related Visual Problems"
       linktext="Learn about other services we offer"
     >
-      <div className="container">
-        <Row
-          className="text-center justify-content-center"
-          style={{ color: 'var(--dark)' }}
-        >
-          <Col sm="12" md={{ size: 5 }} className="evenPadding7 primaryBorder">
-            1 in 4 children struggle with reading and learning because of
-            undiagnosed vision problems.
+      <div className="container text-center">
+        <Row className="justify-content-center">
+          <Col xs="12" sm={{ size: 5 }} className="circleBlurbColLRVP">
+            <div className="circleBlurbLRVP circleBlurbDanger">1 in 4</div>
+            <div
+              className="circleBlurbText"
+              style={{
+                borderRadius: '10px',
+                padding: '10px',
+                color: 'var(--danger)'
+              }}
+            >
+              <h5>
+                1 in 4 children struggle with reading and learning because of
+                undiagnosed vision problems.
+              </h5>
+            </div>
           </Col>
           <Col
-            sm="12"
-            md={{ size: 5, offset: 1 }}
-            className="evenPadding7 primaryBorder"
+            xs="12"
+            sm={{ size: 5, offset: 1 }}
+            className="circleBlurbColLRVP"
           >
-            It is estimated that over 60% of "learning disabled" children have
-            undiagnosed vision problems.
+            <div className="circleBlurbLRVP circleBlurbPrimary">60%</div>
+            <div
+              className="circleBlurbText"
+              style={{
+                borderRadius: '10px',
+                padding: '10px',
+                color: 'var(--primary)'
+              }}
+            >
+              <h5>
+                It is estimated that over 60% of "learning disabled" children
+                have undiagnosed vision problems.
+              </h5>
+            </div>
           </Col>
         </Row>
+        {/* row*/}
       </div>
       <br />
 
@@ -43,28 +65,47 @@ function Lrvp() {
         perform.
       </p>
       <div className="container">
-        <Row
-          className="text-center justify-content-center"
-          style={{ color: 'var(--dark)' }}
-        >
-          <Col sm="12" md={{ size: 3 }} className="evenPadding7 primaryBorder">
-            80% of learning in the classroom is visual.
+        <Row className="text-center justify-content-center text-white">
+          <Col
+            sm="12"
+            md={{ size: 3 }}
+            className="LRVPsolidCol row align-items-center justify-content-center"
+            style={{
+              border: '1px solid var(--danger)',
+              backgroundColor: 'var(--danger)'
+            }}
+          >
+            <p style={{ marginBottom: '0' }}>
+              80% of learning in the classroom is visual.
+            </p>
           </Col>
           <Col
             sm="12"
             md={{ size: 3, offset: 1 }}
-            className="evenPadding7 primaryBorder"
+            className="LRVPsolidCol row align-items-center justify-content-center"
+            style={{
+              border: '1px solid var(--primary)',
+              backgroundColor: 'var(--primary)'
+            }}
           >
-            Many vision problems that interfere with reading and learning are
-            treatable.
+            <p style={{ marginBottom: '0' }}>
+              Many vision problems that interfere with reading and learning are
+              treatable.
+            </p>
           </Col>
           <Col
             sm="12"
             md={{ size: 3, offset: 1 }}
-            className="evenPadding7 primaryBorder"
+            className="LRVPsolidCol row align-items-center justify-content-center"
+            style={{
+              border: '1px solid var(--success)',
+              backgroundColor: 'var(--success)'
+            }}
           >
-            Seeing clearly ("20/20") is just one of 17 visual skills critical to
-            academic success.
+            <p style={{ marginBottom: '0' }}>
+              Seeing clearly ("20/20") is just one of 17 visual skills critical
+              to academic success.
+            </p>
           </Col>
         </Row>
       </div>

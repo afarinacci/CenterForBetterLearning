@@ -428,6 +428,26 @@ a .socialIcon:hover {
     rgba(130, 209, 255, 1) 100%
   );
 }
+.circleBlurbLRVP {
+  background-color: var(--primary);
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: #64b3e3;
+  text-align: center !important;
+  margin: 0 auto 0px;
+  line-height: 150px;
+  font-family: 'league_spartanbold', sans-serif;
+  font-weight: 600;
+  font-size: 2.7rem;
+  color: white;
+}
+.circleBlurbColLRVP {
+  text-align: center;
+  margin-bottom: 30px;
+  min-width: 150px;
+  padding: 0px;
+}
 .circleBlurb {
   background-color: var(--primary);
   border-radius: 100px;
@@ -447,6 +467,7 @@ a .socialIcon:hover {
   min-width: 188px;
   padding: 0px;
 }
+
 .circleBlurbPrimary {
   background: rgb(3, 163, 255);
   background: radial-gradient(
@@ -515,15 +536,15 @@ a .socialIcon:hover {
   background-color: var(--dark);
   padding: 0px;
   margin: 0px;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   color: white;
   min-height: 300px;
 }
 .wivt-fordoctors-col1 {
-  background-image: url(https://lh3.googleusercontent.com/ZaUL7uUr1tkfFt-EFr72H6QUZk1l0EAxAr9uRtnhR6RqVYwKpoQaGyruvB1HHATc8mjg-dp7xGQEY28ewCG9CSqpbtLC3ECgatHMSA6Kj0j04eS52s1f-wMRABeZDAn9gmKWyX0-j_c=w1200);
+  background-image: url(https://lh3.googleusercontent.com/G_wHy5bhb-F6dNwsX3aIw2PF0QokJXLQAyiKSfEA9rtT3EFzgikY88urfThwzvUd1GsNfDRBZ_fc6SY_LtG4LFTy3l0euvZ4fq1pgWMZ_gwgwarqOGagQHE1-LEhHNpCCYkxkwhcfBY=w1200);
 }
 .wivt-fordoctors-col2 {
-  background-image: url(https://lh3.googleusercontent.com/HgAA0IiCiKa2CwGMaKCwpCIixhKzBmfzmOLllTSvDBvwnqsBuXArBKHxQM607IVIkl2AObSnaGPez4kCtMfl3o37HidWFoBaA7VLb3WWu-wIPClL4pofXetbu8J7zeFS8aBj-h1AOIc=w1200);
+  background-image: url(https://lh3.googleusercontent.com/iUUdbhl3WTtknTAGk0oFHwpQncr0WfraFrSaXpyIRZe5JmvdBwPAWI2d6dzOgtxRUV2BlryNESpL1ssRTqtPQr37ncyBE_G-V9j0tpuNqK54NcGVaqYjbZCbVwicE1A0d_dCy-WUxZ8=w1137);
 }
 .wivt-fordoctors-row {
   margin: 0px;
@@ -536,13 +557,34 @@ a .socialIcon:hover {
   background: url('./images/checkmark.svg') no-repeat left 5px;
   padding-left: 1.4em;
 }
-.primaryBorder {
-  border: 1px solid var(--primary);
-  border-radius: 10px;
+.wivtrow {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wivtIcon {
+  font-size: 5rem;
   margin-bottom: 15px;
 }
-.evenPadding7 {
-  padding: 7px;
+.colorPrimary {
+  color: var(--primary);
+}
+.colorSuccess {
+  color: var(--success);
+}
+.colorDanger {
+  color: var(--danger);
+}
+
+.wivtIconCol {
+  text-align: center;
+}
+.LRVPsolidCol {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--primary);
+  margin: 15px;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 370px) {
@@ -643,7 +685,6 @@ a .socialIcon:hover {
   main h6 {
     font-size: 1rem;
   }
-
   .extraPaddingBottomPhone {
     padding-bottom: 15px;
   }
@@ -687,6 +728,15 @@ a .socialIcon:hover {
   }
   .topNavLink {
     padding: 0px 10px;
+  }
+  .wivtrow {
+    text-align: left;
+  }
+  .wivtIcon {
+    font-size: 6rem;
+  }
+  .wivtIconCol {
+    text-align: right;
   }
 }
 @media (min-width: 841px) {

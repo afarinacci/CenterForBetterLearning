@@ -158,7 +158,7 @@ function Home() {
                 connection between the eyes, brain, and body.
               </div>
             </Col>
-            <Col sm="12" sm="12" md={{ size: 4 }} className="circleBlurbCol">
+            <Col sm="12" md={{ size: 4 }} className="circleBlurbCol">
               <div className="circleBlurb circleBlurbPrimary">PURPOSE</div>
               <div className="circleBlurbText">
                 Our purpose is to provide innovative, evidenced-based vision
@@ -166,7 +166,7 @@ function Home() {
                 rehabilitation of visual function.
               </div>
             </Col>
-            <Col sm="12" sm="12" md={{ size: 4 }} className="circleBlurbCol">
+            <Col sm="12" md={{ size: 4 }} className="circleBlurbCol">
               <div className="circleBlurb circleBlurbSuccess">PROMISE</div>
               <div className="circleBlurbText">
                 Our promise is to rebuild the foundation and efficiency of your
@@ -180,7 +180,11 @@ function Home() {
       </Col>
 
       <div className="wideSectionBannerPrimary text-center">
-          <img src={blueLogo} alt="Center for Better Learning" style={{ maxWidth: '500px' }} />
+        <img
+          src={blueLogo}
+          alt="Center for Better Learning"
+          style={{ maxWidth: '500px' }}
+        />
       </div>
 
       <div className="row wivt-fordoctors-row text-center">
