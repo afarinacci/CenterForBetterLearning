@@ -61,23 +61,27 @@ function Home() {
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="container text-white text-center videoFadeIn">
-          <div className="videoTitle">Bright Child, Poor Grades?</div>
-          <div className="videoSubtitle">
-            Your child may have an undetected vision problem.
-            <br />
-            Find out how to get them back on track.
+        <div className="container text-white text-center">
+          <div className="videoTitle videoTitleFadeIn">
+            Bright Child, Poor Grades?
           </div>
-          <Link to="/services/learning-related-visual-problems">
-            <Button
-              outline
-              color="primary"
-              onClick={scrollTop}
-              className="homeLinksButtonPrimary shrinkingButton"
-            >
-              Learn More <FontAwesomeIcon icon={faAngleRight} />
-            </Button>
-          </Link>
+          <div className="videoSubtitleFadeIn">
+            <div className="videoSubtitle">
+              Your child may have an undetected vision problem.
+              <br />
+              Find out how to get them back on track.
+            </div>
+            <Link to="/services/learning-related-visual-problems">
+              <Button
+                outline
+                color="primary"
+                onClick={scrollTop}
+                className="homeLinksButtonPrimary shrinkingButton"
+              >
+                Learn More <FontAwesomeIcon icon={faAngleRight} />
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
 

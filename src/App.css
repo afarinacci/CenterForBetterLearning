@@ -295,7 +295,18 @@ a .socialIcon:hover {
     opacity: 1;
   }
 }
-.videoFadeIn {
+.videoTitleFadeIn {
+  opacity: 0;
+  animation-name: fadein;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+.videoSubtitleFadeIn {
+  opacity: 0;
   animation-name: fadein;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
