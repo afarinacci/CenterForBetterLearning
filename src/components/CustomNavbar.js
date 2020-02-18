@@ -93,7 +93,6 @@ class CustomNavbar extends React.Component {
               to="/request-appointment"
               onClick={this.scrollTop}
               className="topNavLink"
-              style={{ paddingLeft: '15px' }}
             >
               <FontAwesomeIcon
                 icon={faCalendarAlt}
@@ -104,7 +103,7 @@ class CustomNavbar extends React.Component {
           </div>
         </div>
         <Navbar expand="md" className="bottomNav navbar-light bg-light">
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-auto" />
+          <NavbarToggler onClick={this.toggleNavbar} className="" />
           <NavbarBrand
             className="d-md-none ml-auto mr-auto"
             onClick={this.scrollTop}

@@ -169,6 +169,10 @@ class SymptomsChecklist extends React.Component {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     this.setState({ checkedItems: new Map() });
   }
+  scrollTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   render() {
     const totalScore = checkboxes.reduce((accumulator, currentValue) => {
       return (
@@ -209,6 +213,14 @@ class SymptomsChecklist extends React.Component {
                   onClick={this.handleSubmit}
                 >
                   Clear
+                </Button>
+                <Button
+                  color="primary"
+                  className="formBtn d-none d-md-inline-block"
+                  onClick={this.scrollTop}
+                  style={{ marginLeft: '15px' }}
+                >
+                  View Results
                 </Button>
               </Col>
             </FormGroup>
