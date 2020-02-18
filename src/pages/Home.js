@@ -9,7 +9,7 @@ import {
   faMapMarkerAlt
 } from '@fortawesome/free-solid-svg-icons';
 import homepageVideo from './../images/videostockfootage.mp4';
-import blueLogo from './../images/LogoForBlue2.svg';
+import blueLogo from './../images/LogoForBlue.png';
 
 function Home() {
   const childrenReading_w5743 =
@@ -180,9 +180,7 @@ function Home() {
       </Col>
 
       <div className="wideSectionBannerPrimary">
-        <div className="mr-auto ml-auto" style={{ maxWidth: '500px' }}>
-          <img src={blueLogo} alt="Center for Better Learning Logo" />
-        </div>
+          <img src={blueLogo} alt="Center for Better Learning Logo" style={{ maxWidth: '500px' }} />
       </div>
 
       <div className="row wivt-fordoctors-row text-center">

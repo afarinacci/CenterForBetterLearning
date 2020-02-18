@@ -20,7 +20,8 @@ import {
   DropdownItem,
   Collapse
 } from 'reactstrap';
-import { ReactComponent as Logo } from './../images/BandWNavLogo.svg';
+import logoTop from './../images/LogoWhite.png';
+import logoBottom from './../images/LogoBlack.png';
 
 class CustomNavbar extends React.Component {
   constructor(props) {
@@ -65,16 +66,18 @@ class CustomNavbar extends React.Component {
   render() {
     return (
       <nav className="fixed-top" role="navigation" id="fixedNav">
-        <div className="row bg-white topNav">
+        <div className="row bg-dark topNav">
           <div
             className="col-12 col-md-6 order-2 order-md-1 row justify-content-center justify-content-md-start"
             style={{ margin: '0px', padding: '0px' }}
           >
             <NavbarBrand className="d-none d-md-block" onClick={this.scrollTop}>
               <Link to="/">
-                <div className="navLogoTop">
-                  <Logo />
-                </div>
+                <img
+                  src={logoTop}
+                  alt="Center for Better Learning"
+                  className="navLogoTop"
+                />
               </Link>
             </NavbarBrand>
           </div>
@@ -109,9 +112,11 @@ class CustomNavbar extends React.Component {
             onClick={this.scrollTop}
           >
             <Link to="/">
-              <div className="navLogoBottom">
-                <Logo />
-              </div>
+              <img
+                src={logoBottom}
+                alt="Center for Better Learning"
+                className="navLogoBottom"
+              />
             </Link>
           </NavbarBrand>
           <Collapse isOpen={!this.state.collapsed} navbar>

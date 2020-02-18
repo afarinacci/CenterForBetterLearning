@@ -104,7 +104,7 @@ main h6 {
   margin: 0px;
 }
 .topNavLink {
-  color: var(--dark);
+  color: white;
   padding: 0px 15px;
 }
 .topNavLink:hover {
@@ -378,14 +378,14 @@ a .socialIcon:hover {
   text-decoration: none;
   border-bottom: 1px solid;
 }
-.externalLinkOnHover:hover::after {
+/* .externalLinkOnHover:hover::after {
   content: '';
   background: url('./images/externallink.svg') no-repeat;
   background-position: 2px 2px;
   display: inline-block;
   width: 19px;
   height: 16px;
-}
+} */
 .paragraphLinkDark {
   color: var(--dark);
 }
