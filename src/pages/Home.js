@@ -12,10 +12,8 @@ import homepageVideo from './../images/videostockfootage.mp4';
 import blueLogo from './../images/LogoForBlue.png';
 
 function Home() {
-  const childrenReading_w5743 =
-    'https://lh3.googleusercontent.com/9HuJjH30f-N5coKDoc-cQE2xoHCPOMo9vmCVveJJy7cT6dDDB-NvWGgUv2PzAZFRaL1jmmQWVQbthfsY3yaR7A1hRziZPibyx6cdSb5r2g0l92Hflzas1IRJuBdyVd58H3qM5RkwkYo=w5743';
-  const childrenReading_w2400 =
-    'https://lh3.googleusercontent.com/OhHP8S-3Vq_jiSIWVlJ_bTROaTgJtE1FDUOTRy_rOwyHQvs1vVgg0sNiQN-U3hXjBMyJQFpvqykkRVJUtMJGS3wKK1Q53DEpQPs5WWej_GuLm-CgEli9RVqfAb7KVDLnBxplToVjFY0=w2400';
+  const childFrustrated =
+    'https://lh3.googleusercontent.com/T073UnafXcAf2dnCrjOpmjUXc3O9JZ4H_bx4GXBB0nALZ_SFJR-qEcTG3SE-A0NJORqj96aYUyIVtX-V9qinizbCdMTQ72XIl8UJ3HwMsU5eyhJigF2Xr_tzipXjVIv-rv7g_pQ7Ans=w2400';
   const scrollTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -49,6 +47,7 @@ function Home() {
           alt="Children Reading"
         ></img>
       </picture> */}
+      {/* <iframe src="https://player.vimeo.com/video/392440319" width="640" height="338" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>*/}
       <div className="videoContainer d-flex justify-content-center">
         <video
           autoplay
@@ -56,7 +55,7 @@ function Home() {
           muted
           loop
           id="homepageVideo"
-          poster={childrenReading_w5743}
+          poster={childFrustrated}
         >
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
