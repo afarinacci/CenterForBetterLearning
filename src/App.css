@@ -586,6 +586,12 @@ a .socialIcon:hover {
   margin: 15px;
   font-size: 1.2rem;
 }
+.fullWidthImage {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 30px 0px;
+  margin: 0px;
+}
 
 @media (max-width: 370px) {
   .marginfornav {

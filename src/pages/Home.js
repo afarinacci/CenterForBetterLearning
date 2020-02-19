@@ -183,7 +183,7 @@ function Home() {
         <img
           src={blueLogo}
           alt="Center for Better Learning"
-          style={{ maxWidth: '500px' }}
+          style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
         />
       </div>
 
