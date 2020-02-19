@@ -3,10 +3,17 @@ import { Row, Col, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import referralForm from './../forms/VT_Evaluation_Referral_Form_PROFESSIONALS.pdf';
+import optometrist from './../images/optometrist.png';
+import teacher from './../images/teacher.png';
+import therapist from './../images/therapist.png';
+import psychologist from './../images/psychologist.png';
 
 function Resources() {
-  const optometrists_w1200 = '';
-  const optometrists_w1600 = '';
+  const optometrists_w1200 =
+    'https://lh3.googleusercontent.com/MJNDsiDJfiEGfNsCYYHU4tA2WGTa8vhVAp1DsLawy3GDZNCG58QUD17OfuBVZDSzw66MxTCyc-wcU_nd-_LgE3s-ReDPk2C_EumIfnf6eRZiBMkjQLuLTL8L77Dc2sc9B_Mx0g35b0E=w1200';
+  const optometrists_w1600 =
+    'https://lh3.googleusercontent.com/KAGlVUW8siHlX-_p_-Hy4O2L8xbzLhURj5tQoxa2LgxfyDvQM5QIB6nzbSm2Z1xG0XQy3Ec4dC2KRgZm97z3BbcT6J_0Cui0BdfG5x27r34UDIrV48rlJ23avuArw0-e3nefZPwtboY=w1600';
   const teachers_w1200 = '';
   const teachers_w1600 = '';
   const physicalTherapists_w1200 = '';
@@ -20,20 +27,32 @@ function Resources() {
   return (
     <div className="marginfornav">
       <div className="wideSectionBannerPrimary">
-        <h1 className="text-center pageTitleOnDark">Services</h1>
+        <h1 className="text-center pageTitleOnDark">Professional Resources</h1>
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ maxWidth: '900px' }}>
         <Row bg-light>
           <Col sm="12" md="6" className="allServicesCol">
-            <picture>
-              <source media="(max-width: 767px)" srcSet={optometrists_w1200} />
-              <source media="(min-width: 768px)" srcSet={optometrists_w1600} />
-              <img
-                src={optometrists_w1600}
-                className="img-fluid"
-                alt="Optometrist"
-              ></img>
-            </picture>
+            <img
+              src={optometrist}
+              alt="Optometrist"
+              className="resourcesImage"
+            />
+            <div
+              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
+              className="text-center"
+            >
+              Icons made by{' '}
+              <a
+                href="https://www.flaticon.com/authors/freepik"
+                title="Freepik"
+              >
+                Freepik
+              </a>{' '}
+              from{' '}
+              <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com
+              </a>
+            </div>
           </Col>
           <Col sm="12" md="6" className="allServicesCol my-auto">
             <div
@@ -42,18 +61,16 @@ function Resources() {
             >
               <h3>Optometrists</h3>
               <p>
-                We will send a full report on all results from additional
+                Identifying and referring patients with functional vision
+                problem to a behavioral optometrist will gain you a patient for
+                life. We will send a full report on all results from additional
                 testing, periodic updates on their progress, and ultimately
                 release the patient back to your care upon completion of their
                 vision therapy program. A quick cover test, EOMs, and NPC can be
                 the difference between a referral for discovering an undiagnosed
                 visual problem or a child continuing to struggle in silence.
               </p>
-              <a
-                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href={referralForm} download="VT_referral_form">
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
                   Referral Form
@@ -65,15 +82,23 @@ function Resources() {
 
         <Row bg-light>
           <Col sm="12" md={{ size: 6, order: 2 }} className="allServicesCol">
-            <picture>
-              <source media="(max-width: 767px)" srcSet={teachers_w1200} />
-              <source media="(min-width: 768px)" srcSet={teachers_w1600} />
-              <img
-                src={teachers_w1600}
-                className="img-fluid"
-                alt="Teacher"
-              ></img>
-            </picture>
+            <img src={teacher} alt="Teacher" className="resourcesImage" />
+            <div
+              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
+              className="text-center"
+            >
+              Icons made by{' '}
+              <a
+                href="https://www.flaticon.com/authors/freepik"
+                title="Freepik"
+              >
+                Freepik
+              </a>{' '}
+              from{' '}
+              <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com
+              </a>
+            </div>
           </Col>
           <Col
             sm="12"
@@ -89,14 +114,10 @@ function Resources() {
                 children struggle unnecessarily from an undiagnosed vision
                 problem. We offer FREE developmental vision screenings to
                 children you suspect may have a learning related visual problem.
-                Please fill out the referral form with the child’s
-                parent/guardian to.
+                Please fill out the referral form with the child’s parent/
+                guardian to.
               </p>
-              <a
-                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href={referralForm} download="VT_referral_form">
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
                   Referral Form
@@ -108,38 +129,42 @@ function Resources() {
 
         <Row bg-light>
           <Col sm="12" md="6" className="allServicesCol">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcSet={physicalTherapists_w1200}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={physicalTherapists_w1600}
-              />
-              <img
-                src={physicalTherapists_w1600}
-                className="img-fluid"
-                alt="Physical Occupational Therapist"
-              ></img>
-            </picture>
+            <img
+              src={therapist}
+              alt="Physical therapist"
+              className="resourcesImage"
+            />
+            <div
+              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
+              className="text-center"
+            >
+              Icons made by{' '}
+              <a
+                href="https://www.flaticon.com/authors/freepik"
+                title="Freepik"
+              >
+                Freepik
+              </a>{' '}
+              from{' '}
+              <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com
+              </a>
+            </div>
           </Col>
           <Col sm="12" md="6" className="allServicesCol my-auto">
             <div className="paddingAround extraPaddingBottomPhone">
               <h3>Physical/Occupational Therapists</h3>
               <p>
-                functional vision problems and other deficits in motor skills.
-                If you notice a patient hit a barrier in their progress and you
-                think it may be due to an undiagnosed visual problem, please
-                send them to us for a full developmental evaluation. Often once
-                the vision problems are resolved, we can move forward with their
-                therapy program and often have even better results.
+                We work closely with OT’s and PTs to provide full comprehensive
+                care to our patients. There is often overlap between functional
+                vision problems and other deficits in motor skills. If you
+                notice a patient hit a barrier in their progress and you think
+                it may be due to an undiagnosed visual problem, please send them
+                to us for a full developmental evaluation. Often once the vision
+                problems are resolved, we can move forward with their therapy
+                program and often have even better results.
               </p>
-              <a
-                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href={referralForm} download="VT_referral_form">
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
                   Referral Form
@@ -151,15 +176,27 @@ function Resources() {
 
         <Row bg-light>
           <Col sm="12" md={{ size: 6, order: 2 }} className="allServicesCol">
-            <picture>
-              <source media="(max-width: 767px)" srcSet={psychologists_w1200} />
-              <source media="(min-width: 768px)" srcSet={psychologists_w1600} />
-              <img
-                src={psychologists_w1600}
-                className="img-fluid"
-                alt="Psychologist"
-              ></img>
-            </picture>
+            <img
+              src={psychologist}
+              alt="Psychologist"
+              className="resourcesImage"
+            />
+            <div
+              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
+              className="text-center"
+            >
+              Icons made by{' '}
+              <a
+                href="https://www.flaticon.com/authors/freepik"
+                title="Freepik"
+              >
+                Freepik
+              </a>{' '}
+              from{' '}
+              <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com
+              </a>
+            </div>
           </Col>
           <Col
             sm="12"
@@ -179,11 +216,7 @@ function Resources() {
                 our patients through the changes Vision Therapy brings to their
                 life.
               </p>
-              <a
-                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href={referralForm} download="VT_referral_form">
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
                   Referral Form

@@ -22,6 +22,8 @@ import {
 } from 'reactstrap';
 import logoTop from './../images/LogoWhite.png';
 import logoBottom from './../images/LogoBlack.png';
+import childForm from './../forms/CHILD_INTAKE_FORM.pdf';
+import adultForm from './../forms/ADULT_INTAKE_FORM.pdf';
 
 class CustomNavbar extends React.Component {
   constructor(props) {
@@ -231,9 +233,8 @@ class CustomNavbar extends React.Component {
                 <DropdownMenu>
                   <DropdownItem>
                     <NavLink
-                      href="https://drive.google.com/file/d/1plSR0OxL2FfyOjhgBf0QBVZpmW1CwH0x/view?usp=sharing"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href={childForm}
+                      download
                       onClick={this.closeNavbar}
                     >
                       <FontAwesomeIcon
@@ -245,9 +246,8 @@ class CustomNavbar extends React.Component {
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink
-                      href="https://drive.google.com/file/d/1M3s85pwr8RgydN-qeJRc5w83G2QmFNJc/view?usp=sharing"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href={adultForm}
+                      download
                       onClick={this.closeNavbar}
                     >
                       <FontAwesomeIcon
