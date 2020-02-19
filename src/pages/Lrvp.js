@@ -5,8 +5,12 @@ import ServiceContent from './../components/ServiceContent';
 function Lrvp() {
   const childFrustrated_w1200 =
     'https://lh3.googleusercontent.com/WFqgpMmgoiU2yzm6EldbDvWFcID6_4dploMQg9w95pZqVea-bjUv7iCNCaUwAAJSpiVxThGGI1ZewCOzFSBlIzBSI2EfG4atMmZo-7ihtxMFz0bYQQ3jwIWkpknDrquGVDWfxIs7Omk=w1200';
-  const childFrustrated_w2400 =
+  const childFrustrated_w1600 =
     'https://lh3.googleusercontent.com/bmEJGm3tDYskIkP4S_JwFj1XRjqWMbyXQKLsPsGx5RFp8CxzhN5Ffq-Pi8gDhF9cmy1m_F1uHNzw0d-1vTOmms-lqh0jA27_VMKH0plKwATrSIolQtTNypKuLhuvoqygDWoXu6PUACk=w1597';
+  const rubbingeye_w1200 =
+    'https://lh3.googleusercontent.com/2crfJsp7U4KVgxtVObZsrKjUoslEISnW9lCvcZr3TmcXHvXCkCI8qZzsPW-AeyRq0oZPoqusolf0h0AKgiO3wJuqYnmb0nfQ6zFI6HsGOVImQpR9K9WlLYT9h0Qlrx1uMBcJagK1TUA=w1200';
+  const rubbingeye_w1600 =
+    'https://lh3.googleusercontent.com/yKhk9j3Iiq-e3h9Z7a54I_zJkD1IUg7iOYXgUjwFJru3axWSpYrwe6l9sJH3hcppV-sSRiEwQ5Z31sYw89lbCJwX723i-mOiYX_wVjuv1Gl7wNijrSUScXGgNKlMym8besgMZ2Q4JJo=w1600';
   return (
     <ServiceContent
       title="Learning Related Visual Problems"
@@ -119,29 +123,50 @@ function Lrvp() {
         stress and frustration to create a low achiever.
       </p>
       <br />
-      <h5>Undiagnosed Vision Problems can lead to:</h5>
-      <ul>
-        <li>Misdiagnosis of learning disabilities, ADD/ADHD, and Dyslexia</li>
-        <li>Poor self-esteem</li>
-        <li>Fatigue, frustration and irritability</li>
-        <li>Short attention span</li>
-        <li>Poor grades</li>
-      </ul>
+
+      <Row>
+        <Col sm="12" md={{ size: 6, order: 2 }}>
+          <picture>
+            <source media="(max-width: 450px)" srcSet={rubbingeye_w1200} />
+            <source media="(min-width: 451px)" srcSet={rubbingeye_w1600} />
+            <img
+              src={rubbingeye_w1600}
+              className="fullWidthImage"
+              alt="Child rubbing eyes"
+            ></img>
+          </picture>
+        </Col>
+        <Col sm="12" md={{ size: 6, order: 1 }}>
+          <h5 className="h5articleTitle">
+            Undiagnosed Vision Problems can lead to:
+          </h5>
+          <ul>
+            <li>
+              Misdiagnosis of learning disabilities, ADD/ADHD, and Dyslexia
+            </li>
+            <li>Poor self-esteem</li>
+            <li>Fatigue, frustration and irritability</li>
+            <li>Short attention span</li>
+            <li>Poor grades</li>
+          </ul>
+        </Col>
+      </Row>
       <br />
+
       <Row>
         <Col sm="12" md="6">
           <picture>
             <source media="(max-width: 450px)" srcSet={childFrustrated_w1200} />
-            <source media="(min-width: 451px)" srcSet={childFrustrated_w2400} />
+            <source media="(min-width: 451px)" srcSet={childFrustrated_w1600} />
             <img
-              src={childFrustrated_w2400}
-              className="img-fluid"
+              src={childFrustrated_w1600}
+              className="fullWidthImage"
               alt="Child frustrated with schoolwork"
             ></img>
           </picture>
         </Col>
         <Col sm="12" md="6">
-          <h5 style={{ paddingTop: '20px' }}>
+          <h5 className="h5articleTitle">
             Common symptoms of learning related visual problems in children who
             struggle with reading are:
           </h5>
@@ -161,9 +186,8 @@ function Lrvp() {
       <br />
       <br />
 
-      <h4 className="text-center paddingAround wideSectionTitle">
-        Frequently Asked Questions
-      </h4>
+      <h3 className="text-center">Frequently Asked Questions</h3>
+      <br />
       <h5>How do visual problems effect my child's ability to read?</h5>
       <p>
         Poor visual skills, specifically lack of mastery over eye movement, can

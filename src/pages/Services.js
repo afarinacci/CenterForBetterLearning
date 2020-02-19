@@ -5,26 +5,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function Services() {
-  const childFrustrated_w1200 =
-    'https://lh3.googleusercontent.com/WFqgpMmgoiU2yzm6EldbDvWFcID6_4dploMQg9w95pZqVea-bjUv7iCNCaUwAAJSpiVxThGGI1ZewCOzFSBlIzBSI2EfG4atMmZo-7ihtxMFz0bYQQ3jwIWkpknDrquGVDWfxIs7Omk=w1200';
-  const childFrustrated_w1597 =
-    'https://lh3.googleusercontent.com/bmEJGm3tDYskIkP4S_JwFj1XRjqWMbyXQKLsPsGx5RFp8CxzhN5Ffq-Pi8gDhF9cmy1m_F1uHNzw0d-1vTOmms-lqh0jA27_VMKH0plKwATrSIolQtTNypKuLhuvoqygDWoXu6PUACk=w1597';
   const childAS_w1200 =
     'https://lh3.googleusercontent.com/-3OkcNKRuCyEsVNG_9cGg9ElCQOKNOumSx5KqOfpYaSLuHjjJkqpkLznQWQhgV9fKYThowqXa-ey90Q0Skv_OSiBNTBFFMNBzc6OHi7H68JVJsV4hIHixsfd-uSo1Yr6DUx7IRcpzKc=w1200';
   const childAS_w1641 =
     'https://lh3.googleusercontent.com/FbJYUb-UQmeK1UJg1VOEFCOMUmVcVH_4sn1LvXr2J-otq0fg_jUz3juG-zohqzc_jhnWVS5SUo1sCqm0CjLMtJ95Ds2qRxy-gleRYU0MgQ39YPwZjFIzDFEdrxrK8G_2ybK01rdgtLM=w1641';
-  const sports_w949 =
-    'https://lh3.googleusercontent.com/UYf8yOPFVwWbcB9KsBsaDn4XaYu8JAWKZKwiaWHpEIqbJ3ytzI3axRTLCgiY5aWixXwy972l6hRNVI00tf3OAkJE5Tx7TnlAttfoIXR65VfH7SgbMuwxAjRcri7Urn3zmzGKTZ3wJ_k=w949';
-  const sports_w1266 =
-    'https://lh3.googleusercontent.com/_MdveahU5PeJPF_9PB-yGbEfDGTznEML8KG5_Vf6lEAvwf1CgzljeAINofGlSmAIvt1idSxPIb7V1b0TgkD6HREIaGuCKeHrhjNTExrWx3VEHeH0KiewR-vgYfMI5UER3HpH3Hvz7DM=w1266';
-  const rubbingeye_w1200 =
-    'https://lh3.googleusercontent.com/2crfJsp7U4KVgxtVObZsrKjUoslEISnW9lCvcZr3TmcXHvXCkCI8qZzsPW-AeyRq0oZPoqusolf0h0AKgiO3wJuqYnmb0nfQ6zFI6HsGOVImQpR9K9WlLYT9h0Qlrx1uMBcJagK1TUA=w1200';
-  const rubbingeye_w1600 =
-    'https://lh3.googleusercontent.com/yKhk9j3Iiq-e3h9Z7a54I_zJkD1IUg7iOYXgUjwFJru3axWSpYrwe6l9sJH3hcppV-sSRiEwQ5Z31sYw89lbCJwX723i-mOiYX_wVjuv1Gl7wNijrSUScXGgNKlMym8besgMZ2Q4JJo=w1600';
-  const visionrehab_1200 =
-    'https://lh3.googleusercontent.com/MJNDsiDJfiEGfNsCYYHU4tA2WGTa8vhVAp1DsLawy3GDZNCG58QUD17OfuBVZDSzw66MxTCyc-wcU_nd-_LgE3s-ReDPk2C_EumIfnf6eRZiBMkjQLuLTL8L77Dc2sc9B_Mx0g35b0E=w1200';
-  const visionrehab_1600 =
-    'https://lh3.googleusercontent.com/KAGlVUW8siHlX-_p_-Hy4O2L8xbzLhURj5tQoxa2LgxfyDvQM5QIB6nzbSm2Z1xG0XQy3Ec4dC2KRgZm97z3BbcT6J_0Cui0BdfG5x27r34UDIrV48rlJ23avuArw0-e3nefZPwtboY=w1600';
+  const help_w1200 =
+    'https://lh3.googleusercontent.com/BT42uiDKN3rz0J7Debr9oYaF1TFte80knjEmlL3tDMxRE0-3-8rKNhRp9B2aSJdOjCbvr2D1ftpyDQCHniv_b7nxaxF52GPIcEdqCjFAOGNv5v81BCC5-LTDeNNtbGKioUVniuPb1qI=w1200';
+  const help_w1600 =
+    'https://lh3.googleusercontent.com/FGKgFjIK13uNGUsSuQC8uKCOjlCabbaoewEeZh35SCvB0T--r4Ey6f3QbSwpUcxpgDOuZnuu-peSAcisLFMwQGpWJYUPmVlC6yjdmwTOIDaFP_LcRghM4WYUOA4U78Frzg8MSavPnJc=w1600';
+  const baseball_w1200 =
+    'https://lh3.googleusercontent.com/YipAhFDdRLBB4citGpvBT9GzMECMMS-3pSpp28murcJHtpRpiIYrNScH1wG8bwcZLNxr42C4rxaEOZ7gkZjEo62iZf-aIOA820F8250FnVAbBXIoY3-0sq1WJR7-CnjMD3Xeg9r3hpk=w1200';
+  const baseball_w1600 =
+    'https://lh3.googleusercontent.com/Y4QIanrNTpMhAKiLLxuu0KXZK5kxFjXuPi0PLvLWqxbm_1m8H9XAxx9C_Gt8subQacSDJ_O1umc79axS5DGVUS9eASN36MhOlCe7_-GWpzPNfJZcZip5FA9cp-SS3_UGg--t1pro7gE=w1600';
+  const adult_w1200 =
+    'https://lh3.googleusercontent.com/UmpAygL-aAfgf-jqjXb99zQAEE4_7ss5qW9dsYVa9QBHIUe55Km4BpL3tJ2yR10gojhvJxrMZBedfycphgkTYwXEYLepUQq_08yXZ_FYGilZIgniJOChhDHqotv45r_U7moseKgZtLM=w1200';
+  const adult_w1600 =
+    'https://lh3.googleusercontent.com/mc-APuZHdchGHS0VCzYtL1SHt54-ENLJXKecG87eubOrV0QmTv67SslWssn91fZ9n3S2OJ_VxLPu4o07t5uwsz5oPWiRHfFj3aWrod-yHWPuzpBTfhbUfR1692wvb-AOkkqoehAryAo=w1600';
 
   const scrollTop = () => {
     document.body.scrollTop = 0; // For Safari
@@ -39,10 +35,10 @@ function Services() {
         <Row bg-light>
           <Col sm="12" md="6" className="allServicesCol">
             <picture>
-              <source media="(max-width: 767px)" srcSet={rubbingeye_w1200} />
-              <source media="(min-width: 768px)" srcSet={rubbingeye_w1600} />
+              <source media="(max-width: 767px)" srcSet={help_w1200} />
+              <source media="(min-width: 768px)" srcSet={help_w1600} />
               <img
-                src={rubbingeye_w1600}
+                src={help_w1600}
                 className="img-fluid"
                 alt="Child frustrated with reading"
               ></img>
@@ -57,8 +53,8 @@ function Services() {
               <p>
                 The visual system is the dominant sense utilized for learning.
                 When our visual system does not work efficiently, it can
-                negatively impact the ability to learn and/ or stay focused.
-                Vision Therapy restores the ability to gather and process visual
+                negatively impact our ability to learn or stay focused. Vision
+                Therapy restores the ability to gather and process visual
                 information efficiently resulting in improved academic
                 performance.
               </p>
@@ -117,10 +113,10 @@ function Services() {
         <Row bg-light>
           <Col sm="12" md="6" className="allServicesCol">
             <picture>
-              <source media="(max-width: 767px)" srcSet={visionrehab_1200} />
-              <source media="(min-width: 768px)" srcSet={visionrehab_1600} />
+              <source media="(max-width: 767px)" srcSet={adult_w1200} />
+              <source media="(min-width: 768px)" srcSet={adult_w1600} />
               <img
-                src={visionrehab_1600}
+                src={adult_w1600}
                 className="img-fluid"
                 alt="Vision exam"
               ></img>
@@ -152,10 +148,10 @@ function Services() {
         <Row bg-light>
           <Col sm="12" md={{ size: 6, order: 2 }} className="allServicesCol">
             <picture>
-              <source media="(max-width: 767px)" srcSet={sports_w949} />
-              <source media="(min-width: 768px)" srcSet={sports_w1266} />
+              <source media="(max-width: 767px)" srcSet={baseball_w1200} />
+              <source media="(min-width: 768px)" srcSet={baseball_w1600} />
               <img
-                src={sports_w1266}
+                src={baseball_w1600}
                 className="img-fluid"
                 alt="Doctor checking athletes eyes"
               ></img>

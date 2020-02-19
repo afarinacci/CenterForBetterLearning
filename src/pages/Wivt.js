@@ -182,7 +182,7 @@ function Wivt() {
         ></img>
       </picture>
       <br />
-      <h5>
+      <h5 className="h5articleTitle">
         Our goals for bringing organization to an incredibly complex system are
         simple:
       </h5>
@@ -198,7 +198,7 @@ function Wivt() {
         </li>
       </ul>
       <br />
-      <h5>
+      <h5 className="h5articleTitle">
         Research has demonstrated vision therapy can be an effective treatment
         option for:
       </h5>
@@ -215,7 +215,7 @@ function Wivt() {
         <li>Visual sequelae of acquired brain injury</li>
       </ul>
       <br />
-      <h5>
+      <h5 className="h5articleTitle">
         We find most people have come to this website for one of the following
         reasons:
       </h5>
