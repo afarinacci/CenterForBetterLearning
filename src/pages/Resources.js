@@ -10,16 +10,6 @@ import therapist from './../images/therapist.png';
 import psychologist from './../images/psychologist.png';
 
 function Resources() {
-  const optometrists_w1200 =
-    'https://lh3.googleusercontent.com/MJNDsiDJfiEGfNsCYYHU4tA2WGTa8vhVAp1DsLawy3GDZNCG58QUD17OfuBVZDSzw66MxTCyc-wcU_nd-_LgE3s-ReDPk2C_EumIfnf6eRZiBMkjQLuLTL8L77Dc2sc9B_Mx0g35b0E=w1200';
-  const optometrists_w1600 =
-    'https://lh3.googleusercontent.com/KAGlVUW8siHlX-_p_-Hy4O2L8xbzLhURj5tQoxa2LgxfyDvQM5QIB6nzbSm2Z1xG0XQy3Ec4dC2KRgZm97z3BbcT6J_0Cui0BdfG5x27r34UDIrV48rlJ23avuArw0-e3nefZPwtboY=w1600';
-  const teachers_w1200 = '';
-  const teachers_w1600 = '';
-  const physicalTherapists_w1200 = '';
-  const physicalTherapists_w1600 = '';
-  const psychologists_w1200 = '';
-  const psychologists_w1600 = '';
   const scrollTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -31,28 +21,12 @@ function Resources() {
       </div>
       <div className="container-fluid" style={{ maxWidth: '900px' }}>
         <Row bg-light>
-          <Col sm="12" md="6" className="allServicesCol">
+          <Col sm="12" md="6" className="allServicesCol text-center">
             <img
               src={optometrist}
               alt="Optometrist"
               className="resourcesImage"
             />
-            <div
-              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
-              className="text-center"
-            >
-              Icons made by{' '}
-              <a
-                href="https://www.flaticon.com/authors/freepik"
-                title="Freepik"
-              >
-                Freepik
-              </a>{' '}
-              from{' '}
-              <a href="https://www.flaticon.com/" title="Flaticon">
-                www.flaticon.com
-              </a>
-            </div>
           </Col>
           <Col sm="12" md="6" className="allServicesCol my-auto">
             <div
@@ -81,24 +55,12 @@ function Resources() {
         </Row>
 
         <Row bg-light>
-          <Col sm="12" md={{ size: 6, order: 2 }} className="allServicesCol">
+          <Col
+            sm="12"
+            md={{ size: 6, order: 2 }}
+            className="allServicesCol text-center"
+          >
             <img src={teacher} alt="Teacher" className="resourcesImage" />
-            <div
-              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
-              className="text-center"
-            >
-              Icons made by{' '}
-              <a
-                href="https://www.flaticon.com/authors/freepik"
-                title="Freepik"
-              >
-                Freepik
-              </a>{' '}
-              from{' '}
-              <a href="https://www.flaticon.com/" title="Flaticon">
-                www.flaticon.com
-              </a>
-            </div>
           </Col>
           <Col
             sm="12"
@@ -128,28 +90,12 @@ function Resources() {
         </Row>
 
         <Row bg-light>
-          <Col sm="12" md="6" className="allServicesCol">
+          <Col sm="12" md="6" className="allServicesCol text-center">
             <img
               src={therapist}
               alt="Physical therapist"
               className="resourcesImage"
             />
-            <div
-              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
-              className="text-center"
-            >
-              Icons made by{' '}
-              <a
-                href="https://www.flaticon.com/authors/freepik"
-                title="Freepik"
-              >
-                Freepik
-              </a>{' '}
-              from{' '}
-              <a href="https://www.flaticon.com/" title="Flaticon">
-                www.flaticon.com
-              </a>
-            </div>
           </Col>
           <Col sm="12" md="6" className="allServicesCol my-auto">
             <div className="paddingAround extraPaddingBottomPhone">
@@ -175,28 +121,16 @@ function Resources() {
         </Row>
 
         <Row bg-light>
-          <Col sm="12" md={{ size: 6, order: 2 }} className="allServicesCol">
+          <Col
+            sm="12"
+            md={{ size: 6, order: 2 }}
+            className="allServicesCol text-center"
+          >
             <img
               src={psychologist}
               alt="Psychologist"
               className="resourcesImage"
             />
-            <div
-              style={{ color: 'var(--secondary)', fontSize: '.5rem' }}
-              className="text-center"
-            >
-              Icons made by{' '}
-              <a
-                href="https://www.flaticon.com/authors/freepik"
-                title="Freepik"
-              >
-                Freepik
-              </a>{' '}
-              from{' '}
-              <a href="https://www.flaticon.com/" title="Flaticon">
-                www.flaticon.com
-              </a>
-            </div>
           </Col>
           <Col
             sm="12"
@@ -225,6 +159,23 @@ function Resources() {
             </div>
           </Col>
         </Row>
+        <div
+          style={{
+            color: 'var(--secondary)',
+            fontSize: '.5rem',
+            paddingBottom: '15px'
+          }}
+          className="text-center"
+        >
+          Icons made by{' '}
+          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+            Freepik
+          </a>{' '}
+          from{' '}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
       </div>
     </div>
   );
