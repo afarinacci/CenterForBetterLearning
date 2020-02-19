@@ -50,8 +50,9 @@ function Resources() {
                 visual problem or a child continuing to struggle in silence.
               </p>
               <a
-                href="./../forms/VT_Evaluation_Referral_Form_PROFESSIONALS.pdf"
-                download
+                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
@@ -92,8 +93,9 @@ function Resources() {
                 parent/guardian to.
               </p>
               <a
-                href="./../forms/VT_Evaluation_Referral_Form_PROFESSIONALS.pdf"
-                download
+                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
@@ -134,8 +136,9 @@ function Resources() {
                 therapy program and often have even better results.
               </p>
               <a
-                href="./../forms/VT_Evaluation_Referral_Form_PROFESSIONALS.pdf"
-                download
+                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
@@ -177,8 +180,9 @@ function Resources() {
                 life.
               </p>
               <a
-                href="./../forms/VT_Evaluation_Referral_Form_PROFESSIONALS.pdf"
-                download
+                href="https://drive.google.com/file/d/1rvyzNxohvLjk32RrNOb3-HK8j51kSTh5/view?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <Button color="primary" className="buttonPrimary">
                   <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}

@@ -231,8 +231,9 @@ class CustomNavbar extends React.Component {
                 <DropdownMenu>
                   <DropdownItem>
                     <NavLink
-                      href="./../forms/CHILD_INTAKE_FORM.pdf"
-                      download
+                      href="https://drive.google.com/file/d/1plSR0OxL2FfyOjhgBf0QBVZpmW1CwH0x/view?usp=sharing"
+                      rel="noopener noreferrer"
+                      target="_blank"
                       onClick={this.closeNavbar}
                     >
                       <FontAwesomeIcon
@@ -244,8 +245,9 @@ class CustomNavbar extends React.Component {
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink
-                      href="./../forms/ADULT_INTAKE_FORM.pdf"
-                      download
+                      href="https://drive.google.com/file/d/1M3s85pwr8RgydN-qeJRc5w83G2QmFNJc/view?usp=sharing"
+                      rel="noopener noreferrer"
+                      target="_blank"
                       onClick={this.closeNavbar}
                     >
                       <FontAwesomeIcon
