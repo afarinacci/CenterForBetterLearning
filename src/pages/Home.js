@@ -84,7 +84,7 @@ function Home() {
           <FontAwesomeIcon icon={faUserCircle} className="homeLinksIcon" />
           <Link to="/our-team" onClick={scrollTop} className="homeLinkPrimary">
             <h4 className="textShadow" style={{ margin: '12px 0px' }}>
-              Meet the Team <FontAwesomeIcon icon={faAngleRight} />
+              Meet Our Team <FontAwesomeIcon icon={faAngleRight} />
             </h4>
           </Link>
         </Col>
