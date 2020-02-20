@@ -79,7 +79,11 @@ function Home() {
       >
         <Col sm="12" md={{ size: 3 }} className="homeLinksCol">
           <FontAwesomeIcon icon={faUserCircle} className="homeLinksIcon" />
-          <Link to="/our-team" onClick={scrollTop} className="homeLinkPrimary">
+          <Link
+            to="/our-team"
+            onClick={scrollTop}
+            className="homeLinkPrimary homeLinkPrimarySpace"
+          >
             <h4 className="textShadow" style={{ margin: '12px 0px' }}>
               Meet Our Team <FontAwesomeIcon icon={faAngleRight} />
             </h4>
@@ -90,7 +94,7 @@ function Home() {
           <Link
             to="/request-appointment"
             onClick={scrollTop}
-            className="homeLinkPrimary"
+            className="homeLinkPrimary homeLinkPrimarySpace"
           >
             <h4 className="textShadow" style={{ margin: '12px 0px' }}>
               Request an{' '}
@@ -102,7 +106,10 @@ function Home() {
         </Col>
         <Col sm="12" md={{ size: 3, offset: 1 }} className="homeLinksCol">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="homeLinksIcon" />
-          <Link onClick={scrollToLocations} className="homeLinkPrimary">
+          <Link
+            onClick={scrollToLocations}
+            className="homeLinkPrimary homeLinkPrimarySpace"
+          >
             <h4 className="textShadow" style={{ margin: '12px 0px' }}>
               Locations <FontAwesomeIcon icon={faAngleRight} />
             </h4>
@@ -178,7 +185,7 @@ function Home() {
       <div className="row wivt-fordoctors-row text-center">
         <div className="col-12 col-md-6 wivt-fordoctors-col wivt-fordoctors-col1 row align-items-center">
           <div className="col-12">
-            <h1 className="textShadow">For Patients</h1>
+            <h1>For Patients</h1>
             <Link to="/what-is-vision-therapy">
               <Button
                 outline
@@ -194,7 +201,7 @@ function Home() {
         </div>
         <div className="col-12 col-md-6 wivt-fordoctors-col wivt-fordoctors-col2 row align-items-center">
           <div className="col-12">
-            <h1 className="textShadow">For Professionals</h1>
+            <h1>For Professionals</h1>
             <Link to="/resources">
               <Button
                 outline

@@ -31,7 +31,7 @@ function Footer() {
         <h5 style={{ margin: '0px' }}>
           <Link
             to="/request-appointment"
-            className="paragraphLinkWhite"
+            className="paragraphLinkWhite homeLinkPrimarySpace"
             onClick={scrollTop}
           >
             Schedule an Evaluation <FontAwesomeIcon icon={faAngleRight} />
