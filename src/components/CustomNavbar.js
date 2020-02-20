@@ -61,7 +61,7 @@ class CustomNavbar extends React.Component {
         this.toggleNavbar();
       }
       const element = document.getElementById('locations');
-      const y = element.getBoundingClientRect().top + window.pageYOffset - 111;
+      const y = element.getBoundingClientRect().top + window.pageYOffset - 99;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
