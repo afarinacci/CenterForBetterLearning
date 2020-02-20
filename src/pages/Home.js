@@ -8,12 +8,14 @@ import {
   faUserCircle,
   faMapMarkerAlt
 } from '@fortawesome/free-solid-svg-icons';
-import homepageVideo from './../images/videostockfootage.mp4';
 import blueLogo from './../images/LogoForBlue.png';
+import homepageVideo from './../images/childfrustrated_33mb.mov';
 
 function Home() {
   const childFrustrated =
     'https://lh3.googleusercontent.com/T073UnafXcAf2dnCrjOpmjUXc3O9JZ4H_bx4GXBB0nALZ_SFJR-qEcTG3SE-A0NJORqj96aYUyIVtX-V9qinizbCdMTQ72XIl8UJ3HwMsU5eyhJigF2Xr_tzipXjVIv-rv7g_pQ7Ans=w2400';
+  const childFrustrated_small =
+    'https://lh3.googleusercontent.com/VTCihepZ9i9HrdHFw5YpidjbF7a6GmyEzDL_HwZ7GJrfJu6gkD40nz0YFwFm3hk0Ku_XAbq32BtUKcZK3CSB-_UdM_ZIVAclUIzIIqR5np66yrT32lk76rJNLIemuZts8zSUfuWvTUI=w1200';
   const scrollTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -38,16 +40,6 @@ function Home() {
   };
   return (
     <div className="marginfornav">
-      {/* <picture>
-        <source media="(max-width: 450px)" srcSet={childrenReading_w2400} />
-        <source media="(min-width: 451px)" srcSet={childrenReading_w5743} />
-        <img
-          src={childrenReading_w5743}
-          className="img-fluid"
-          alt="Children Reading"
-        ></img>
-      </picture> */}
-      {/* <iframe src="https://player.vimeo.com/video/392440319" width="640" height="338" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>*/}
       <div className="videoContainer d-flex justify-content-center">
         <video
           autoplay

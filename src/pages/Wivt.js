@@ -3,7 +3,6 @@ import ServiceContent from './../components/ServiceContent';
 import { Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faAngleRight,
   faCalendarCheck,
   faUserAlt,
   faClock

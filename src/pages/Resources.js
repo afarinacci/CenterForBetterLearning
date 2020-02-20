@@ -1,19 +1,14 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
-import referralForm from './../forms/VT_Evaluation_Referral_Form_PROFESSIONALS.pdf';
+import referralForm from './../forms/VT_Referral_Form_PROFESSIONALS.pdf';
 import optometrist from './../images/optometrist.png';
 import teacher from './../images/teacher.png';
 import therapist from './../images/therapist.png';
 import psychologist from './../images/psychologist.png';
 
 function Resources() {
-  const scrollTop = () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  };
   return (
     <div className="marginfornav">
       <div className="wideSectionBannerPrimary">
@@ -76,8 +71,8 @@ function Resources() {
                 children struggle unnecessarily from an undiagnosed vision
                 problem. We offer FREE developmental vision screenings to
                 children you suspect may have a learning related visual problem.
-                Please fill out the referral form with the child’s parent/
-                guardian to.
+                Please fill out the referral form with the child’s
+                parent/guardian.
               </p>
               <a href={referralForm} download="VT_referral_form">
                 <Button color="primary" className="buttonPrimary">
@@ -101,7 +96,7 @@ function Resources() {
             <div className="paddingAround extraPaddingBottomPhone">
               <h3>Physical/Occupational Therapists</h3>
               <p>
-                We work closely with OT’s and PTs to provide full comprehensive
+                We work closely with OTs and PTs to provide full comprehensive
                 care to our patients. There is often overlap between functional
                 vision problems and other deficits in motor skills. If you
                 notice a patient hit a barrier in their progress and you think
