@@ -5,8 +5,9 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import referralForm from './../forms/VT_Referral_Form_PROFESSIONALS.pdf';
 import optometrist from './../images/optometrist.png';
 import teacher from './../images/teacher.png';
-import therapist from './../images/therapist.png';
+import pediatrician from './../images/pediatrician.png';
 import psychologist from './../images/psychologist.png';
+import therapist from './../images/physiotherapy.png';
 
 function Resources() {
   return (
@@ -87,23 +88,23 @@ function Resources() {
         <Row bg-light>
           <Col sm="12" md="6" className="allServicesCol text-center">
             <img
-              src={therapist}
-              alt="Physical therapist"
+              src={pediatrician}
+              alt="Pediatrician"
               className="resourcesImage"
             />
           </Col>
           <Col sm="12" md="6" className="allServicesCol my-auto">
             <div className="paddingAround extraPaddingBottomPhone">
-              <h3>Physical/Occupational Therapists</h3>
+              <h3>Pediatricians</h3>
               <p>
-                We work closely with OTs and PTs to provide full comprehensive
-                care to our patients. There is often overlap between functional
-                vision problems and other deficits in motor skills. If you
-                notice a patient hit a barrier in their progress and you think
-                it may be due to an undiagnosed visual problem, please send them
-                to us for a full developmental evaluation. Often once the vision
-                problems are resolved, we can move forward with their therapy
-                program and often have even better results.
+                A pediatrician is often the first person a parent goes to when
+                they have concerns with their child’s development. Knowing who
+                to refer to for further testing is crucial for building and
+                keeping a parent’s trust. Whether it’s an eye turn, failed
+                vision screening test, or a behavioral problem, a developmental
+                eye exam is often the simplest next step to find the answers
+                parents seek. We work together with various health professionals
+                to get each child to the person who can help them the best.
               </p>
               <a href={referralForm} download="VT_referral_form">
                 <Button color="primary" className="buttonPrimary">
@@ -154,11 +155,42 @@ function Resources() {
             </div>
           </Col>
         </Row>
+        <Row bg-light>
+          <Col sm="12" md="6" className="allServicesCol text-center">
+            <img
+              src={therapist}
+              alt="Physical therapist"
+              className="resourcesImage"
+            />
+          </Col>
+          <Col sm="12" md="6" className="allServicesCol my-auto">
+            <div className="paddingAround extraPaddingBottomPhone">
+              <h3>Physical/Occupational Therapists</h3>
+              <p>
+                We work closely with OTs and PTs to provide full comprehensive
+                care to our patients. There is often overlap between functional
+                vision problems and other deficits in motor skills. If you
+                notice a patient hit a barrier in their progress and you think
+                it may be due to an undiagnosed visual problem, please send them
+                to us for a full developmental evaluation. Often once the vision
+                problems are resolved, we can move forward with their therapy
+                program and often have even better results.
+              </p>
+              <a href={referralForm} download="VT_referral_form">
+                <Button color="primary" className="buttonPrimary">
+                  <FontAwesomeIcon icon={faFileDownload} className="navIcon" />{' '}
+                  Referral Form
+                </Button>
+              </a>
+            </div>
+          </Col>
+        </Row>
+
         <div
           style={{
             color: 'var(--secondary)',
             fontSize: '.5rem',
-            paddingBottom: '15px'
+            padding: '15px 0px'
           }}
           className="text-center"
         >
