@@ -837,11 +837,11 @@ a .socialIcon:hover {
     margin-bottom: 20px;
   }
   .videoContainer .videoTextContainer {
-    bottom: 12%;
+    bottom: 10%;
     padding: 15px 30px;
   }
   .videoContainer {
-    padding-top: 48%;
+    padding-top: max(min(calc(100vh - 132px), 52%), 400px);
   }
 }
 .backgroundTextureDark {
