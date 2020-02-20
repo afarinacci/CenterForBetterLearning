@@ -181,8 +181,9 @@ function Home() {
             <h1 className="textShadow">For Patients</h1>
             <Link to="/what-is-vision-therapy">
               <Button
+                outline
                 color="primary"
-                className="primary-btn buttonPrimary"
+                className="videoButtonPrimary"
                 onClick={scrollTop}
               >
                 Learn About Vision Therapy{' '}
@@ -196,8 +197,9 @@ function Home() {
             <h1 className="textShadow">For Professionals</h1>
             <Link to="/resources">
               <Button
+                outline
                 color="primary"
-                className="primary-btn buttonPrimary"
+                className="videoButtonPrimary"
                 onClick={scrollTop}
               >
                 View All Resources <FontAwesomeIcon icon={faAngleRight} />

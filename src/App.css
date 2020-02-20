@@ -243,13 +243,18 @@ a .socialIcon:hover {
   color: var(--primary);
   background-color: var(--light);
 }
-.buttonPrimary:hover,
-.buttonPrimary:focus,
-.formBtn:hover,
-.formBtn:focus,
+
 .videoButtonPrimary:hover,
 .videoButtonPrimary:focus {
   color: white;
+}
+.buttonPrimary:hover,
+.buttonPrimary:focus,
+.formBtn:hover,
+.formBtn:focus {
+  color: var(--primary);
+  border-color: var(--primary);
+  background-color: transparent;
 }
 .videoButtonPrimary {
   font-weight: 500;
