@@ -249,17 +249,15 @@ a .socialIcon:hover {
 .formBtn:focus,
 .videoButtonPrimary:hover,
 .videoButtonPrimary:focus {
-  color: var(--primary);
-  border-color: var(--primary);
-  background-color: transparent;
+  color: white;
+}
+.videoButtonPrimary {
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 .buttonPrimary,
 .formBtn {
   color: var(--light);
-  background-color: var(--primary);
-}
-.videoButtonPrimary {
-  color: white;
   background-color: var(--primary);
 }
 .homeLinkPrimary {
@@ -279,7 +277,12 @@ a .socialIcon:hover {
   font-weight: 600;
   padding: 0px;
 }
-.videoSubtitle {
+.videoSubtitle1 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0px;
+}
+.videoSubtitle2 {
   font-size: 0.9rem;
   margin-bottom: 7px;
   font-weight: 400;
@@ -294,7 +297,7 @@ a .socialIcon:hover {
 }
 .videoContainer .videoTextContainer {
   position: absolute;
-  padding: 15px;
+  padding: 10px 15px;
   z-index: 1;
   bottom: 10%;
   margin: 0px;
@@ -340,14 +343,24 @@ a .socialIcon:hover {
   animation-play-state: running;
   animation-fill-mode: forwards;
 }
-.videoSubtitleFadeIn {
+.videoSubtitleFadeIn1 {
+  opacity: 0;
+  animation-name: fadein;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 9s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+.videoSubtitleFadeIn2 {
   margin-bottom: 15px;
   opacity: 0;
   animation-name: fadein;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
   animation-duration: 2s;
-  animation-delay: 8s;
+  animation-delay: 12s;
   animation-play-state: running;
   animation-fill-mode: forwards;
 }
@@ -614,7 +627,11 @@ a .socialIcon:hover {
   .videoTitle {
     font-size: 1.3rem;
   }
-  .videoSubtitle {
+  .videoSubtitle1 {
+    font-size: 0.6rem;
+    display: none;
+  }
+  .videoSubtitle2 {
     font-size: 0.6rem;
     display: none;
   }
@@ -625,12 +642,16 @@ a .socialIcon:hover {
   }
   .videoContainer .videoTextContainer {
     bottom: 3%;
-    padding: 7px;
+    padding: 5px 7px;
   }
   .videoTitle {
     font-size: 1.5rem;
   }
-  .videoSubtitle {
+  .videoSubtitle1 {
+    font-size: 0.8rem;
+    display: none;
+  }
+  .videoSubtitle2 {
     font-size: 0.8rem;
   }
   .shrinkingButton {
@@ -659,7 +680,10 @@ a .socialIcon:hover {
   .videoTitle {
     font-size: 2.5rem;
   }
-  .videoSubtitle {
+  .videoSubtitle1 {
+    font-size: 1.2rem;
+  }
+  .videoSubtitle2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
@@ -730,7 +754,10 @@ a .socialIcon:hover {
   .videoTitle {
     font-size: 3.2rem;
   }
-  .videoSubtitle {
+  .videoSubtitle1 {
+    font-size: 1.5rem;
+  }
+  .videoSubtitle2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
@@ -784,9 +811,19 @@ a .socialIcon:hover {
   .videoTitle {
     font-size: 4rem;
   }
-  .videoSubtitle {
+  .videoSubtitle1 {
+    font-size: 1.75rem;
+  }
+  .videoSubtitle2 {
     font-size: 1.75rem;
     margin-bottom: 20px;
+  }
+  .videoContainer .videoTextContainer {
+    bottom: 12%;
+    padding: 15px 30px;
+  }
+  .videoContainer {
+    padding-top: 45%;
   }
 }
 .backgroundTextureDark {

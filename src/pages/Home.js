@@ -41,14 +41,7 @@ function Home() {
   return (
     <div className="marginfornav">
       <div className="videoContainer d-flex justify-content-center">
-        <video
-          autoplay
-          controls
-          muted
-          loop
-          id="homepageVideo"
-          poster={childFrustrated}
-        >
+        <video loop autoPlay muted id="homepageVideo" poster={childFrustrated}>
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -56,11 +49,15 @@ function Home() {
           <div className="videoTitle videoTitleFadeIn">
             Bright Child, Poor Grades?
           </div>
-          <div className="videoSubtitleFadeIn">
-            <div className="videoSubtitle">
+
+          <div className="videoSubtitleFadeIn1">
+            <div className="videoSubtitle1">
               Your child may have an undetected vision problem.
-              <br />
-              Find out how to get them back on track.
+            </div>
+          </div>
+          <div className="videoSubtitleFadeIn2">
+            <div className="videoSubtitle2">
+              We can help your child reach their full potential.
             </div>
             <Link to="/services/learning-related-visual-problems">
               <Button
