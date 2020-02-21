@@ -6,6 +6,18 @@ const Team = () => (
   <div>
     <Helmet>
       <title>Meet Our Team</title>
+      <meta
+        property="og:title"
+        content="Center for Better Learning | Meet Our Team"
+      />
+      <meta
+        property="og:description"
+        content="Dr. Christina Murray, O.D., Renee Wise - Lead Vision Therapist, Paul Murray - Operations Manager"
+      />
+      <meta
+        name="description"
+        content="Dr. Christina Murray, O.D., Renee Wise - Lead Vision Therapist, Paul Murray - Operations Manager"
+      />
     </Helmet>
     <div className="marginfornav">
       <div className="wideSectionBannerPrimary">
@@ -68,7 +80,7 @@ const Team = () => (
               <div className="col-md-8">
                 <Bio
                   name="Paul Murray"
-                  role="Operations Manager "
+                  role="Operations Manager"
                   bio={[
                     "Paul's professional career spans 10+ years in the sales industry selling a wide variety of products and managing teams of sales professionals around the country. Paul's ambition to help people naturally lead him to support Dr. Murray at the Center for Better Learning to provide Vision Therapy services in the tri-county area.",
                     "When Paul isn't working, he enjoys spending time with his newborn daughter, being outside, and playing with his dogs."

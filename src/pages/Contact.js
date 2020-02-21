@@ -7,6 +7,7 @@ function Contact() {
     <div>
       <Helmet>
         <title>Contact Us</title>
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="marginfornav">
         <div className="wideSectionBannerPrimary">

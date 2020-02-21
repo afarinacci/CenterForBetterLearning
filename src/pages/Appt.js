@@ -7,6 +7,7 @@ function Appt() {
     <div>
       <Helmet>
         <title>Request an Appointment</title>
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="marginfornav">
         <div className="wideSectionBannerPrimary">

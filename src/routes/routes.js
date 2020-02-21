@@ -42,7 +42,7 @@ const Routes = () => (
     <Route exact path="/resources" component={Resources}></Route>
     <Route exact path="/symptoms" component={Symptoms}></Route>
     <Route exact path="/contact-us" component={Contact}></Route>
-    <Route component={NotFound}></Route>
+    <Route component={NotFound} />
   </Switch>
 );
 

@@ -6,6 +6,7 @@ function NotFound() {
     <div>
       <Helmet>
         <title>Page Not Found</title>
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="marginfornav">
         <main className="container-fluid paddingAround max800">
