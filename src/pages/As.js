@@ -11,6 +11,8 @@ function As() {
     <ServiceContent
       title="Learning Related Visual Problems"
       linktext="Learn about other services we offer"
+      url="services/amblyopia-strabismus"
+      description="Learn about the signs and symptoms of amblyopia and strabismus, and how Vision Therapy can improve the condition."
     >
       <h5 className="h5articleTitle">What is amblyopia?</h5>
       <p>

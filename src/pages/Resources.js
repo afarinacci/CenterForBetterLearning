@@ -15,6 +15,32 @@ function Resources() {
     <div>
       <Helmet>
         <title>Professional Resources</title>
+        <meta
+          property="og:title"
+          content="Center for Better Learning | Professional Resources"
+        />
+        <meta
+          property="og:url"
+          content="https://www.centerforbetterlearning.com/resources"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="twitter:image"
+          content="https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:image"
+          content="https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
+        />
+        <meta
+          property="og:description"
+          content="Vision Therapy resources for Optometrists, Pediatricians, Physical / Occupational Therapists, Psychologists, and Teachers."
+        />
+        <meta
+          name="description"
+          content="Vision Therapy resources for Optometrists, Pediatricians, Physical / Occupational Therapists, Psychologists, and Teachers."
+        />
       </Helmet>
       <div className="marginfornav">
         <div className="wideSectionBannerPrimary">

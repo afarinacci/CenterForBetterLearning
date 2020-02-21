@@ -15,6 +15,8 @@ function Lrvp() {
     <ServiceContent
       title="Learning Related Visual Problems"
       linktext="Learn about other services we offer"
+      url="services/learning-related-visual-problems"
+      description="Learn how visual problems can effect your child's ability to read, spell, write, and follow directions."
     >
       <div className="container text-center">
         <Row className="justify-content-center">

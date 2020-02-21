@@ -11,6 +11,9 @@ function Sportsvision() {
     <ServiceContent
       title="Sports Vision"
       linktext="Learn about other services we offer"
+      url="services/sports-vision"
+      description="Sports vision training (VT) can be used by athletes of any age and any
+        level of sports to gain an upper hand on the competition."
     >
       <h3 className="h5articleTitle">Sports Vision Training</h3>
       <p>

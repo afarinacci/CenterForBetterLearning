@@ -15,6 +15,8 @@ function Visionrehab() {
     <ServiceContent
       title="Vision Rehabilitation"
       linktext="Learn about other services we offer"
+      url="services/vision-rehabilitation"
+      description="Acquired Brain Injury can cause dramatic changes to an individual's visual system. The root cause may come from a stroke, neurological dysfunction or hit on the head."
     >
       <h3 className="h5articleTitle">Acquired Brain Injury</h3>
       <p>
