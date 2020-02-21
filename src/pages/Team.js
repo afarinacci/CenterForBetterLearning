@@ -10,6 +10,7 @@ const Team = () => (
         property="og:title"
         content="Center for Better Learning | Meet Our Team"
       />
+      <meta property="og:type" content="article" />
       <meta
         property="og:description"
         content="Dr. Christina Murray, O.D., Renee Wise - Lead Vision Therapist, Paul Murray - Operations Manager"
@@ -17,6 +18,19 @@ const Team = () => (
       <meta
         name="description"
         content="Dr. Christina Murray, O.D., Renee Wise - Lead Vision Therapist, Paul Murray - Operations Manager"
+      />
+      <meta
+        property="og:url"
+        content="https://www.centerforbetterlearning.com/our-team"
+      />
+      <meta
+        property="twitter:image"
+        content="https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        property="og:image"
+        content="https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
       />
     </Helmet>
     <div className="marginfornav">
