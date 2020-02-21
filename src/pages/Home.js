@@ -39,7 +39,8 @@ function Home() {
   return (
     <div>
       <Helmet>
-        <title>Center for Better Learning Homepage</title>
+        <title>Center for Better Learning | Dr. Christina Murray, O.D.</title>
+        <meta name="description" content="Vision Therapy for Learning Related Visual Problems, Amblyopia, Strabismus, Acquired Brain Injury, and Sports Vision Training. Located in South Florida. Request an appointment today!" />
       </Helmet>
       <div className="marginfornav">
         <div className="videoContainer d-flex justify-content-center">

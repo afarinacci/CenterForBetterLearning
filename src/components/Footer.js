@@ -50,9 +50,11 @@ function Footer() {
                     className="footerIcon"
                   />
                 </span>
-                4171 W Hillsboro Blvd, Ste 13
-                <br />
-                Coconut Creek, FL 33703
+                <span itemProp="address">
+                  4171 W Hillsboro Blvd, Ste 13
+                  <br />
+                  Coconut Creek, FL 33703
+                </span>
                 <br />
               </address>
             </div>
@@ -86,9 +88,11 @@ function Footer() {
                     className="footerIcon"
                   />
                 </span>
-                3650 Forest Hill Blvd, Ste 2
-                <br />
-                West Palm Beach, FL 33406
+                <span itemProp="address">
+                  3650 Forest Hill Blvd, Ste 2
+                  <br />
+                  West Palm Beach, FL 33406
+                </span>
                 <br />
                 <span style={{ fontStyle: 'italic' }}>
                   Located inside Premier Eye Center
@@ -146,14 +150,42 @@ function Footer() {
             </Link>
           </h6>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 footerCol2">
+        <div
+          className="col-12 col-sm-6 col-md-4 footerCol2"
+          itemScope
+          itemType="http://schema.org/LocalBusiness"
+        >
           <h4 style={{ fontWeight: 'bold' }}>Office Hours</h4>
-          <div className="hours">Mon: 9:00 AM - 6:00 PM</div>
-          <div className="hours">Tue: 9:00 AM - 6:00 PM</div>
-          <div className="hours">Wed: 9:00 AM - 6:00 PM</div>
-          <div className="hours">Thu: 9:00 AM - 6:00 PM</div>
-          <div className="hours">Fri: 9:00 AM - 6:00 PM</div>
-          <div className="hours">Sat: 9:00 AM - 1:00 PM</div>
+          <div className="hours">
+            <time itemProp="openingHours" dateTime="Mo 09:00-18:00">
+              Mon: 9:00 AM - 6:00 PM
+            </time>
+          </div>
+          <div className="hours">
+            <time itemProp="openingHours" dateTime="Tu 09:00-18:00">
+              Tue: 9:00 AM - 6:00 PM
+            </time>
+          </div>
+          <div className="hours">
+            <time itemProp="openingHours" dateTime="We 09:00-18:00">
+              Wed: 9:00 AM - 6:00 PM
+            </time>
+          </div>
+          <div className="hours">
+            <time itemProp="openingHours" dateTime="Th 09:00-18:00">
+              Thu: 9:00 AM - 6:00 PM
+            </time>
+          </div>
+          <div className="hours">
+            <time itemProp="openingHours" dateTime="Fr 09:00-18:00">
+              Fri: 9:00 AM - 6:00 PM
+            </time>
+          </div>
+          <div className="hours">
+            <time itemProp="openingHours" dateTime="Sa 09:00-18:00">
+              Sat: 9:00 AM - 1:00 PM
+            </time>
+          </div>
           <div className="hours">
             Sun: <span style={{ fontStyle: 'italic' }}>Closed</span>
           </div>
