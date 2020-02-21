@@ -27,6 +27,8 @@ function Wivt() {
     <ServiceContent
       title="What is Vision Therapy?"
       linktext="Vision Therapy Services"
+      url="what-is-vision-therapy"
+      description="Vision therapy is an individualized program of neurosensory and neuromuscular activities prescribed by a developmental optometrist to develop, rehabilitate and enhance visual skills and processing."
     >
       <img
         src={justIcons}
