@@ -27,7 +27,6 @@ const Team = () => (
         property="twitter:image"
         content="https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/422/2018/04/UKKXIPXYVTEA.IMAGE_4.jpeg"
       />
-      <meta name="twitter:card" content="summary_large_image" />
       <meta
         property="og:image"
         content="https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/422/2018/04/UKKXIPXYVTEA.IMAGE_4.jpeg"
