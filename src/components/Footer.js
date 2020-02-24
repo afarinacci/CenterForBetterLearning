@@ -150,41 +150,25 @@ function Footer() {
             </Link>
           </h6>
         </div>
-        <div
-          className="col-12 col-sm-6 col-md-4 footerCol2"
-          itemScope
-          itemType="http://schema.org/LocalBusiness"
-        >
+        <div className="col-12 col-sm-6 col-md-4 footerCol2">
           <h4 style={{ fontWeight: 'bold' }}>Office Hours</h4>
           <div className="hours">
-            <time itemProp="openingHours" dateTime="Mo 09:00-18:00">
-              Mon: 9:00 AM - 6:00 PM
-            </time>
+            <time dateTime="Mo 09:00-18:00">Mon: 9:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time itemProp="openingHours" dateTime="Tu 09:00-18:00">
-              Tue: 9:00 AM - 6:00 PM
-            </time>
+            <time dateTime="Tu 09:00-18:00">Tue: 9:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time itemProp="openingHours" dateTime="We 09:00-18:00">
-              Wed: 9:00 AM - 6:00 PM
-            </time>
+            <time dateTime="We 09:00-18:00">Wed: 9:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time itemProp="openingHours" dateTime="Th 09:00-18:00">
-              Thu: 9:00 AM - 6:00 PM
-            </time>
+            <time dateTime="Th 09:00-18:00">Thu: 9:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time itemProp="openingHours" dateTime="Fr 09:00-18:00">
-              Fri: 9:00 AM - 6:00 PM
-            </time>
+            <time dateTime="Fr 09:00-18:00">Fri: 9:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time itemProp="openingHours" dateTime="Sa 09:00-18:00">
-              Sat: 9:00 AM - 1:00 PM
-            </time>
+            <time dateTime="Sa 09:00-13:00">Sat: 9:00 AM - 1:00 PM</time>
           </div>
           <div className="hours">
             Sun: <span style={{ fontStyle: 'italic' }}>Closed</span>
