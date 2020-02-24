@@ -56,7 +56,8 @@ function App() {
                   "streetAddress": "4171 W Hillsboro Blvd, Ste 13"
                   },
                 "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
-                "telephone" : "+1-561-462-1245"
+                "telephone" : "+1-561-462-1245",
+                "image": ""https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
               },
               {
                 "@type": "LocalBusiness",
@@ -69,24 +70,25 @@ function App() {
                   "streetAddress": "3650 Forest Hill Blvd, Ste 2"
                   },
                 "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
-                "telephone" : "+1-561-462-2356"
+                "telephone" : "+1-561-462-2356",
+                "image": ""https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
               }
             ],
           "employees": [
             {
               "@type": "Person",
               "jobTitle": "Optometrist",
-              "name": "Dr. Christina Murray, O.D.",
+              "name": "Dr. Christina Murray, O.D."
             },
             {
               "@type": "Person",
               "jobTitle": "Lead Vision Therapist",
-              "name": "Renee Wise",
+              "name": "Renee Wise"
             },
             {
               "@type": "Person",
               "jobTitle": "Operations Manager",
-              "name": "Paul Murray",
+              "name": "Paul Murray"
             }
           ]
         }
