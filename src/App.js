@@ -35,6 +35,62 @@ function App() {
           name="description"
           content="Vision Therapy for Learning Related Visual Problems, Amblyopia, Strabismus, Acquired Brain Injury, and Sports Vision Training. Located in South Florida. Request an appointment today!"
         />
+        <script type="application/ld+json">{`
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Center for Better Learning",
+          "email": "mailto:info@centerforbetterlearning.com",
+          "url": "https://www.centerforbetterlearning.com",
+          "logo": "https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200",
+          "description": "Vision Therapy for Learning Related Visual Problems, Amblyopia, Strabismus, Acquired Brain Injury, and Sports Vision Training. Located in South Florida. Request an appointment today!",
+          "location": [
+              {
+                "@type": "LocalBusiness",
+                "name" : "Center for Better Learning – Coconut Creek",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Coconut Creek",
+                  "addressRegion": "Florida",
+                  "postalCode": "33703",
+                  "streetAddress": "4171 W Hillsboro Blvd, Ste 13"
+                  },
+                "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
+                "telephone" : "+1-561-462-1245"
+              },
+              {
+                "@type": "LocalBusiness",
+                "name" : "Center for Better Learning – West Palm Beach",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "West Palm Beach",
+                  "addressRegion": "Florida",
+                  "postalCode": "33406",
+                  "streetAddress": "3650 Forest Hill Blvd, Ste 2"
+                  },
+                "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
+                "telephone" : "+1-561-462-2356"
+              }
+            ],
+          "employees": [
+            {
+              "@type": "Person",
+              "jobTitle": "Optometrist",
+              "name": "Dr. Christina Murray, O.D.",
+            },
+            {
+              "@type": "Person",
+              "jobTitle": "Lead Vision Therapist",
+              "name": "Renee Wise",
+            },
+            {
+              "@type": "Person",
+              "jobTitle": "Operations Manager",
+              "name": "Paul Murray",
+            }
+          ]
+        }
+    `}</script>
       </Helmet>
       <CustomNavbar />
       <Routes />
