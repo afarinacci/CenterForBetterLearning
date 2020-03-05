@@ -126,7 +126,7 @@ function Wivt() {
             </h5>
             <p>
               The average Vision Therapy program is 6-8 months. The length of
-              treatment depends on severity of your specific diagnosis and the
+              treatment depends on the severity of your specific diagnosis and
               your goals.
             </p>
           </Col>
@@ -156,9 +156,9 @@ function Wivt() {
               The success of a Vision Therapy program is highly dependent on the
               repetition and practice of the new skills learned during in-office
               sessions. We expect you to practice at home 3-4 days per week for
-              20-30 minutes to complete program in estimated time. For those who
-              cannot commit to consistent home practice, we recommend two in
-              office sessions per week.
+              20-30 minutes in order to complete the program in the estimated
+              time. For those who cannot commit to consistent home practice, we
+              recommend two in office sessions per week.
             </p>
           </Col>
         </Row>
