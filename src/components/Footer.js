@@ -7,7 +7,9 @@ import {
   faCalendarAlt,
   faEnvelope,
   faUserCircle,
-  faAngleRight
+  faAngleRight,
+  faQuestionCircle,
+  faCreditCard
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookSquare,
@@ -53,7 +55,7 @@ function Footer() {
                 <span itemProp="address">
                   4171 W Hillsboro Blvd, Ste 13
                   <br />
-                  Coconut Creek, FL 33703
+                  Coconut Creek, FL 33073
                 </span>
                 <br />
               </address>
@@ -149,11 +151,26 @@ function Footer() {
               Request an Appointment
             </Link>
           </h6>
+          <h6 className="footerLinkDiv">
+            <Link to="/faqs" onClick={scrollTop} className="footerLink">
+              <FontAwesomeIcon
+                icon={faQuestionCircle}
+                className="footerLinkIcon"
+              />
+              Frequently Asked Questions
+            </Link>
+          </h6>
+          <h6 className="footerLinkDiv">
+            <Link to="/payments" onClick={scrollTop} className="footerLink">
+              <FontAwesomeIcon icon={faCreditCard} className="footerLinkIcon" />
+              Payment Options
+            </Link>
+          </h6>
         </div>
         <div className="col-12 col-sm-6 col-md-4 footerCol2">
           <h4 style={{ fontWeight: 'bold' }}>Office Hours</h4>
           <div className="hours">
-            <time dateTime="Mo 09:00-18:00">Mon: 9:00 AM - 6:00 PM</time>
+            <time dateTime="Mo 09:00-18:00">Mon: 9:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
             <time dateTime="Tu 09:00-18:00">Tue: 9:00 AM - 6:00 PM</time>
@@ -162,7 +179,7 @@ function Footer() {
             <time dateTime="We 09:00-18:00">Wed: 9:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="Th 09:00-18:00">Thu: 9:00 AM - 6:00 PM</time>
+            <time dateTime="Th 09:00-18:00">Thu: 9:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
             <time dateTime="Fr 09:00-18:00">Fri: 9:00 AM - 6:00 PM</time>

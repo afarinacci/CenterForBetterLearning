@@ -52,10 +52,10 @@ function App() {
                   "@type": "PostalAddress",
                   "addressLocality": "Coconut Creek",
                   "addressRegion": "Florida",
-                  "postalCode": "33703",
+                  "postalCode": "33073",
                   "streetAddress": "4171 W Hillsboro Blvd, Ste 13"
                   },
-                "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
+                "openingHours": ["Mo 09:00-19:00", "Tu 09:00-18:00", "We 09:00-18:00", "Th 09:00-19:00", "Fr 09:00-18:00", "Sa 09:00-13:00"],
                 "telephone" : "+1-561-462-1245",
                 "image": "https://lh3.googleusercontent.com/IZozt6YjnYiibHeeMcvcJ3yrmfCH-dKNhVvBEBGU5Lh41f84cwBun7Nlpz8tbcqNAVNN8Ifoc2O5aG8sVEBVU4dEEOclASGdDPhtGGBikkxUW8kresvfqtin6vpZTqR-W89ylQPRd3g=w1200"
               },

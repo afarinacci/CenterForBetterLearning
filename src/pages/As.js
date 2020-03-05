@@ -75,7 +75,7 @@ function As() {
             <img
               src={childAS_w1641}
               className="fullWidthImage"
-              alt="Doctor checking eyes of injured football player"
+              alt="Child with strabismus"
             ></img>
           </picture>
         </Col>

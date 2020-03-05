@@ -14,6 +14,8 @@ import Symptoms from '../pages/Symptoms';
 import Diagnosis from '../pages/Diagnosis';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
+import Faqs from '../pages/Faqs';
+import Payments from '../pages/Payments';
 
 const Routes = () => (
   <Switch>
@@ -42,6 +44,8 @@ const Routes = () => (
     <Route exact path="/resources" component={Resources}></Route>
     <Route exact path="/symptoms" component={Symptoms}></Route>
     <Route exact path="/contact-us" component={Contact}></Route>
+    <Route exact path="/faqs" component={Faqs}></Route>
+    <Route exact path="/payments" component={Payments}></Route>
     <Route component={NotFound} />
   </Switch>
 );
