@@ -46,6 +46,7 @@ const Routes = () => (
     <Route exact path="/contact-us" component={Contact}></Route>
     <Route exact path="/faqs" component={Faqs}></Route>
     <Route exact path="/payments" component={Payments}></Route>
+
     <Route component={NotFound} />
   </Switch>
 );

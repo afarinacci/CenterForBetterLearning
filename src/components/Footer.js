@@ -9,16 +9,18 @@ import {
   faUserCircle,
   faAngleRight,
   faQuestionCircle,
-  faCreditCard
+  faCreditCard,
+  faFileDownload,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookSquare,
   faInstagram,
   faGoogle,
-  faYelp
+  faYelp,
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
-import { Button } from 'reactstrap';
+import { Button, NavLink } from 'reactstrap';
+import privacyPolicy from './../forms/Notice_of_Privacy_Practices.pdf';
 
 function Footer() {
   const d = new Date();
@@ -165,6 +167,15 @@ function Footer() {
               <FontAwesomeIcon icon={faCreditCard} className="footerLinkIcon" />
               Payment Options
             </Link>
+          </h6>
+          <h6 className="footerLinkDiv">
+            <a href={privacyPolicy} download className="footerLink">
+              <FontAwesomeIcon
+                icon={faFileDownload}
+                className="footerLinkIcon"
+              />
+              Privacy Policy
+            </a>
           </h6>
         </div>
         <div className="col-12 col-sm-6 col-md-4 footerCol2">

@@ -20,7 +20,7 @@ const Faqs = () => (
       />
       <meta
         property="og:url"
-        content="https://www.centerforbetterlearning.com/our-team"
+        content="https://www.centerforbetterlearning.com/faqs"
       />
       <meta
         property="twitter:image"
