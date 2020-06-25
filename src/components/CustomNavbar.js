@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,
   faFileDownload,
-  faCalendarAlt
+  faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   Nav,
@@ -18,7 +18,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Collapse
+  Collapse,
 } from 'reactstrap';
 import logoTop from './../images/LogoWhite.png';
 import logoBottom from './../images/LogoBlack.png';
@@ -35,7 +35,7 @@ class CustomNavbar extends React.Component {
     this.scrollToLocations = this.scrollToLocations.bind(this);
   }
   toggleNavbar() {
-    this.setState(state => ({ collapsed: !state.collapsed }));
+    this.setState((state) => ({ collapsed: !state.collapsed }));
   }
   closeNavbar() {
     if (this.state.collapsed !== true) {
@@ -259,6 +259,16 @@ class CustomNavbar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <NavLink
+                  to="/blog"
+                  tag={RRNavLink}
+                  onClick={this.closeNavbar}
+                  activeClassName="active"
+                >
+                  Blog
+                </NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="#" onClick={this.scrollToLocations}>
                   Locations

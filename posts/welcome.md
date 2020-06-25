@@ -1,0 +1,10 @@
+---
+title: Welcome to CenterForBetterLearning.com
+author: Andrea Farinacci
+date: 2020-06-25T07:00:00.255Z
+thumbnail: /images/logo512.png
+---
+
+Check out the new blog on CenterForBetterLearning.com
+
+_Come back for our weekly blog posts._

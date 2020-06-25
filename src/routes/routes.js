@@ -16,6 +16,8 @@ import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
 import Faqs from '../pages/Faqs';
 import Payments from '../pages/Payments';
+import Blog from '../pages/Blog';
+import Post from '../pages/Post';
 
 const Routes = () => (
   <Switch>
@@ -46,7 +48,8 @@ const Routes = () => (
     <Route exact path="/contact-us" component={Contact}></Route>
     <Route exact path="/faqs" component={Faqs}></Route>
     <Route exact path="/payments" component={Payments}></Route>
-
+    <Route exact path="/blog" component={Blog}></Route>
+    <Route exact path="/post/:id" render={(props) => <Post {...props} />} />
     <Route component={NotFound} />
   </Switch>
 );
