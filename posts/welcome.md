@@ -5,6 +5,6 @@ date: 2020-06-25T07:00:00.255Z
 thumbnail: /images/logo512.png
 ---
 
-Check out the new blog on CenterForBetterLearning.com
+Check out our new blog on CenterForBetterLearning.com
 
 _Come back for our weekly blog posts._
