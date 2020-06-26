@@ -873,9 +873,11 @@ a .socialIcon:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.post h6 {
-  font-size: 0.7em;
+.post p + h6 {
   text-align: center;
+}
+.post p + h6 em {
+  font-size: 0.7em;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon&display=swap');
