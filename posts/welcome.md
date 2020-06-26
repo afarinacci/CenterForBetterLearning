@@ -7,4 +7,4 @@ thumbnail: /images/logo512.png
 
 Check out our new blog on CenterForBetterLearning.com
 
-_Come back for our weekly blog posts._
+_Come back to see our weekly blog posts._
