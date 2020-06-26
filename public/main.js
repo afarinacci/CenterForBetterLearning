@@ -100,6 +100,7 @@ const getPosts = () => {
           });
           let data = JSON.stringify(sortedList);
           fs.writeFileSync('src/posts.json', data);
+          console.log('created posts.json');
         }
       });
     });
