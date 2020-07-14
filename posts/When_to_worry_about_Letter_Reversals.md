@@ -1,6 +1,6 @@
 ---
 title: When to worry about Letter Reversals
-author: Christina Murray
+author: Dr. Christina Murray, O.D.
 date: 2020-06-26T15:00:00.000Z
 thumbnail: /images/letterreversals3.png
 ---
@@ -24,7 +24,7 @@ For even a smart child, each one of these letters is a bubble with a stick attac
 
 ![Brain Letter Reversals](/images/letterreversals4.png 'Brain Letter Reversals')
 
-###### *in literacy acquisition. Pegado F, Nakamura K and Hannagan T (2014).*
+###### _in literacy acquisition. Pegado F, Nakamura K and Hannagan T (2014)._
 
 <br>
 <br>

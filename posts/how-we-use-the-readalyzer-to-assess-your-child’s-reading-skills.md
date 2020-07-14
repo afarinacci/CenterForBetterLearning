@@ -1,6 +1,6 @@
 ---
 title: How We Use the ReadAlyzer to Assess Your Child’s Reading Skills
-author: Christina Murray
+author: Dr. Christina Murray, O.D.
 date: 2020-06-29T14:00:00.000Z
 thumbnail: /images/picture1.png
 ---
