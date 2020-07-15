@@ -32,5 +32,5 @@ There are ways to help a child overcome their visual deficits caused by visual s
 * Does your child have frequent headaches or eye discomfort while reading or doing homework?
 
 <br>
-<br>
+
 ![Vision and classroom tasks chart](/images/blog3image4.png)
