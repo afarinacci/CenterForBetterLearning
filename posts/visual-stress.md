@@ -1,5 +1,5 @@
 ---
-title: "Visual Stress of Virtual Learning "
+title: Visual Stress of Virtual Learning
 author: Dr. Christina Murray, O.D.
 date: 2020-07-14T17:00:00.000Z
 thumbnail: /images/blog3image2.png
