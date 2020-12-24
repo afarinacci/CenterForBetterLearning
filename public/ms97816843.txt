@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "centerforbetterlearning.com",
+  "Id": "d2ff978e-f8ba-40fe-b953-e77018d9b002"
+}
