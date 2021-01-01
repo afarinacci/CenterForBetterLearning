@@ -9,7 +9,7 @@ function Appt() {
         <title>Request an Appointment</title>
         <meta
           property="og:title"
-          content="Center for Better Learning | Request an Appointment"
+          content="Center for Better Learning | Schedule an Appointment"
         />
         <meta
           property="og:url"
@@ -19,7 +19,7 @@ function Appt() {
       <div className="marginfornav">
         <div className="wideSectionBannerPrimary">
           <h1 className="text-center pageTitleOnDark">
-            Request an Appointment
+            Schedule an Appointment
           </h1>
         </div>
         <main className="container-fluid page paddingAround max800 effect8">

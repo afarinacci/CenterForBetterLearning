@@ -146,7 +146,7 @@ function Footer() {
                 icon={faCalendarAlt}
                 className="footerLinkIcon"
               />
-              Request an Appointment
+              Schedule an Appointment
             </Link>
           </h6>
           <h6 className="footerLinkDiv">

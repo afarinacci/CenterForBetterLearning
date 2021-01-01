@@ -103,7 +103,7 @@ class CustomNavbar extends React.Component {
                 icon={faCalendarAlt}
                 style={{ color: 'var(--primary)' }}
               />{' '}
-              Request an Appointment
+              Schedule an Appointment
             </Link>
           </div>
         </div>
