@@ -180,10 +180,10 @@ function Footer() {
             <time dateTime="Mo 09:00-18:00">Mon: 10:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="Tu 09:00-18:00">Tue: 10:00 AM - 6:00 PM</time>
+            <time dateTime="Tu 09:00-18:00">Tue: 10:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="We 09:00-18:00">Wed: 10:00 AM - 6:00 PM</time>
+            <time dateTime="We 09:00-18:00">Wed: 10:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
             <time dateTime="Th 09:00-18:00">Thu: 10:00 AM - 7:00 PM</time>
