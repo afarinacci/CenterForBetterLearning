@@ -83,7 +83,7 @@ function Footer() {
         </div>
         <div className="footerCol col-12 col-sm-6 row">
           <div className="footerCol col-12 col-lg-6 footerColLocationName">
-            <h3 className="footerlocation">West Palm Beach</h3>
+            <h3 className="footerlocation">Boynton Beach</h3>
             <div>
               <address>
                 <span>
@@ -93,13 +93,9 @@ function Footer() {
                   />
                 </span>
                 <span itemProp="address">
-                  3650 Forest Hill Blvd, Ste 2
+                  9200 S Jog Rd Suite 200
                   <br />
-                  West Palm Beach, FL 33406
-                </span>
-                <br />
-                <span style={{ fontStyle: 'italic' }}>
-                  Located inside Premier Eye Center
+                  Boynton Beach, FL 33472
                 </span>
               </address>
             </div>
