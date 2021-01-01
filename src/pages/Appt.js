@@ -40,7 +40,12 @@ function Appt() {
           <Button
             color="primary"
             className="buttonPrimary"
-            href="https://outlook.office365.com/owa/calendar/CenterforBetterLearningBoyntonBeach@centerforbetterlearning.com/bookings/"
+            onClick={() =>
+              window.open(
+                'https://outlook.office365.com/owa/calendar/CenterforBetterLearningBoyntonBeach@centerforbetterlearning.com/bookings/',
+                '_blank'
+              )
+            }
           >
             Book Appointment <FontAwesomeIcon icon={faArrowRight} />
           </Button>
