@@ -108,13 +108,13 @@ function Footer() {
           </div>
           <div className="footerCol col-12 col-lg-6 footerMapCol">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.9259432077806!2d-80.0996689849606!3d26.650853483241118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d7e2b2fda219%3A0x4a24362d573a4248!2s3650%20Forest%20Hill%20Blvd%20%232%2C%20West%20Palm%20Beach%2C%20FL%2033406%2C%20USA!5e0!3m2!1sen!2s!4v1580894192930!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.390095556514!2d-80.14933378496293!3d26.53973318328962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d92128c2c10653%3A0x3910713ddc4f44fa!2s9200%20Jog%20Rd%20%23200%2C%20Boynton%20Beach%2C%20FL%2033472!5e0!3m2!1sen!2sus!4v1609527709184!5m2!1sen!2sus"
               width="220"
               height="220"
               frameBorder="0"
               style={{ border: '2px solid rgb(249,249,249)' }}
               allowFullScreen=""
-              title="WestPalmLocation"
+              title="BoyntonLocation"
             ></iframe>
           </div>
         </div>
@@ -177,22 +177,22 @@ function Footer() {
         <div className="col-12 col-sm-6 col-md-4 footerCol2">
           <h4 style={{ fontWeight: 'bold' }}>Office Hours</h4>
           <div className="hours">
-            <time dateTime="Mo 09:00-18:00">Mon: 9:00 AM - 7:00 PM</time>
+            <time dateTime="Mo 09:00-18:00">Mon: 10:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="Tu 09:00-18:00">Tue: 9:00 AM - 6:00 PM</time>
+            <time dateTime="Tu 09:00-18:00">Tue: 10:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="We 09:00-18:00">Wed: 9:00 AM - 6:00 PM</time>
+            <time dateTime="We 09:00-18:00">Wed: 10:00 AM - 6:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="Th 09:00-18:00">Thu: 9:00 AM - 7:00 PM</time>
+            <time dateTime="Th 09:00-18:00">Thu: 10:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="Fr 09:00-18:00">Fri: 9:00 AM - 6:00 PM</time>
+            <time dateTime="Fr 09:00-18:00">Fri: 10:00 AM - 7:00 PM</time>
           </div>
           <div className="hours">
-            <time dateTime="Sa 09:00-13:00">Sat: 9:00 AM - 1:00 PM</time>
+            <time dateTime="Sa 09:00-13:00">Sat: 10:00 AM - 1:00 PM</time>
           </div>
           <div className="hours">
             Sun: <span style={{ fontStyle: 'italic' }}>Closed</span>
