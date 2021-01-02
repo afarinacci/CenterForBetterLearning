@@ -26,6 +26,7 @@ function Appt() {
           </h1>
         </div>
         <div className="container-fluid" style={{ maxWidth: '900px' }}>
+          <br />
           <h3>Book an appointment at the Coconut Creek Location</h3>
           <Button
             color="primary"
@@ -39,6 +40,7 @@ function Appt() {
           >
             Book Appointment <FontAwesomeIcon icon={faArrowRight} />
           </Button>
+          <br />
           <br />
           <br />
           <h3>Book an appointment at the Boynton Beach Location</h3>
