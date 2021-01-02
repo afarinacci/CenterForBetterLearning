@@ -73,20 +73,20 @@ const Payments = () => (
         <p>
           Our programs are custom, and each patient and duration of treatment
           depends on individual goals. We continue until your visual abilities
-          are second nature enough to hold when we are finished. To continue
-          changing lives, we insist on the excellence of our care.
+          are second nature enough to hold when we are finished.
         </p>
         <p>
-          We,therefore, do not act as a participating provider for any insurance
-          plan. Dr. Murray is unwilling for an insurance company's arbitrary
-          policies to prevent the excellence we expect. None of us can afford
-          wasting time and expense on mediocre care whose results may not hold
-          over time. At Center for Better Learning, we insist on providing the
-          life-changing results for all patients enrolled in our therapy
+          To continue changing lives, we insist on the excellence of our care.
+          We, therefore, do not act as a participating provider for any
+          insurance plan. Dr. Murray is unwilling for an insurance company's
+          arbitrary policies to prevent the excellence we expect. None of us can
+          afford wasting time and expense on mediocre care whose results may not
+          hold over time. At Center for Better Learning, we insist on providing
+          the life-changing results for all patients enrolled in our therapy
           programs.
         </p>
         <br />
-        <h3>Flexible Spending Accounts</h3>
+        <h3>FLEXIBLE SPENDING ACCOUNTS</h3>
         <p>
           Many employers are offering Flexible Spending Account (FSA) options to
           employees. Vision Therapy generally qualifies as a medically necessary
