@@ -41,6 +41,13 @@ function Appt() {
             Book Appointment <FontAwesomeIcon icon={faArrowRight} />
           </Button>
           <br />
+          <iframe
+            src="https://outlook.office365.com/owa/calendar/CenterforBetterLearning@centerforbetterlearning.com/bookings/"
+            width="100%"
+            height="100%"
+            scrolling="yes"
+            style="border:0"
+          ></iframe>
           <br />
           <br />
           <h3>Book an appointment at the Boynton Beach Location</h3>
