@@ -108,7 +108,7 @@ function Footer() {
           </div>
           <div className="footerCol col-12 col-lg-6 footerMapCol">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.390095556514!2d-80.14933378496293!3d26.53973318328962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d92128c2c10653%3A0x3910713ddc4f44fa!2s9200%20Jog%20Rd%20%23200%2C%20Boynton%20Beach%2C%20FL%2033472!5e0!3m2!1sen!2sus!4v1609527709184!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.937297049948!2d-80.15158878496258!3d26.554282183283295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d926d3ef6ae225%3A0x521c4b4e548b8bd0!2s8200%20Jog%20Rd%20%23200%2C%20Boynton%20Beach%2C%20FL%2033472!5e0!3m2!1sen!2sus!4v1610817264108!5m2!1sen!2sus"
               width="220"
               height="220"
               frameBorder="0"
