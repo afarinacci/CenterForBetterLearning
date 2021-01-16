@@ -93,7 +93,7 @@ function Footer() {
                   />
                 </span>
                 <span itemProp="address">
-                  9200 S Jog Rd Suite 200
+                  8200 S Jog Rd Suite 200
                   <br />
                   Boynton Beach, FL 33472
                 </span>
