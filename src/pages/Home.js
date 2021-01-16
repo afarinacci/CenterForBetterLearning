@@ -7,7 +7,7 @@ import {
   faAngleRight,
   faCalendarAlt,
   faUserCircle,
-  faMapMarkerAlt
+  faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import blueLogo from './../images/LogoForBlue.png';
 import homepageVideo from './../images/childfrustrated_33mb.mov';
@@ -114,7 +114,7 @@ function Home() {
               className="homeLinkPrimary homeLinkPrimarySpace"
             >
               <h4 className="textShadow" style={{ margin: '12px 0px' }}>
-                Request an{' '}
+                Schedule an{' '}
                 <span style={{ whiteSpace: 'nowrap' }}>
                   Appointment <FontAwesomeIcon icon={faAngleRight} />
                 </span>
