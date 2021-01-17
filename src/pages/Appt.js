@@ -41,6 +41,19 @@ function Appt() {
             Book Appointment <FontAwesomeIcon icon={faArrowRight} />
           </Button>
           <br />
+
+          <iframe
+            src="https://app.acuityscheduling.com/schedule.php?owner=21675469&location=8200%20S%20Jog%20Rd.%20Suite%20200%20Boynton%20Beach%2C%20FL%2033472"
+            title="Schedule Appointment"
+            width="100%"
+            height="800"
+            frameBorder="0"
+          ></iframe>
+          <script
+            src="https://embed.acuityscheduling.com/js/embed.js"
+            type="text/javascript"
+          ></script>
+
           <br />
           <br />
           <h3>Book an appointment at the Boynton Beach Location</h3>
