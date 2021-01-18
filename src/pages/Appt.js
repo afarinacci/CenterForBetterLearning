@@ -26,6 +26,8 @@ function Appt() {
           </h1>
         </div>
         <div className="container-fluid" style={{ maxWidth: '900px' }}>
+          <br />
+          <br />
           <Row bg-light>
             <Col sm="12" md="6">
               <Card body>
