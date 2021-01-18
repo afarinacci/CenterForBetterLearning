@@ -1,7 +1,7 @@
 import React from 'react';
 import ApptForm from './../components/ApptForm';
 import Helmet from 'react-helmet';
-import { Row, Col, Button } from 'reactstrap';
+import { Row, Col, Button, Card, CardTitle } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -28,34 +28,42 @@ function Appt() {
         <div className="container-fluid" style={{ maxWidth: '900px' }}>
           <Row bg-light>
             <Col sm="12" md="6">
-              <h3>Book an appointment at the Coconut Creek Location</h3>
-              <Button
-                color="primary"
-                className="buttonPrimary"
-                onClick={() =>
-                  window.open(
-                    'https://app.acuityscheduling.com/schedule.php?owner=21675469&location=4171%20W%20Hillsboro%20Blvd.%20Suite%2013%20Coconut%20Creek%2C%20FL%2033073',
-                    '_blank'
-                  )
-                }
-              >
-                Book Appointment <FontAwesomeIcon icon={faArrowRight} />
-              </Button>
+              <Card body>
+                <CardTitle tag="h5">
+                  Book an appointment at the Coconut Creek Location
+                </CardTitle>
+                <Button
+                  color="primary"
+                  className="buttonPrimary"
+                  onClick={() =>
+                    window.open(
+                      'https://app.acuityscheduling.com/schedule.php?owner=21675469&location=4171%20W%20Hillsboro%20Blvd.%20Suite%2013%20Coconut%20Creek%2C%20FL%2033073',
+                      '_blank'
+                    )
+                  }
+                >
+                  Book Appointment <FontAwesomeIcon icon={faArrowRight} />
+                </Button>
+              </Card>
             </Col>
             <Col sm="12" md="6">
-              <h3>Book an appointment at the Boynton Beach Location</h3>
-              <Button
-                color="primary"
-                className="buttonPrimary"
-                onClick={() =>
-                  window.open(
-                    'https://app.acuityscheduling.com/schedule.php?owner=21675469&location=8200%20S%20Jog%20Rd.%20Suite%20200%20Boynton%20Beach%2C%20FL%2033472',
-                    '_blank'
-                  )
-                }
-              >
-                Book Appointment <FontAwesomeIcon icon={faArrowRight} />
-              </Button>
+              <Card body>
+                <CardTitle tag="h5">
+                  Book an appointment at the Boynton Beach Location
+                </CardTitle>
+                <Button
+                  color="primary"
+                  className="buttonPrimary"
+                  onClick={() =>
+                    window.open(
+                      'https://app.acuityscheduling.com/schedule.php?owner=21675469&location=8200%20S%20Jog%20Rd.%20Suite%20200%20Boynton%20Beach%2C%20FL%2033472',
+                      '_blank'
+                    )
+                  }
+                >
+                  Book Appointment <FontAwesomeIcon icon={faArrowRight} />
+                </Button>
+              </Card>
             </Col>
           </Row>
         </div>
