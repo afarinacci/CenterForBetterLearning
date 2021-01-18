@@ -31,9 +31,7 @@ function Appt() {
           <Row bg-light>
             <Col sm="12" md="6">
               <Card body>
-                <CardTitle tag="h5">
-                  Book an appointment at the Coconut Creek Location
-                </CardTitle>
+                <CardTitle tag="h5">Coconut Creek Location</CardTitle>
                 <Button
                   color="primary"
                   className="buttonPrimary"
@@ -50,9 +48,7 @@ function Appt() {
             </Col>
             <Col sm="12" md="6">
               <Card body>
-                <CardTitle tag="h5">
-                  Book an appointment at the Boynton Beach Location
-                </CardTitle>
+                <CardTitle tag="h5">Boynton Beach Location</CardTitle>
                 <Button
                   color="primary"
                   className="buttonPrimary"
