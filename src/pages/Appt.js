@@ -1,7 +1,7 @@
 import React from 'react';
 import ApptForm from './../components/ApptForm';
 import Helmet from 'react-helmet';
-import { Button } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
