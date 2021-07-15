@@ -37,7 +37,7 @@ function Appt() {
                   className="buttonPrimary"
                   onClick={() =>
                     window.open(
-                      'https://app.acuityscheduling.com/schedule.php?owner=21675469&location=4171%20W%20Hillsboro%20Blvd.%20Suite%2013%20Coconut%20Creek%2C%20FL%2033073',
+                      'https://app.acuityscheduling.com/schedule.php?owner=21675469&calendarID=4941585',
                       '_blank'
                     )
                   }
