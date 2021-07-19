@@ -55,7 +55,7 @@ function Footer() {
                   />
                 </span>
                 <span itemProp="address">
-                  4171 W Hillsboro Blvd, Ste 13
+                  4171 W Hillsboro Blvd, Ste 10
                   <br />
                   Coconut Creek, FL 33073
                 </span>

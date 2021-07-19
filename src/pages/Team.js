@@ -64,7 +64,11 @@ const Team = () => (
           <div className="card">
             <div className="row no-gutters">
               <div className="col-md-4 my-auto text-center">
-                {/* <img className="bioimg card-img-top" src="" alt="Paul Murray" /> */}
+                <img
+                  className="bioimg card-img-top"
+                  src="https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/422/2018/04/UKKXIPXYVTEA.IMAGE_4.jpeg"
+                  alt="Dr. Christina Murray, O.D."
+                />
               </div>
               <div className="col-md-8">
                 <Bio
@@ -73,6 +77,31 @@ const Team = () => (
                   bio={[
                     "Paul's professional career spans 10+ years in the sales industry selling a wide variety of products and managing teams of sales professionals around the country. Paul's ambition to help people naturally lead him to support Dr. Murray at the Center for Better Learning to provide Vision Therapy services in the tri-county area.",
                     "When Paul isn't working, he enjoys spending time with his newborn daughter, being outside, and playing with his dogs.",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
+                  src="public/images/IMG_3998.JPG"
+                  alt="Lori Baron, BS, COVT"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Lori Baron, BS, COVT"
+                  role="Lead Vision Therapist"
+                  bio={[
+                    'Lori was born and raised in sunny, south Florida. She went to Florida Atlantic University where she received her BS degree in Biological Sciences. She’s been interested in helping people of all ages meet their vision therapy and educational goals for over 10 years. As her love for Vision Therapy grew, she became certified as a Vision Therapist from the College of Optometrists in Vision Development.  Lori’s passion is working with special populations, gifted individuals, athletes, brain injury, strabismus, and amblyopia patients to help them succeed at work and school.',
+                    'She loves working at C4BL. “The facilities are state of the art with the latest technology/equipment and large enough for safety with social distancing at the utmost time during a global pandemic. Secondly, the team works as a family supporting one another and planning patients collaboratively to provide the best patient care. Finally, the continuing education is an endless resource here and I love to learn!”',
+                    'Fun Fact about Lori: Outside of work you may catch Lori at your local Bikram Yoga studio or playing Pokemon Go. She likes spending time outdoors in nature, health and fitness, arts and crafts, reading and traveling.',
                   ]}
                 />
               </div>
