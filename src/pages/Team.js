@@ -1,7 +1,8 @@
 import React from 'react';
 import Bio from '../components/Bio';
 import Helmet from 'react-helmet';
-import paulmurray from '../../public/images/paul_murray.jpeg';
+import paulmurray from '/images/paul_murray.jpeg';
+import loribaron from '/images/IMG_3998.JPG';
 
 const Team = () => (
   <div>
@@ -91,7 +92,7 @@ const Team = () => (
               <div className="col-md-4 my-auto text-center">
                 <img
                   className="bioimg card-img-top"
-                  src="/images/IMG_3998.JPG"
+                  src={loribaron}
                   alt="Lori Baron, BS, COVT"
                 />
               </div>
