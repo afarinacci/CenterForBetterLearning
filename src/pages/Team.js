@@ -3,6 +3,8 @@ import Bio from '../components/Bio';
 import Helmet from 'react-helmet';
 import paulmurray from '../images/paul_murray.jpeg';
 import loribaron from '../images/IMG_3998.JPG';
+//import juanordonez from '../images/IMG_.JPG';
+import abidkhan from '../images/IMG_3983.JPG';
 
 const Team = () => (
   <div>
@@ -103,8 +105,32 @@ const Team = () => (
                   bio={[
                     'Lori was born and raised in sunny, south Florida. She went to Florida Atlantic University where she received her BS degree in Biological Sciences. She’s been interested in helping people of all ages meet their vision therapy and educational goals for over 10 years. As her love for Vision Therapy grew, she became certified as a Vision Therapist from the College of Optometrists in Vision Development.  Lori’s passion is working with special populations, gifted individuals, athletes, brain injury, strabismus, and amblyopia patients to help them succeed at work and school.',
                     'She loves working at C4BL. “The facilities are state of the art with the latest technology/equipment and large enough for safety with social distancing at the utmost time during a global pandemic. Secondly, the team works as a family supporting one another and planning patients collaboratively to provide the best patient care. Finally, the continuing education is an endless resource here and I love to learn!”',
-                    'Fun Fact about Lori',
-                    'Outside of work you may catch Lori at your local Bikram Yoga studio or playing Pokemon Go. She likes spending time outdoors in nature, health and fitness, arts and crafts, reading and traveling.',
+                    'Fun Fact about Lori: Outside of work you may catch Lori at your local Bikram Yoga studio or playing Pokemon Go. She likes spending time outdoors in nature, health and fitness, arts and crafts, reading and traveling.',
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
+                  src={juanordonez}
+                  alt="Juan Ordonez, BS, OVT"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Juan Ordonez, BS, OVT"
+                  role="Vision Therapist"
+                  bio={[
+                    "Juan was born in Bogota, Colombia and lived there for six years before emigrating to South Florida with his immediate family. He attended Florida Atlantic University, where he earned his Bachelor's degree in Biological Sciences while minoring in Psychology. He discovered his passion for therapy while attending FAU and working at the Louis and Anne Green Memory and Wellness Center, where he assisted in activities and exercises for participants with dementia and other related illnesses.",
+                    'What he loves most about being a vision therapist with C4BL is the opportunity to improve the quality of life for young children, adolescents, and adults in his local community. He strives to incorporate compassion, empathy, and understanding with vision therapy for the best possible outcomes. This mindset is shared by everyone on the C4BL team.',
+                    'Outside of therapy, Juan enjoys reading novels, taking trips to parks and zoos, playing sports, and generally living in the present moment.',
                   ]}
                 />
               </div>
