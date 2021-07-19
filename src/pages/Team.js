@@ -1,8 +1,8 @@
 import React from 'react';
 import Bio from '../components/Bio';
 import Helmet from 'react-helmet';
-import paulmurray from '/images/paul_murray.jpeg';
-import loribaron from '/images/IMG_3998.JPG';
+import paulmurray from '../images/paul_murray.jpeg';
+import loribaron from '../images/IMG_3998.JPG';
 
 const Team = () => (
   <div>
