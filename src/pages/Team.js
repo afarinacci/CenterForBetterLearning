@@ -165,6 +165,52 @@ const Team = () => (
           <div className="card">
             <div className="row no-gutters">
               <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
+                  src={abidkhan}
+                  alt="Abid Khan, BS, OVT"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Abid Khan, BS, OVT"
+                  role="Vision Therapist"
+                  bio={[
+                    "Abid was born and raised in South Florida. He received his Bachelor's degree from The Florida State University majoring in Biology with a minor in Psychology. Growing up he developed his passion to heal others in any chance he could get. Being from the Bengali community that he was raised in he was taught to always help others in any way shape or form which is why he loves the work he does here.",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
+                  src={jerivonna}
+                  alt="Jerivonna aka Jeri, OVT"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Jerivonna aka Jeri, OVT"
+                  role="Vision Therapist"
+                  bio={[
+                    'Jeri was born in a small town in Georgia named Tifton and moved to West Palm Beach when she was 4 years old. She is a graduate of the class of 2021 and is going to Mercer University this fall. She is majoring in chemistry and is on the pathway of pre-optometry. Having memories of the country/farm life to the city she became a well-rounded person, open minded, easy person to talk to, and a person to follow what’s right.',
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
                 {/*<img
                   className="bioimg card-img-top"
                   src={juanordonez}
