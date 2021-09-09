@@ -3,8 +3,12 @@ import Bio from '../components/Bio';
 import Helmet from 'react-helmet';
 import paulmurray from '../images/paul_murray.jpeg';
 import loribaron from '../images/IMG_3998.JPG';
-//import juanordonez from '../images/IMG_.JPG';
+import juanordonez from '../images/IMG_3960.JPG';
 import abidkhan from '../images/IMG_3983.JPG';
+import francobattistini from '../images/IMG_3993.JPG';
+import taylorsintay from '../images/IMG_3969.JPG';
+import alyssacavalieri from '../images/IMG_3949.JPG';
+import jerivonna from '../images/IMG_3965.JPG';
 
 const Team = () => (
   <div>
@@ -117,6 +121,29 @@ const Team = () => (
               <div className="col-md-4 my-auto text-center">
                 <img
                   className="bioimg card-img-top"
+                  src={alyssacavalieri}
+                  alt="Alyssa Cavalieri, OVT"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Alyssa Cavalieri, OVT"
+                  role="Vision Therapist"
+                  bio={[
+                    'Alyssa was born and raised in South Florida. She is in the process of becoming a certified vision therapist, while also in school pursing her degree in occupational therapy. Alyssa has always had a passion for helping others and working with young children. She personally takes joy in working with traumatic brain injury, stroke, and special population patients.',
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
                   src={juanordonez}
                   alt="Juan Ordonez, BS, OVT"
                 />
@@ -127,8 +154,6 @@ const Team = () => (
                   role="Vision Therapist"
                   bio={[
                     "Juan was born in Bogota, Colombia and lived there for six years before emigrating to South Florida with his immediate family. He attended Florida Atlantic University, where he earned his Bachelor's degree in Biological Sciences while minoring in Psychology. He discovered his passion for therapy while attending FAU and working at the Louis and Anne Green Memory and Wellness Center, where he assisted in activities and exercises for participants with dementia and other related illnesses.",
-                    'What he loves most about being a vision therapist with C4BL is the opportunity to improve the quality of life for young children, adolescents, and adults in his local community. He strives to incorporate compassion, empathy, and understanding with vision therapy for the best possible outcomes. This mindset is shared by everyone on the C4BL team.',
-                    'Outside of therapy, Juan enjoys reading novels, taking trips to parks and zoos, playing sports, and generally living in the present moment.',
                   ]}
                 />
               </div>
