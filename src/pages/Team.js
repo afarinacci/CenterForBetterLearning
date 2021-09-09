@@ -167,6 +167,29 @@ const Team = () => (
               <div className="col-md-4 my-auto text-center">
                 <img
                   className="bioimg card-img-top"
+                  src={francobattistini}
+                  alt="Franco Battistini, OVT"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Franco Battistini, OVT"
+                  role="Vision Therapist"
+                  bio={[
+                    "Franco was born and raised in Lima, Peru. He moved to South Florida when he was only 9 years old, seeking to pursue a new life with a lot of opportunities. Franco is currently enrolled at Florida Atlantic University where he will be receiving a bachelor’s degree in Exercise Science. His passion has always been to help people in all aspects of health, to improve a person's well-being. He loves helping people better themselves physically and mentally, which is why he discovered his love for Vision and Performance Therapy.",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
                   src={abidkhan}
                   alt="Abid Khan, BS, OVT"
                 />
