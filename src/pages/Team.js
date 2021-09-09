@@ -104,8 +104,6 @@ const Team = () => (
                   role="Lead Vision Therapist"
                   bio={[
                     'Lori was born and raised in sunny, south Florida. She went to Florida Atlantic University where she received her BS degree in Biological Sciences. She’s been interested in helping people of all ages meet their vision therapy and educational goals for over 10 years. As her love for Vision Therapy grew, she became certified as a Vision Therapist from the College of Optometrists in Vision Development.  Lori’s passion is working with special populations, gifted individuals, athletes, brain injury, strabismus, and amblyopia patients to help them succeed at work and school.',
-                    'She loves working at C4BL. “The facilities are state of the art with the latest technology/equipment and large enough for safety with social distancing at the utmost time during a global pandemic. Secondly, the team works as a family supporting one another and planning patients collaboratively to provide the best patient care. Finally, the continuing education is an endless resource here and I love to learn!”',
-                    'Fun Fact about Lori: Outside of work you may catch Lori at your local Bikram Yoga studio or playing Pokemon Go. She likes spending time outdoors in nature, health and fitness, arts and crafts, reading and traveling.',
                   ]}
                 />
               </div>
