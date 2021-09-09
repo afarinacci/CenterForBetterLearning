@@ -74,30 +74,6 @@ const Team = () => (
               <div className="col-md-4 my-auto text-center">
                 <img
                   className="bioimg card-img-top"
-                  src={paulmurray}
-                  alt="Paul Murray"
-                />
-              </div>
-              <div className="col-md-8">
-                <Bio
-                  name="Paul Murray"
-                  role="Operations Manager"
-                  bio={[
-                    "Paul's professional career spans 10+ years in the sales industry selling a wide variety of products and managing teams of sales professionals around the country. Paul's ambition to help people naturally lead him to support Dr. Murray at the Center for Better Learning to provide Vision Therapy services in the tri-county area.",
-                    "When Paul isn't working, he enjoys spending time with his newborn daughter, being outside, and playing with his dogs.",
-                  ]}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="biocard">
-          <div className="card">
-            <div className="row no-gutters">
-              <div className="col-md-4 my-auto text-center">
-                <img
-                  className="bioimg card-img-top"
                   src={loribaron}
                   alt="Lori Baron, BS, COVT"
                 />
@@ -247,6 +223,30 @@ const Team = () => (
                   role="Office Coordinator"
                   bio={[
                     "Taylor if from South Florida. She graduated from Florida Atlantic University with a bachelor's degree in Sociology, Spring of 2020. Her passion has always been to help others and she has been working with children in various settings for over a decade. Her goal in both life and work is to be a positive role model and inspiration to others. ",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                <img
+                  className="bioimg card-img-top"
+                  src={paulmurray}
+                  alt="Paul Murray"
+                />
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Paul Murray"
+                  role="Operations Manager"
+                  bio={[
+                    "Paul's professional career spans 10+ years in the sales industry selling a wide variety of products and managing teams of sales professionals around the country. Paul's ambition to help people naturally lead him to support Dr. Murray at the Center for Better Learning to provide Vision Therapy services in the tri-county area.",
+                    "When Paul isn't working, he enjoys spending time with his newborn daughter, being outside, and playing with his dogs.",
                   ]}
                 />
               </div>
