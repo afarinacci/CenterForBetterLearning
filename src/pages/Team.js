@@ -6,8 +6,8 @@ import loribaron from '../images/IMG_3998.JPG';
 import juanordonez from '../images/IMG_3960.JPG';
 import abidkhan from '../images/IMG_3983.JPG';
 import francobattistini from '../images/IMG_3993.JPG';
-import taylorsintay from '../images/IMG_3969.JPG';
-import alyssacavalieri from '../images/IMG_3949.JPG';
+//import taylorsintay from '../images/IMG_.JPG';
+import alyssacavalieri from '../images/IMG_3969.JPG';
 import jerivonna from '../images/IMG_3965.JPG';
 
 const Team = () => (
@@ -154,6 +154,30 @@ const Team = () => (
                   role="Vision Therapist"
                   bio={[
                     "Juan was born in Bogota, Colombia and lived there for six years before emigrating to South Florida with his immediate family. He attended Florida Atlantic University, where he earned his Bachelor's degree in Biological Sciences while minoring in Psychology. He discovered his passion for therapy while attending FAU and working at the Louis and Anne Green Memory and Wellness Center, where he assisted in activities and exercises for participants with dementia and other related illnesses.",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="biocard">
+          <div className="card">
+            <div className="row no-gutters">
+              <div className="col-md-4 my-auto text-center">
+                {/*<img
+                  className="bioimg card-img-top"
+                  src={juanordonez}
+                  alt="Juan Ordonez, BS, OVT"
+                />
+                */}
+              </div>
+              <div className="col-md-8">
+                <Bio
+                  name="Taylor Sintay, BA"
+                  role="Office Coordinator"
+                  bio={[
+                    "Taylor if from South Florida. She graduated from Florida Atlantic University with a bachelor's degree in Sociology, Spring of 2020. Her passion has always been to help others and she has been working with children in various settings for over a decade. Her goal in both life and work is to be a positive role model and inspiration to others. ",
                   ]}
                 />
               </div>
