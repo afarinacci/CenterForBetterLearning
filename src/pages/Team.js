@@ -21,11 +21,11 @@ const Team = () => (
       <meta property="og:type" content="article" />
       <meta
         property="og:description"
-        content="Dr. Christina Murray, O.D., Renee Wise - Lead Vision Therapist, Paul Murray - Operations Manager"
+        content="Dr. Christina Murray, Paul Murray - Operations Manager"
       />
       <meta
         name="description"
-        content="Dr. Christina Murray, O.D., Renee Wise - Lead Vision Therapist, Paul Murray - Operations Manager"
+        content="Dr. Christina Murray, O.D., Paul Murray - Operations Manager"
       />
       <meta
         property="og:url"
@@ -59,8 +59,9 @@ const Team = () => (
                 <Bio
                   name="Dr. Christina Murray, O.D."
                   bio={[
-                    "Dr. Murray is originally from Columbus, Ohio, and is a proud graduate of The Ohio State University. She happily escaped the cold Ohio winters to attend optometry school at Nova Southeastern University. While in school, she discovered her passion for pediatrics and vision therapy. Dr. Murray's passion for helping children and adults reach their full potential through vision therapy has inspired her to open Center for Better Learning. She is currently finishing up her board certification from the College of Optometrists in Vision Development.",
-                    'When not seeing patients, Dr. Murray enjoys spending time with her husband, Paul, daughter, Mia, and two adorable golden retrievers, Sadie and Bentley. Her favorite activities include reading, baking, traveling.',
+                    "Dr. Christina Murray OD, FCOVD, is a board-certified optometrist in vision development. She is a proud graduate of both The Ohio State University and Nova Southeastern University. Since she was a child, Dr. Murray wanted to be an eye doctor but developed a passion for working with those with vision problems when she discovered deficits in her own visual system as an adult. Over the years, she has spent her post-graduate years studying primitive reflexes, syntonics light therapy, and exploring how the brain processes visual information. Dr. Murray is on a mission to bring awareness to how vision problems affect a child's ability to read and learn. She is actively working with parents, legislators, and the school board to change the laws to consider visual processing disorders a disability. Expanding the law will allow for better coverage by medical insurance plans and children to get the accommodations they need in the classroom.",
+                    'Dr. Murray opened Center for Better Learning in 2018 and has expanded to three office locations in Coconut Creek, Boynton Beach, and Palm Beach Gardens. She works very closely with occupational therapists, physical therapists, speech therapists, cranial-sacral therapists, and tutors to provide comprehensive care for each patient. Her dream is to eventually open an office location where she can work side by side with other health care professionals in a collaborative way.',
+                    'Dr. Christina Murray lives in Boca Raton with her husband, Paul, two daughters, Amelia and Emma, and two golden retrievers, Sadie and Bentley. When she is not seeing patients, she enjoys reading, baking, and spending time with her family. As an avid runner, biker, and swimmer, she hopes her kids will allow her enough time to train for a half iron man this year.',
                   ]}
                 />
               </div>
